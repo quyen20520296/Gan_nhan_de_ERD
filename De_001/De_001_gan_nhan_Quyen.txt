@@ -1,96 +1,96 @@
 Công_ty	
 phát_hành	
 nhiều	
-báo	thực thể
+báo	E
 khác_nhau	
 (	
 ví_dụ	
-báo	thực thể
+báo	E
 Tuổi_trẻ	
 ,	
-báo	thực thể
+báo	E
 Thanh_niên	
 ,	
 ...	
 )	
 ,	
 mỗi	
-báo	thực thể
+báo	E
 có	
 một	
-mã_báo	thuộc tính khóa
+mã_báo	PK
 duy_nhất	
 để	
 phân_biệt	
 với	
 các	
-báo	thực thể
+báo	E
 khác	
 ,	
 có	
-tên_báo	thuộc tính thường
+tên_báo	AE
 ,	
-đơn_giá	thuộc tính thường
-.	
+đơn_giá	AE
+.	CH
 
 Mỗi	
-khách_hàng	thực thể
+khách_hàng	E
 có	
 một	
-mã_khách_hàng	thuộc tính khóa
+mã_khách_hàng	PK
 duy_nhất	
 để	
 phân_biệt	
 với	
 các	
-khách_hàng	thực thể
+khách_hàng	E
 khác	
 ,	
 có	
-tên_khách_hàng	thuộc tính thường
+tên_khách_hàng	AE
 ,	
-địa_chỉ	thuộc tính thường
-.	
+địa_chỉ	AE
+.	CH
 
 Mỗi	
-khách_hàng	thực thể
+khách_hàng	E
 có_thể	
-đặt_mua	mối kết hợp
+đặt_mua	R
 nhiều	
 báo	
-.	
+.	CH
 
 Khi	
-đặt_mua	mối kết hợp
+đặt_mua	R
 báo	
 ,	
 mỗi	
-khách_hàng	thực thể
+khách_hàng	E
 sẽ	
 nhận	
 một	
-hóa_đơn	thực thể
+hóa_đơn	E
 tính_tiền	
-.	
+.	CH
 
 Mỗi	
-hóa_đơn	thực thể
+hóa_đơn	E
 có	
 một	
-số_hóa_đơn	thuộc tính khóa
+số_hóa_đơn	PK
 duy_nhất	
 để	
 phân_biệt	
 với	
 các	
-hóa_đơn	thực thể
+hóa_đơn	E
 khác	
 ,	
 có	
-ngày_đặt_mua	thuộc tính thường
+ngày_đặt_mua	AE
 ,	
-trị_giá_hóa_đơn	thuộc tính thường
-.	
+trị_giá_hóa_đơn	AE
+.	CH
 
 Công_ty	
 cũng	
@@ -98,14 +98,14 @@ lưu_trữ
 thông_tin_chi_tiết
 của	
 mỗi	
-hóa_đơn	thực thể
+hóa_đơn	E
 gồm	
 có	
 những	
-báo	thực thể
+báo	E
 nào	
 với	
-số_lượng_đặt_mua	thuộc tính thường
+số_lượng_đặt_mua	AR
 là	
 bao_nhiêu	
-.	
+.	CH
