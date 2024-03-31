@@ -60,12 +60,11 @@ dung_lượng_RAM
 dung_lượng_ổ_cứng
 .
 
-Các
-máy_tính
-được_bố_trí
-trong
-các
+Một
 phòng_máy
+có
+nhiều
+máy_tính
 .
 
 Mỗi

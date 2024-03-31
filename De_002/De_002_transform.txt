@@ -1,0 +1,5 @@
+Trung tâm đào tạo nhiều chứng chỉ khác nhau (ví dụ Nghiệp vụ sư phạm, Lý luận dạy học Đại học,...), mỗi một chứng chỉ có một mã chứng chỉ duy nhất để phân biệt với các chứng chỉ khác, có tên chứng chỉ, tổng số tín chỉ và một mức học phí.
+Mỗi một môn học có một mã môn học duy nhất để phân biệt với các môn học khác, có tên môn học, số tín chỉ môn học.
+Mỗi một chứng chỉ bao gồm nhiều môn học và một môn học có thể được dạy trong một số các chứng chỉ khác nhau.
+Mỗi lớp_học được xác định bởi duy nhất một mã_lớp, tên_lớp, ngày_bắt_đầu_học, ngày_kết_thúc, số_học_viên_tối_đa_dự_kiến.
+Mỗi chứng_chỉ có nhiều lớp_học.

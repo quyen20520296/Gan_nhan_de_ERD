@@ -72,15 +72,14 @@ nhiều
 bài_viết
 .
 
-Hệ_thống
-ghi_nhận
-lại
-thời_gian
+Khi
 bình_luận
-và
-nội_dung
-của
-bình_luận
+,
+phải
+biết
+thời_gian_bình_luận
+,
+nội_dung_bình_luận
 .
 
 Mỗi

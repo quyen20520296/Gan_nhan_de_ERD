@@ -31,7 +31,7 @@ có
 tên_báo	AE
 ,	
 đơn_giá	AE
-.	CH
+.	F
 
 Mỗi	
 khách_hàng	E
@@ -50,33 +50,19 @@ có
 tên_khách_hàng	AE
 ,	
 địa_chỉ	AE
-.	CH
+.	F
 
-Mỗi	
+Mỗi	O
 khách_hàng	E
-có_thể	
-đặt_mua	R
-nhiều	
-báo	
-.	CH
-
-Khi	
-đặt_mua	R
-báo	
-,	
-mỗi	
-khách_hàng	E
-sẽ	
-nhận	
-một	
+có	R
+nhiều	M
 hóa_đơn	E
-tính_tiền	
-.	CH
+.	F
 
 Mỗi	
 hóa_đơn	E
 có	
-một	
+một
 số_hóa_đơn	PK
 duy_nhất	
 để	
@@ -90,22 +76,29 @@ có
 ngày_đặt_mua	AE
 ,	
 trị_giá_hóa_đơn	AE
-.	CH
+.	F
 
-Công_ty	
-cũng	
-lưu_trữ	
-thông_tin_chi_tiết
-của	
-mỗi	
+Một	O
 hóa_đơn	E
-gồm	
-có	
-những	
+có_thể	
+chứa	R
+nhiều	M
 báo	E
-nào	
-với	
+.	F
+
+Một	O
+báo	E
+có_thể	
+được_chứa	R
+trong	
+nhiều	M
+hóa_đơn	E
+.	F
+
+Khi	
+thông_tin_chi_tiết	ER
+,	
+phải	
+biết	
 số_lượng_đặt_mua	AR
-là	
-bao_nhiêu	
-.	CH
+.	F

@@ -46,7 +46,7 @@ nào
 Mỗi
 sinh_viên
 có
-mã_số
+mã_sinh viên
 duy_nhất
 để
 phân_biệt
@@ -81,4 +81,5 @@ do
 nhiều
 sinh_viên
 cùng
-thực_hiện.
+thực_hiện
+.

@@ -16,7 +16,7 @@ sau
 Mỗi
 loại_giáo_trình
 có
-mã_số
+mã_loại_giáo_trình
 duy_nhất
 ,
 có
@@ -30,7 +30,7 @@ loại_giáo_trình
 Mỗi
 giáo_trình
 có
-mã_số
+mã_giáo_trình
 duy_nhất
 để
 phân_biệt
@@ -47,18 +47,17 @@ số_trang
 năm_xuất_bản
 .
 
-Mỗi
-giáo_trình
-thuộc
-một
+Một
 loại_giáo_trình
-cụ_thể
+có
+nhiều
+giáo_trình
 .
 
 Mỗi
 tác_giả
 có
-mã_số
+mã_tác_giả
 duy_nhất
 ,
 họ_tên_tác_giả

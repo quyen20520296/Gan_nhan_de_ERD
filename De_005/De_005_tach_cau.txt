@@ -19,7 +19,7 @@ chuyên_đề
 Mỗi
 chuyên_đề
 có
-mã_số
+mã_chuyên_đề
 duy_nhất
 để
 phân_biệt
@@ -39,7 +39,7 @@ học_viên
 mỗi
 học_viên
 có
-mã_số
+mã_học_viên
 duy_nhất
 để
 nhận_biết

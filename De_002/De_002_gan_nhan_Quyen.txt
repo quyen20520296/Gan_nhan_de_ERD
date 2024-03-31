@@ -1,0 +1,115 @@
+Trung_tâm	
+đào_tạo	
+nhiều	
+chứng_chỉ	E
+khác_nhau	
+(	
+ví_dụ	
+Nghiệp_vụ_sư_phạm	
+,	
+Lý_luận_dạy_học_Đại_học	
+,	
+...	
+)	
+,	
+mỗi_một	
+chứng_chỉ	E
+có	
+một	
+mã_chứng_chỉ	PK
+duy_nhất	
+để	
+phân_biệt	
+với	
+các	
+chứng_chỉ	E
+khác	
+,	
+có	
+tên_chứng_chỉ	AE
+,	
+tổng_số_tín_chỉ	AE
+và	
+một	
+mức_học_phí	AE
+.	F
+
+Mỗi_một	
+môn_học	E
+có	
+một	
+mã_môn_học	PK
+duy_nhất	
+để	
+phân_biệt	
+với	
+các	
+môn_học	E
+khác	
+,	
+có	
+tên_môn_học	AE
+,	
+số_tín_chỉ_môn_học	AE
+.	F
+
+Mỗi_một	O
+chứng_chỉ	E
+bao_gồm	R
+nhiều	M
+môn_học	E
+và	
+một	O
+môn_học	E
+có_thể	
+được_dạy	R
+trong	
+một_số	M
+các	M
+chứng_chỉ	E
+khác_nhau	
+.	F
+
+Mỗi	
+lớp_học	E
+được	
+xác_định	
+bởi	
+duy_nhất	
+một	
+mã_lớp	PK
+,	
+tên_lớp	AE
+,	
+ngày_bắt_đầu_học	AE
+,	
+ngày_kết_thúc	AE
+,	
+số_học_viên_tối_đa_dự_kiến	AE
+.	F
+
+Mỗi	O
+chứng_chỉ	E
+có	R
+nhiều	M
+lớp_học	E
+.	F
+
+Ví_dụ	
+:	
+lớp	
+có	
+mã	
+NVSPK30	
+có	
+tên_lớp	
+Nghiệp_vụ_sư_phạm_K30	
+,	
+sau_khi	
+hoàn_tất	
+học_viên	
+sẽ	
+được_nhận	
+chứng_chỉ	
+Nghiệp_vụ_sư_phạm	
+.	
