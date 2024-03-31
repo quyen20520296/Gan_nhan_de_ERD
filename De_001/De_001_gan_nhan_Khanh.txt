@@ -1,24 +1,24 @@
 Công_ty
 phát_hành
 nhiều
-báo E
+báo	E
 khác_nhau
 (
 ví_dụ
-báo E
+báo	E
 Tuổi_trẻ
 ,
-báo E
+báo	E
 Thanh_niên
 ,
 ...
 )
 ,
-mỗi O
-báo E
+mỗi	O
+báo	E
 có
-một O
-mã_báo  PK
+một	O
+mã_báo	PK
 duy_nhất
 để
 phân_biệt
@@ -28,16 +28,16 @@ báo
 khác
 ,
 có
-tên_báo AE
+tên_báo	AE
 ,
-đơn_giá AE
-.   F
+đơn_giá	AE
+.	F
 
 Mỗi O
-khách_hàng  E
+khách_hàng	E
 có
-một O
-mã_khách_hàng PK
+một	O
+mã_khách_hàng	PK
 duy_nhất
 để
 phân_biệt
@@ -47,37 +47,37 @@ khách_hàng
 khác
 ,
 có
-tên_khách_hàng  E
+tên_khách_hàng	E
 ,
-địa_chỉ E
-.   F
+địa_chỉ	E
+.	F
 
-Mỗi O
-khách_hàng E
+Mỗi	O
+khách_hàng	E
 có_thể
 đặt_mua
-nhiều   M
-báo E
-.   F
+nhiều	M
+báo	E
+.	F
 
 Khi
 đặt_mua
 báo
 ,
-mỗi O
-khách_hàng  E
+mỗi	O
+khách_hàng	E
 sẽ
 nhận
-một O
-hóa_đơn AE
+một	O
+hóa_đơn	AE
 tính_tiền
-.   F
+.	F
 
-Mỗi O
-hóa_đơn E
+Mỗi	O
+hóa_đơn	E
 có
-một O
-số_hóa_đơn  PK
+một	O
+số_hóa_đơn	PK
 duy_nhất
 để
 phân_biệt
@@ -87,25 +87,25 @@ hóa_đơn
 khác
 ,
 có
-ngày_đặt_mua    AE
+ngày_đặt_mua	AE
 ,
-trị_giá_hóa_đơn AE
-.   F
+trị_giá_hóa_đơn	AE
+.	F
 
 Công_ty
 cũng
 lưu_trữ
 thông_tin_chi_tiết
 của
-mỗi O
-hóa_đơn E
+mỗi	O
+hóa_đơn	E
 gồm
 có
 những
-báo E
+báo	E
 nào
 với
-số_lượng_đặt_mua    AE
+số_lượng_đặt_mua	AE
 là
-bao_nhiêu   AE
-.   F
+bao_nhiêu	AE
+.	F
