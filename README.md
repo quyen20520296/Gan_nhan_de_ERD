@@ -6,7 +6,8 @@
   - Khóa chính: PK (Primary Key)
   - Thuộc tính của thực thể: AE (Attribute of Entity)
   - Mối kết hợp: R (Relationship)
-  - Thuộc tính của mối kết hợp: AR (Attribute of Relationship)
+  - Bảng trung gian của mối quan hệ nhiều-nhiều: ER
+  - Thuộc tính của bảng trung gian: AR (Attribute of Relationship)
   - Dấu chấm: F
   - Lượng từ "1", "một": O (One)
   - Lượng từ "nhiều", "một số",...: M (Many) <br>
