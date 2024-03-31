@@ -18,7 +18,7 @@ mỗi O
 báo E
 có
 một O
-mã_báo  AE
+mã_báo  PK
 duy_nhất
 để
 phân_biệt
@@ -37,7 +37,7 @@ Mỗi O
 khách_hàng  E
 có
 một O
-mã_khách_hàng AE
+mã_khách_hàng PK
 duy_nhất
 để
 phân_biệt
@@ -77,7 +77,7 @@ Mỗi O
 hóa_đơn E
 có
 một O
-số_hóa_đơn  AE
+số_hóa_đơn  PK
 duy_nhất
 để
 phân_biệt
