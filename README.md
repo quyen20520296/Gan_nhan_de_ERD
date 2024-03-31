@@ -7,7 +7,9 @@
   - Thuộc tính của thực thể: AE (Attribute of Entity)
   - Mối kết hợp: R (Relationship)
   - Thuộc tính của mối kết hợp: AR (Attribute of Relationship)
-  - Dấu chấm: CH
+  - Dấu chấm: F
+  - Lượng từ "1", "một": O (One)
+  - Lượng từ "nhiều", "một số",...: M (Many)
 3. Khi thực hiện gán nhãn, phải phân tách giữa 2 cột với nhau bằng <ins>duy nhất 1 dấu Tab</ins>. Bất kể là dòng đó không có nhãn gì để gán cũng phải thực hiện Tab 1 cái, để sau này đọc data máy biết phần data ở cột 2 sẽ là data rỗng.
 ## Ví dụ
 Xem ở file [De_001_gan_nhan_Quyen.txt](https://github.com/quyen20520296/Gan_nhan_de_ERD/blob/master/De_001/De_001_gan_nhan_Quyen.txt) <br>
