@@ -1,0 +1,104 @@
+Công_ty	
+phát_hành	
+nhiều	
+báo	E
+khác_nhau	
+(	
+ví_dụ	
+báo	E
+Tuổi_trẻ	
+,	
+báo	E
+Thanh_niên	
+,	
+...	
+)	
+,	
+mỗi	
+báo	E
+có	
+một	
+mã_báo	PK
+duy_nhất	
+để	
+phân_biệt	
+với	
+các	
+báo	E
+khác	
+,	
+có	
+tên_báo	AE
+,	
+đơn_giá	AE
+.	F
+
+Mỗi	
+khách_hàng	E
+có	
+một	
+mã_khách_hàng	PK
+duy_nhất	
+để	
+phân_biệt	
+với	
+các	
+khách_hàng	E
+khác	
+,	
+có	
+tên_khách_hàng	AE
+,	
+địa_chỉ	AE
+.	F
+
+Mỗi	O
+khách_hàng	E
+có	R
+nhiều	M
+hóa_đơn	E
+.	
+
+Mỗi	
+hóa_đơn	E
+có	
+một	
+số_hóa_đơn	PK
+duy_nhất	
+để	
+phân_biệt	
+với	
+các	
+hóa_đơn	E
+khác	
+,	
+có	
+ngày_đặt_mua	AE
+,	
+trị_giá_hóa_đơn	AE
+.	F
+
+Một	O
+hóa_đơn	E
+có_thể	
+chứa	R
+nhiều	M
+báo	E
+.	F
+
+Một	O
+báo	E
+có_thể	
+được_chứa	R
+trong	
+nhiều	M
+hóa_đơn	E
+.	F
+
+Khi	
+thông_tin_chi_tiết	ER
+,	
+phải	
+biết	
+số_lượng_đặt_mua	AR
+.	F
