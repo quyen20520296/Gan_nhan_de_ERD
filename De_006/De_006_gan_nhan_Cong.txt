@@ -1,0 +1,105 @@
+Một	
+trung_tâm_tin_học	
+cần	
+tổ_chức	
+một	
+cơ_sở_dữ_liệu	
+để	
+quản_lý	
+các	
+phòng_máy_thực_hành	E
+với	
+các	
+thông_tin	
+như	
+sau	
+:	
+
+Mỗi	
+phòng_máy	E
+có	
+mã_phòng	PK
+duy_nhất	
+để	
+phân_biệt	
+với	
+các	
+phòng_máy	E
+khác	
+,	
+có	
+tên_phòng	AE
+và	
+tên_người_quản_lý_phòng	AE
+.	F
+
+Mỗi	
+máy_tính	E
+có	
+một	
+mã_máy	PK
+duy_nhất	
+.	F
+
+Ngoài_ra	
+,	
+mỗi	
+máy_tính	E
+còn	
+có	
+các	
+thông_tin	
+về	
+cấu_hình	
+như	
+:	
+tốc_độ_CPU	AE
+,	
+dung_lượng_RAM	AE
+,	
+dung_lượng_ổ_cứng	AE
+.	F
+
+Một	O
+phòng_máy	E
+có	R
+nhiều	M
+máy_tính	E
+.	F
+
+Mỗi	
+môn_học	E
+có	
+mã_môn_học	PK
+duy_nhất	
+,	
+có	
+tên_môn_học	AE
+và	
+thời_lượng_môn_học	AE
+.	F
+
+Mỗi	O
+môn_học	E
+có_thể	
+được_thực_hành	R
+ở	
+các	M
+phòng_máy	E
+khác_nhau	
+và	
+một	O
+phòng_máy	E
+có_thể	
+được_đăng_ký	R
+cho	
+nhiều	M
+môn_học	E
+khác_nhau	
+,	
+khi	
+đăng_ký	ER
+phải	
+biết	
+ngày_đăng_ký	AR
+.	F

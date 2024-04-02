@@ -1,0 +1,118 @@
+Ban_tổ_chức	
+Hội_thao	
+cần	
+tổ_chức	
+cơ_sở_dữ_liệu	
+quản_lý	
+thông_tin	
+đăng_ký	
+tham_gia	
+hội_thao	
+với	
+nhiều	
+môn_thể_thao	E
+khác_nhau	
+,	
+thông_tin	
+chi_tiết	
+như	
+sau	
+:	
+
+Mỗi	
+môn_thể_thao	E
+có	
+mã_môn	PK
+duy_nhất	
+để	
+phân_biệt	
+,	
+có	
+tên_môn	AE
+,	
+loại_môn	AE
+.	F
+
+Ví_dụ	
+:	
+môn_thể_thao	E
+có_thể	
+thuộc	
+loại_môn	AE
+đồng_đội	
+,	
+cá_nhân	
+.	F
+
+Mỗi	O
+môn_thể_thao	E
+có	R
+một	O
+hoặc	
+nhiều	M
+nội_dung	E
+thi_đấu	
+.	F
+
+Mỗi	O
+nội_dung	E
+chỉ	
+thuộc	R
+một	O
+môn_thể_thao	E
+.	F
+
+Thông_tin	
+nội_dung	E
+thi_đấu	
+gồm	
+:	
+mã_nội_dung	PK
+duy_nhất	
+để	
+phân_biệt	
+,	
+tên_nội_dung	AE
+và	
+lệ_phí_tham_gia	AE
+.	F
+
+Mỗi	
+vận_động_viên	E
+sẽ	
+có	
+mã_vận_động_viên	PK
+duy_nhất	
+để	
+phân_biệt	
+,	
+họ_tên	AE
+,	
+giới_tính	AE
+,	
+ngày_sinh	AE
+và	
+thông_tin_liên_hệ	AE
+.	F
+
+Dựa_trên	
+việc	
+đăng_ký	
+,	
+một	O
+vận_động_viên	E
+có_thể	
+tham_gia	R
+nhiều	M
+nội_dung	E
+thi_đấu	
+khác_nhau	
+và	
+một	O
+nội_dung	E
+có_thể	
+có	R
+nhiều	M
+vận_động_viên	E
+tham_gia	R
+.	

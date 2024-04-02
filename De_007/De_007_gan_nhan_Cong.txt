@@ -1,0 +1,104 @@
+Một	
+cửa_hàng	
+cho_thuê	
+đồ_dự_tiệc	
+có	
+mô_tả	
+như	
+sau	
+:	
+
+Cửa_hàng	
+có	
+nhiều	
+trang_phục	E
+khác_nhau	
+.	F
+
+Mỗi	
+trang_phục	E
+có	
+mã_trang_phục	PK
+duy_nhất	
+để	
+phân_biệt	
+,	
+tên_trang_phục	AE
+,	
+kích_cỡ	AE
+,	
+màu_sắc	AE
+và	
+giá_cho_thuê	AE
+.	F
+
+Mỗi	
+khách_hàng	E
+có	
+mã	PK
+duy_nhất	
+để	
+phân_biệt	
+,	
+họ_tên	AE
+,	
+địa_chỉ	AE
+và	
+số_điện_thoại_liên_lạc	AE
+.	F
+
+Khi	
+khách_hàng	E
+muốn	
+thuê_đồ	
+,	
+một	
+hợp_đồng	E
+sẽ	
+được_lập	
+với	
+những	
+thông_tin	
+gồm	
+mã_hợp_đồng	PK
+duy_nhất	
+để	
+phân_biệt	
+,	
+ngày_bắt_đầu_hợp_đồng	AE
+,	
+ngày_kết_thúc_hợp_đồng	AE
+và	
+trị_giá_hợp_đồng	AE
+.	F
+
+Khách_hàng	E
+có_thể	
+có	R
+nhiều	M
+hợp_đồng	E
+và	
+một	O
+hợp_đồng	E
+chỉ	
+thuộc_về	R
+một	O
+khách_hàng	E
+.	F
+
+Mỗi	O
+hợp_đồng	E
+có_thể	
+thuê	R
+nhiều	M
+trang_phục	E
+và	
+một	O
+trang_phục	E
+có_thể	
+được_thuê	R
+bởi	
+nhiều	M
+hợp_đồng	E
+khác_nhau	
+.	F
