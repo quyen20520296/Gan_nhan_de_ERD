@@ -37,7 +37,7 @@ Mỗi
 máy_tính	E
 có	
 một	
-mã_máy	E
+mã_máy	PK
 duy_nhất	
 .	F
 
@@ -98,8 +98,8 @@ môn_học	E
 khác_nhau	
 ,	
 khi	
-đăng_ký	
+đăng_ký	ER
 phải	
 biết	
-ngày_đăng_ký	ER
+ngày_đăng_ký	AR
 .	F
