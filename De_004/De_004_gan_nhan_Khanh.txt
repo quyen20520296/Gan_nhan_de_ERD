@@ -1,0 +1,86 @@
+Ban_giáo_trình	
+trường	
+ĐHCNTT	
+muốn	
+quản_lý	
+các	
+tình_hình	
+viết	
+giáo_trình	
+với	
+các	
+thông_tin	
+sau	
+:	
+
+Mỗi	
+loại_giáo_trình	E
+có	
+mã_loại_giáo_trình	PK
+duy_nhất	
+,	
+có	
+tên_loại_giáo_trình	AE
+,	
+chủ_đề_của_loại_giáo_trình AE	
+.	F
+
+Mỗi	
+giáo_trình	E
+có	
+mã_giáo_trình	PK
+duy_nhất	
+để	
+phân_biệt	
+với	
+các	
+giáo_trình	E
+khác	
+,	
+có	
+tên_giáo_trình	AE
+,	
+số_trang	AE
+,	
+năm_xuất_bản	AE
+.	F
+
+Một	O
+loại_giáo_trình	E
+có	R
+nhiều	M
+giáo_trình	E
+.	F
+
+Mỗi	
+tác_giả	E
+có	
+mã_tác_giả	PK
+duy_nhất	
+,	
+họ_tên_tác_giả	AE
+,	
+ngày_tháng_năm_sinh	AE
+,	
+quê_quán	AE
+,	
+chuyên_ngành	AE
+.	F
+
+Mỗi	O
+tác_giả	E
+có_thể	
+viết	R
+nhiều	M
+giáo_trình	E
+khác_nhau	
+và	
+Mỗi	O
+giáo_trình	E
+có_thể	
+do	R
+nhiều	M
+tác_giả	E
+cùng	
+viết	
+.	F

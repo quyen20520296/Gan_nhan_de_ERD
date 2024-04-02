@@ -1,111 +1,104 @@
 Công_ty	
 phát_hành	
 nhiều	
-báo	E	
+báo	
 khác_nhau	
 (	
 ví_dụ	
-báo	E	
+báo	
 Tuổi_trẻ	
 ,	
-báo	E	
+báo	
 Thanh_niên	
 ,	
 ...	
 )	
 ,	
-mỗi	O	
-báo	E	
+mỗi	
+báo	E
 có	
-một	O	
-mã_báo	PK	
+một	
+mã_báo	PK
 duy_nhất	
 để	
 phân_biệt	
 với	
 các	
-báo	
+báo	E
 khác	
 ,	
 có	
-tên_báo	AE	
+tên_báo	AE
 ,	
-đơn_giá	AE	
-.	F	
-	
-Mỗi O	
-khách_hàng	E	
+đơn_giá	AE
+.	F
+
+Mỗi	
+khách_hàng	E
 có	
-một	O	
-mã_khách_hàng	PK	
+một	
+mã_khách_hàng	PK
 duy_nhất	
 để	
 phân_biệt	
 với	
 các	
-khách_hàng	
+khách_hàng	E
 khác	
 ,	
 có	
-tên_khách_hàng	E	
+tên_khách_hàng	AE
 ,	
-địa_chỉ	E	
-.	F	
-	
-Mỗi	O	
-khách_hàng	E	
+địa_chỉ	AE
+.	F
+
+Mỗi	O
+khách_hàng	E
+có	R
+nhiều	M
+hóa_đơn	E
+.	F
+
+Mỗi	
+hóa_đơn	E
+có	
+một	
+số_hóa_đơn	PK
+duy_nhất	
+để	
+phân_biệt	
+với	
+các	
+hóa_đơn	E
+khác	
+,	
+có	
+ngày_đặt_mua	AE
+,	
+trị_giá_hóa_đơn	AE
+.	F
+
+Một	O
+hóa_đơn	E
 có_thể	
-đặt_mua	
-nhiều	M	
-báo	E	
-.	F	
-	
+chứa	R
+nhiều	M
+báo	E
+.	F
+
+Một	O
+báo	E
+có_thể	
+được_chứa	R
+trong	
+nhiều	M
+hóa_đơn	E
+.	F
+
 Khi	
-đặt_mua	
-báo	
+thông_tin_chi_tiết	ER
 ,	
-mỗi	O	
-khách_hàng	E	
-sẽ	
-nhận	
-một	O	
-hóa_đơn	AE	
-tính_tiền	
-.	F	
-	
-Mỗi	O	
-hóa_đơn	E	
-có	
-một	O	
-số_hóa_đơn	PK	
-duy_nhất	
-để	
-phân_biệt	
-với	
-các	
-hóa_đơn	
-khác	
-,	
-có	
-ngày_đặt_mua	AE	
-,	
-trị_giá_hóa_đơn	AE	
-.	F	
-	
-Công_ty	
-cũng	
-lưu_trữ	
-thông_tin_chi_tiết	
-của	
-mỗi	O	
-hóa_đơn	E	
-gồm	
-có	
-những	
-báo	E	
-nào	
-với	
-số_lượng_đặt_mua	AE	
-là	
-bao_nhiêu	AE	
-.	F	
+phải	
+biết	
+số_lượng_đặt_mua	AR
+.	F

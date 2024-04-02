@@ -1,0 +1,85 @@
+Khoa	
+HTTT	
+muốn	
+quản_lý	
+đồ_án	
+do	
+sinh_viên	
+thực_hiện	
+với	
+những	
+thông_tin	
+sau	
+:	
+
+Mỗi	
+môn_học	E
+có	
+mã_số_môn_học	PK
+,	
+tên_môn_học	AE
+,	
+số_tín_chỉ_lý_thuyết	AE
+,	
+số_tín_chỉ_thực_hành	AE
+.	F
+
+Mỗi	
+đồ_án	E
+có	
+mã_số_đồ_án	PK
+,	
+tên_đồ_án	AE
+,	
+ngày_nộp	AE
+.	F
+
+Mỗi	O
+đồ_án	E
+thuộc	R
+một	M
+môn_học	E
+nào	
+đó	
+.	F
+
+Mỗi	
+sinh_viên	E
+có	
+mã_sinh viên	PK
+duy_nhất	
+để	
+phân_biệt	
+với	
+các	
+sinh_viên	E
+khác	
+,	
+có	
+họ_tên_sinh_viên	AE
+,	
+địa_chỉ	AE
+,	
+số_điện_thoại	AE
+.	F
+
+Mỗi	O
+sinh_viên	E
+trong	
+quá_trình_học	
+sẽ	
+phải	
+thực_hiện	R
+nhiều	M
+đồ_án	E
+khác_nhau	
+,	
+và	
+mỗi	O
+đồ_án	E
+do	
+nhiều	M
+sinh_viên	E
+cùng	
+thực_hiện	R
+.	F
