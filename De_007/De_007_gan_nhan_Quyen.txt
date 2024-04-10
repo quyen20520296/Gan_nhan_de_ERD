@@ -93,7 +93,7 @@ thuê	R
 nhiều	M
 trang_phục	E
 và	
-một	O
+một	
 trang_phục	E
 có_thể	
 được_thuê	R

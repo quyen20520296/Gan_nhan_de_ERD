@@ -77,7 +77,8 @@ nhiều
 giáo_trình
 khác_nhau
 và
-mỗi_giáo_trình
+mỗi
+giáo_trình
 có_thể
 do
 nhiều

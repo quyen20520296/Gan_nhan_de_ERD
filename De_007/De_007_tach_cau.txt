@@ -35,7 +35,7 @@ giá_cho_thuê
 Mỗi
 khách_hàng
 có
-mã
+mã_khách_hàng
 duy_nhất
 để
 phân_biệt

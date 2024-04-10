@@ -35,7 +35,7 @@ giá_cho_thuê	AE
 Mỗi	
 khách_hàng	E
 có	
-mã	PK
+mã_khách_hàng	PK
 duy_nhất	
 để	
 phân_biệt	
