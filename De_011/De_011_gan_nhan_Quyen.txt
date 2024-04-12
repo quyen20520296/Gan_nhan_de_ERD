@@ -1,0 +1,142 @@
+Một	
+cuộc_thi	
+tài_năng	
+ở	
+địa_phương	
+có	
+mô_tả	
+như	
+sau	
+:	
+
+Cuộc_thi	
+có	
+nhiều	
+loại_hình_tài_năng	
+được	
+tổ_chức	
+cho	
+thí_sinh	
+tham_gia	
+.	F
+
+Thông_tin	
+loại_hình_tài_năng	E
+được_lưu_giữ	
+bao_gồm	
+:	
+mã_loại_hình_tài_năng	PK
+,	
+tên_loại_hình	AE
+và	
+số_thí_sinh_đăng_ký_tham_gia	AE
+.	F
+
+Cuộc_thi	
+có	
+đội_ngũ	
+huấn_luyện_viên	E
+được_lưu_trữ	
+với	
+các	
+thông_tin	
+:	
+mã_huấn_luyện_viên	PK
+,	
+họ_tên	AE
+,	
+giới_tính	AE
+,	
+số_điện_thoại	AE
+.	F
+
+Mỗi	
+thí_sinh	E
+được_nhận	
+một	
+mã_số_dự_thi	PK
+và	
+ghi_nhận_lại	
+các	
+thông_tin	
+bao_gồm	
+:	
+họ_tên	AE
+,	
+giới_tính	AE
+,	
+ngày_sinh	AE
+,	
+địa_chỉ	AE
+.	F
+
+Để	
+dự_thi	
+,	
+các	M
+thí_sinh	E
+phải	
+đăng_ký	R
+cho	
+mình	
+ít_nhất	M
+một	
+loại_hình_tài_năng	E
+dự_thi	
+nào	
+đó	
+.	F
+
+Mỗi	O
+thí_sinh	E
+có_thể
+đăng_ký	R
+nhiều	M
+loại_hình_tài_năng	E
+khác_nhau	
+.	F
+
+Bên_cạnh	
+đó	
+,	
+mỗi	O
+thí_sinh	E
+còn	
+được	
+ban_tổ_chức	
+bố_trí	R
+duy_nhất	
+một	O
+huấn_luyện_viên	E
+trong	
+suốt	
+cuộc_thi	
+.	F
+
+Một	O
+huấn_luyện_viên	E
+có_thể	
+huấn_luyện	R
+nhiều	M
+thí_sinh	E
+.	F
+
+Mỗi	O
+thí_sinh	E
+chỉ	
+được	
+bầu_chọn	R
+một	O
+thí_sinh	E
+mình	
+yêu_thích	
+nhất	
+,	
+thông_tin	
+này	
+được_ghi_nhận	
+để	
+tổng_hợp	
+kết_quả	
+cuộc_thi	
+.	F
