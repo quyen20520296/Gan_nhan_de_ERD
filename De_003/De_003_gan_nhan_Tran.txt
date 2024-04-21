@@ -15,7 +15,7 @@ sau
 Mỗi	O
 môn_học	E
 có	
-mã_số_môn_học	PK
+mã_môn_học	PK
 ,	
 tên_môn_học	AE
 ,	
@@ -27,7 +27,7 @@ số_tín_chỉ_thực_hành	AE
 Mỗi	O
 đồ_án	E
 có	
-mã_số_đồ_án	PK
+mã_đồ_án	PK
 ,	
 tên_đồ_án	AE
 ,	

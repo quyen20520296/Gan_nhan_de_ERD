@@ -15,7 +15,7 @@ sau
 Mỗi
 môn_học
 có
-mã_số_môn_học
+mã_môn_học
 ,
 tên_môn_học
 ,
@@ -27,7 +27,7 @@ số_tín_chỉ_thực_hành
 Mỗi
 đồ_án
 có
-mã_số_đồ_án
+mã_đồ_án
 ,
 tên_đồ_án
 ,
