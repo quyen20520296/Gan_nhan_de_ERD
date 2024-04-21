@@ -1,0 +1,110 @@
+Một	
+nhà_văn_hóa	
+cần	
+tổ_chức	
+cơ_sở_dữ_liệu_quản_lý	
+với	
+chi_tiết	
+như	
+sau	
+:	
+
+Nhà_văn_hóa	
+có	
+tổ_chức	
+nhiều	M
+chuyên_đề	
+.	F
+
+Mỗi	O
+chuyên_đề	E
+có	
+mã_chuyên_đề	PK
+duy_nhất	O
+để	
+phân_biệt	
+,	
+có	
+tên_chuyên_đề	AE
+,	
+học_phí_niêm_yết	AE
+.	F
+
+Nhà_văn_hóa	
+cần	
+lưu_trữ	
+thông_tin	
+học_viên	E
+,	
+mỗi	O
+học_viên	E
+có	
+mã_học_viên	PK
+duy_nhất	O
+để	
+nhận_biết	
+,	
+có	
+họ_tên	AE
+,	
+địa_chỉ	AE
+và	
+số_điện_thoại	AE
+liên_lạc	AE
+.	F
+
+Khi	
+học_viên	E
+đăng_ký_học	R
+các	M
+chuyên_đề	E
+,	
+cần	
+phải	
+điền	
+phiếu_đăng_ký	E
+với	
+những	
+thông_tin	
+như	
+mã_số_phiếu_đăng_ký	PK
+duy_nhất	
+để	
+phân_biệt	
+,	
+ngày_lập_phiếu	AE
+,	
+tổng_học_phí	AE
+.	F
+
+Mỗi	O
+học_viên	E
+có_thể	
+có	R
+nhiều	M
+phiếu_đăng_ký	E
+và	
+một	O
+phiếu_đăng_ký	E
+chỉ	
+thuộc_về	R
+một	O
+học_viên	E
+.	F
+
+Mỗi	O
+phiếu_đăng_ký	E
+có_thể	
+đăng_ký	R
+nhiều	M
+chuyên_đề	E
+và	
+một	O
+chuyên_đề	E
+có_thể	
+có	
+trong	R
+nhiều	M
+phiếu_đăng_ký	E
+khác_nhau	
+.	F

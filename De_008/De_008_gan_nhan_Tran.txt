@@ -1,0 +1,123 @@
+Để	
+phục_vụ	
+nhu_cầu	
+kiểm_định	
+chương_trình_đào_tạo	
+theo	
+chuẩn	
+ASIIN	
+thông_qua	
+các	
+tiêu_chuẩn	
+đánh_giá	
+,	
+Khoa	
+cần	
+tổ_chức	
+cơ_sở_dữ_liệu	
+để	
+quản_lý	
+các	
+minh_chứng	
+,	
+cụ_thể	
+như	
+sau	
+:	
+
+Mỗi	O
+tiêu_chuẩn	E
+được_đánh	
+mã_tiêu_chuẩn	PK
+để	
+phân_biệt	
+,	
+có	
+tên_tiêu_chuẩn	AE
+và	
+thông_tin_mô_tả	AE
+.	F
+
+Mỗi	O
+tiêu_chuẩn	E
+bao_gồm	R
+nhiều	M
+tiêu_chí	E
+khác_nhau	
+,	
+mỗi	O
+tiêu_chí	E
+chỉ	
+thuộc_về	R
+một	O
+tiêu_chuẩn	E
+.	F
+
+Mỗi	O
+tiêu_chí	E
+có	
+mã_tiêu_chí	PK
+,	
+nội_dung	AE
+và	
+thông_tin_gợi_ý_tiêu_chí	AE
+.	F
+
+Mỗi	O
+minh_chứng	E
+được_đánh	
+mã_minh_chứng	PK
+để	
+phân_biệt	
+,	
+có	
+tên_minh_chứng	AE
+,	
+tóm_tắt_nội_dung	AE
+,	
+loại_minh_chứng	AE
+và	
+tập_tin_chứa_minh_chứng	AE
+.	F
+
+Ví_dụ	
+:	
+minh_chứng	
+có_thể	
+thuộc	
+loại	
+văn_bản	
+,	
+hình_ảnh	
+,	
+trang_web	
+.	F
+
+Dựa_trên	
+nội_dung	
+,	
+minh_chứng	E
+sẽ	
+được_phân	R
+vào	
+các	M
+tiêu_chí	E
+khác_nhau	
+.	F
+
+Mỗi	O
+minh_chứng	E
+có_thể	
+minh_họa	R
+cho	
+nhiều	M
+tiêu_chí	E
+khác_nhau	
+và	
+mỗi	O
+tiêu_chí	E
+có	R
+nhiều	M
+minh_chứng	E
+minh_họa	
+.	F

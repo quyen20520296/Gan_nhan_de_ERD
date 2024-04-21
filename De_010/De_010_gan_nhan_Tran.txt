@@ -1,0 +1,98 @@
+Để	
+quản_lý	
+thông_tin	
+về	
+một	
+diễn_đàn	
+,	
+người_ta	
+tổ_chức	
+một	
+cơ_sở_dữ_liệu	
+được_mô_tả	
+như	
+sau	
+:	
+
+Các	M
+thành_viên	E
+tham_gia	
+diễn_đàn	
+có	
+một	
+mã_thành_viên	PK
+duy_nhất	O
+để	
+phân_biệt	
+với	
+các	M
+thành_viên	E
+khác	
+,	
+có	
+họ_tên	AE
+,	
+giới_tính	AE
+,	
+ngày_sinh	AE
+,	
+mật_khẩu	AE
+.	F
+
+Mỗi	O
+bài_viết	E
+của	
+diễn_đàn	
+có	
+mã_bài_viết	PK
+duy_nhất	O
+,	
+tiêu_đề	AE
+,	
+ngày_đăng	AE
+,	
+và	
+nội_dung	AE
+của	
+bài_viết	
+.	F
+
+Mỗi	O
+bài_viết	E
+được_bình_luận	R
+bởi	
+nhiều	M
+thành_viên	E
+và	
+mỗi	O
+thành_viên	E
+có_thể	
+bình_luận	R
+nhiều	M
+bài_viết	E
+.	F
+
+Khi	
+bình_luận	R
+,	
+phải	
+biết	
+thời_gian_bình_luận	AR
+,	
+nội_dung_bình_luận	AR
+.	F
+
+Mỗi	O
+bài_viết	E
+thuộc	R
+một	O
+chủ_đề	E
+,	
+mỗi O
+chủ_đề	E
+có	
+mã_chủ_đề	PK
+duy_nhất	O
+và	
+tên_của_chủ_đề	AE
+.	F
