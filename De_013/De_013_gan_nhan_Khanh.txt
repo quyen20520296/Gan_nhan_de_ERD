@@ -1,0 +1,122 @@
+Một	
+cơ_quan	
+muốn	
+quản_lý	
+thông_tin	
+các	
+bộ_phim	
+,	
+đạo_diễn	
+và	
+diễn_viên	
+theo	
+mô_tả	
+như	
+sau	
+:	
+
+Mỗi	
+bộ_phim	E
+được_quản_lý	
+bằng	
+một	
+mã_bộ_phim	PK
+duy_nhất	
+và	
+được_ghi_nhận	
+các	
+thông_tin	
+như	
+sau	
+:	
+tên_bộ_phim	AE
+,	
+năm_phát_hành	AE
+,	
+thể_loại	AE
+,	
+số_tập	AE
+,	
+số_điểm_IMDb	AE
+.	F
+
+Thông_tin	
+các	
+đạo_diễn	E
+được_ghi_nhận	
+bao_gồm	
+:	
+họ_tên	AE
+,	
+tuổi	AE
+,	
+năm_tốt_nghiệp	AE
+,	
+xếp_hạng	AE
+và	
+được_gán	
+cho	
+một	
+mã_đạo_diễn	PK
+để	
+dễ_dàng	
+phân_biệt	
+.	F
+
+Các	
+diễn_viên	E
+đều	
+được_quản_lý	
+bằng	
+một	
+mã_diễn_viên	PK
+riêng	
+,	
+thông_tin	
+lưu_trữ	
+gồm	
+:	
+họ_tên	AE
+,	
+giới_tính	AE
+,	
+tuổi	AE
+,	
+số_vai_chính	AE
+,	
+số_vai_phụ	AE
+đã_từng	
+đóng	
+.	
+
+Một	O
+bộ_phim	E
+sẽ	
+có	R
+nhiều	M
+diễn_viên	E
+tham_gia_diễn_xuất	
+và	
+được_chỉ_đạo	R
+bởi	
+một	
+đạo_diễn	AR
+duy_nhất	
+.	F
+
+Một	O
+đạo_diễn	E
+có_thể	
+phụ_trách	R
+nhiều	M
+bộ_phim	E
+và	
+các	M
+diễn_viên	E
+cũng	
+có_thể	
+đóng	R
+nhiều	M
+bộ_phim	E
+khác_nhau	
+.	

@@ -1,0 +1,123 @@
+Bộ_Y_tế_Việt_Nam	
+muốn	
+quản_lý	
+thông_tin	
+các	
+bệnh_nhân	
+trong	
+dịch_Covid-19	
+như	
+sau	
+:	
+
+Mỗi	
+bệnh_viện	E
+điều_trị	
+sẽ	
+có	
+các	
+thông_tin	
+như	
+mã_bệnh_viện	PK
+,	
+tên_bệnh_viện	AE
+,	
+số_giường_bệnh	AE
+.	F
+
+Trong	
+quá_trình	
+điều_trị	
+,	
+tùy	
+tình_hình	
+chuyển_biến	
+của	
+bệnh	
+mà	
+một	O
+bệnh_nhân	E
+có_thể	
+được_điều_trị	R
+tại	
+nhiều	M
+bệnh_viện	E
+khác_nhau	
+.	F
+
+Một	O
+bệnh_viện	E
+cùng_lúc	
+có_thể	
+điều_trị	R
+cho	
+nhiều	M
+bệnh_nhân	E
+.	F
+
+Mỗi	
+quốc_gia	E
+có	
+các	
+thông_tin	
+bao_gồm	
+:	
+mã_quốc_gia	PK
+,	
+tên_quốc_gia	AE
+,	
+số_lượng_ca_nhiễm_bệnh	AE
+và	
+số_lượng_người_đã_chết	AE
+vì	
+Covid-19	
+của	
+quốc_gia	
+đó	
+.	F
+
+Một	
+bệnh_nhân	E
+khi	
+phát_hiện	
+bệnh	
+sẽ	
+được_ghi_nhận	
+các	
+thông_tin	
+mã_bệnh_nhân	PK
+,	
+tên_bệnh_nhân	AE
+,	
+giới_tính	AE
+,	
+ngày_sinh	AE
+,	
+địa_chỉ	AE
+.	F
+
+Mỗi	O
+bệnh_nhân	E
+thuộc	R
+một	O
+quốc_gia	E
+.	F
+
+Mỗi	O
+bệnh_nhân	E
+bị_lây_nhiễm	R
+bởi	
+một	O
+bệnh_nhân	E
+khác	
+và	
+một	O
+bệnh_nhân	E
+cũng	
+có_thể	
+lây_nhiễm	R
+cho	
+nhiều	M
+bệnh_nhân	E
+khác	
+.	F
