@@ -87,7 +87,7 @@ số_vai_chính	AE
 số_vai_phụ	AE
 đã_từng	
 đóng	
-.	
+.	F
 
 Một	O
 bộ_phim	E
@@ -119,4 +119,4 @@ có_thể
 nhiều	M
 bộ_phim	E
 khác_nhau	
-.	
+.	F
