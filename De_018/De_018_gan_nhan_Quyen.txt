@@ -1,0 +1,157 @@
+Người_quản_trị	
+của	
+một	
+cửa_hàng	
+bán	
+đồ_trang_trí_Giáng_sinh	
+muốn	
+quản_lý	
+các	
+giao_dịch	
+mua_bán	
+,	
+đã	
+thiết_kế	
+một	
+cơ_sở_dữ_liệu	
+quản_lý	
+cửa_hàng	
+bán	
+đồ_trang_trí_Giáng_sinh	
+như_sau	
+:	
+
+Mỗi	
+khách_hàng	E
+khi	
+đến	
+mua_hàng	
+sẽ	
+được_ghi_nhận	
+các	
+thông_tin	
+bao_gồm	
+một	
+mã_khách_hàng	PK
+duy_nhất	
+để	
+phân_biệt	
+với	
+các	
+khách_hàng	
+khác	
+.	F
+
+Ngoài_ra	
+,	
+mỗi	
+khách_hàng	E
+còn	
+được	
+hệ_thống	
+lưu_lại	
+tên_khách_hàng	AE
+,	
+địa_chỉ	AE
+và	
+loại_khách_hàng	AE
+.	F
+
+Mỗi	
+mặt_hàng	E
+được_lưu	
+trong	
+hệ_thống	
+có	
+một	
+mã_mặt_hàng	PK
+duy_nhất	
+để	
+quản_lý	
+và	
+có	
+thêm	
+các	
+thông_tin	
+như	
+tên_mặt_hàng	AE
+,	
+xuất_xứ	AE
+,	
+giá	AE
+.	F
+
+Mỗi	
+khách_hàng	
+khi	
+thanh_toán	
+sẽ	
+nhận_được	
+một	
+hóa_đơn	
+.	F
+
+Một	O
+khách_hàng	E
+có_thể	
+có	R
+nhiều	M
+hóa_đơn	E
+.	F
+
+Mỗi	
+hóa_đơn	E
+có	
+một	
+số_hóa_đơn	PK
+duy_nhất	
+để	
+phân_biệt	
+với	
+các	
+hóa_đơn	
+khác	
+,	
+có	
+ngày_hóa_đơn	AE
+và	
+số_phần_trăm_giá_được_giảm	AE
+trên	
+tổng_thành_tiền	
+của	
+hóa_đơn	
+đó	
+.	F
+
+Một	O
+hóa_đơn	E
+có_thể	
+bao_gồm	R
+danh_sách	
+nhiều	M
+mặt_hàng	E
+.	F
+
+Một	O
+mặt_hàng	E
+cũng	
+có_thể	
+được_ghi_lại	R
+trong	
+nhiều	M
+hóa_đơn	E
+.	F
+
+Khi	
+ghi_lại	
+thông_tin	
+của	
+từng	
+chi_tiết_hóa_đơn	ER
+,	
+cần	
+biết	
+số_lượng_mặt_hàng	AR
+đã	
+được_mua	
+.	F

@@ -1,0 +1,153 @@
+Cho	
+mô_tả	
+cơ_sở_dữ_liệu	
+quản_lý	
+khai_thác	
+khoáng_sản	
+như_sau	
+:	
+
+Mỗi	
+loại_kháng_sản	E
+được_ghi_nhận	
+tên_loại_khoáng_sản	AE
+,	
+phân_loại	AE
+và	
+được_ấn_định	
+một	
+mã_loại_khoáng_sản	PK
+duy_nhất	
+để	
+theo_dõi	
+.	F
+
+Một	O
+loại_khoáng_sản	E
+sẽ	
+có	R
+nhiều	M
+khoáng_sản	E
+.	F
+
+Mỗi	
+khoáng_sản	E
+được_ghi_nhận	
+tên_khoáng_sản	AE
+,	
+trạng_thái	AE
+và	
+được_ấn_định	
+một	
+mã_khoáng_sản	PK
+duy_nhất	
+để	
+theo_dõi	
+.	F
+
+Để	
+thực_hiện	
+khai_thác	
+khoáng_sản	
+cần	
+có	
+các	
+công_ty	
+đứng_ra	
+đảm_nhiệm	
+công_việc	
+khai_khoáng	
+và	
+phải	
+được_cấp_phép	
+khai_khoáng	
+.	F
+
+Mỗi	
+thông_tin	
+công_ty	E
+sẽ	
+bao_gồm	
+tên_công_ty	AE
+,	
+địa_chỉ	AE
+,	
+ngày_thành_lập	AE
+và	
+được_đặt	
+một	
+mã_công_ty	PK
+duy_nhất	
+để	
+quản_lý	
+.	F
+
+Mỗi	
+mỏ_khoáng_sản	E
+được_ghi_nhận	
+một	
+mã_mỏ_khoáng_sản	PK
+định_danh	
+duy_nhất	
+,	
+có	
+tên_mỏ	AE
+,	
+ngày_phát_hiện	AE
+,	
+tỉnh_quản_lý	AE
+.	F
+
+Một	O
+mỏ_khoáng_sản	E
+chỉ	
+có	R
+một	O
+khoáng_sản	E
+cụ_thể	
+nhưng	
+một	O
+khoáng_sảng	E
+có_thể	
+có	R
+trong	
+nhiều	M
+mỏ_khoáng_sản	E
+.	F
+
+Một	O
+công_ty	E
+có_thể	
+được_cấp_phép	
+để	
+khai_thác	R
+nhiều	M
+mỏ_khoáng_sản	E
+và	
+một	O
+mỏ_khoáng_sản	E
+cũng	
+có_thể	
+được	
+khai_thác	R
+bởi	
+nhiều	M
+công_ty	E
+.	F
+
+Khi	
+các	
+công_ty	
+thực_hiện	
+khai_thác	ER
+các	
+mỏ_khoáng_sản	
+,	
+cần	
+ghi_lại	
+thông_tin	
+bao_gồm	
+ngày_cấp_phép	AR
+và	
+ngày_hết_hạn	AR
+.	F

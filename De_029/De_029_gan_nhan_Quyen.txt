@@ -1,0 +1,111 @@
+Cho	
+lược_đồ	
+cơ_sở_dữ_liệu	
+quản_lý	
+chi_nhánh	
+điện_lực	
+tại	
+thành_phố	
+Hồ_Chí_Minh	
+có	
+cấu_trúc	
+như_sau	
+:	
+
+Mỗi	
+nhân_viên	E
+có	
+mã_nhân_viên	PK
+duy_nhất	
+,	
+họ_tên	AE
+,	
+ngày_sinh	AE
+,	
+ngày_vào_làm	AE
+.	F
+
+Mỗi	
+khách_hàng	E
+có	
+mã_khách_hàng	PK
+duy_nhất	
+,	
+tên_khách_hàng	AE
+,	
+ngày_sinh	AE
+và	
+giới_tính	AE
+.	F
+
+Mỗi	
+hợp_đồng	E
+có	
+số_hợp_đồng	PK
+duy_nhất	
+,	
+ngày_ký	AE
+,	
+số_điện_kế	AE
+,	
+số_kw_định_mức	AE
+,	
+đơn_giá_kw	AE
+.	F
+
+Một	O
+khách_hàng	E
+có_thể	
+sở_hữu	R
+nhiều	M
+hợp_đồng	E
+và	
+một	O
+hợp_đồng	E
+chỉ	
+do	
+một	O
+khách_hàng	E
+sở_hữu	R
+.	F
+
+Mỗi	
+hóa_đơn	E
+có	
+một	
+số_hóa_đơn	PK
+duy_nhất	
+và	
+có	
+thông_tin	
+tháng	AE
+,	
+năm	AE
+,	
+số_tiền	AE
+.	F
+
+Một	O
+hóa_đơn	E
+sẽ	
+thuộc	R
+một	O
+hợp_đồng	E
+cụ_thể	
+nào_đó	
+và	
+một	O
+hợp_đồng	E
+sẽ	
+có	R
+nhiều	M
+hóa_đơn	E
+.	F
+
+Một	O
+nhân_viên	E
+có_thể	
+thu_tiền	R
+nhiều	M
+hóa_đơn	E
+.	F

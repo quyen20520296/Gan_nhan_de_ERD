@@ -1,0 +1,227 @@
+Cho	
+lược_đồ	
+cơ_sở_dữ_liệu	
+quản_lý	
+website	
+đăng_ký_học_phần_online	
+như_sau	
+:	
+
+Lược_đồ	
+quan_hệ	
+học_viên	E
+mô_tả	
+thông_tin	
+học_viên	
+.	F
+
+Mỗi	
+học_viên	E
+được_cấp	
+một	
+mã_học_viên	PK
+để	
+phân_biệt	
+,	
+có	
+họ_tên	AE
+,	
+ngày_sinh	AE
+,	
+số_điện_thoại	AE
+,	
+loại_học_viên	AE
+.	F
+
+Lược_đồ	
+quan_hệ	
+khóa_học	E
+lưu_trữ	
+thông_tin	
+các	
+khóa_học	
+đang	
+được_mở	
+trên	
+website	
+.	F
+
+Mỗi	
+khóa_học	E
+có	
+các	
+thông_tin	
+bao_gồm	
+:	
+mã_khóa_học	PK
+duy_nhất	
+,	
+tên_khóa_học	AE
+,	
+mức_độ	AE
+của	
+khóa_học	
+,	
+thời_lượng	AE
+của	
+khóa_học	
+tính	
+bằng	
+đơn_vị	
+tuần	
+,	
+ngày_bắt_đầu_khóa_học	AE
+,	
+ngày_kết_thúc_khóa_học	AE
+.	F
+
+Mỗi	O
+khóa_học	E
+sẽ	
+có	R
+nhiều	M
+học_phần	E
+.	F
+
+Lược_đồ	
+quan_hệ	
+học_phần	E
+lưu_trữ	
+thông_tin	
+các	
+học_phần	
+trong	
+một	
+khóa_học	
+.	F
+
+Mỗi	
+học_phần	E
+có	
+mã_học_phần	PK
+duy_nhất	
+để	
+phân_biệt	
+với	
+các	
+học_phần	
+khác	
+,	
+có	
+tên_học_phần	AE
+,	
+số_tuần	AE
+cần_thiết	
+để	
+hoàn_thành	
+học_phần	
+và	
+thông_tin	
+học_phần	
+đó	
+có	
+bắt_buộc	AE
+trong	
+khóa_học	
+hay	
+không	
+.	F
+
+Thuộc_tính	
+bắt_buộc	
+có	
+giá_trị	
+là	
+:	
+1	
+nếu	
+bắt_buộc	
+,	
+0	
+nếu	
+không	
+bắt_buộc	
+.	F
+
+Lược_đồ	
+quan_hệ	
+đăng_ký	E
+lưu_trữ	
+thông_tin	
+đăng_ký	
+học_phần	
+của	
+học_viên	
+.	F
+
+Thông_tin	
+đăng_ký	E
+này	
+bao_gồm	
+:	
+mã_đăng_ký	PK
+duy_nhất	
+,	
+ngày_đăng_ký	AE
+và	
+tình_trạng	AE
+thanh_toán	
+học_phí	
+.	F
+
+Thuộc_tính	
+tình_trạng	
+có	
+giá_trị	
+là	
+1	
+nếu	
+đã	
+thanh_toán	
+học_phí	
+,	
+0	
+nếu	
+chưa	
+thanh_toán	
+học_phí	
+.	
+
+Mỗi	O
+học_viên	E
+sẽ	
+có_thể	
+có	R
+nhiều	M
+lần	
+đăng_ký	E
+.	F
+
+Một	O
+lần	
+đăng_ký	E
+có_thể	
+chứa	R
+nhiều	M
+học_phần	E
+và	
+một	O
+học_phần	E
+cũng	
+có_thể	
+được_chứa	R
+trong	
+nhiều	M
+đăng_ký	E
+.	F
+
+Khi	
+lưu_trữ	
+chi_tiết_đăng_ký	ER
+,	
+cần	
+ghi_lại	
+số_ngày_hoàn_thành	AR
+và	
+ngày_bắt_đầu_học_phần	AR
+.	F

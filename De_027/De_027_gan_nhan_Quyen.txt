@@ -1,0 +1,134 @@
+Người_quản_trị	
+của	
+Công_ty	
+Cổ_phần	
+xe_khách_Phương_Trang	
+muốn	
+quản_lý	
+các	
+giao_dịch	
+mua	
+vé	
+xe_khách	
+trên	
+các	
+tuyến_đường	
+của_hãng	
+,	
+đã	
+thiết_kế	
+một	
+cơ_sở_dữ_liệu	
+quản_lý	
+vé_xe	
+như_sau	
+:	
+
+Mỗi	
+xe	E
+được_ghi_nhận	
+thông_tin	
+biển_kiểm_soát	AE
+,	
+số_ghế_tầng_1	AE
+,	
+số_ghế_tầng_2	AE
+và	
+được_ấn_định	
+một	
+mã_xe	PK
+duy_nhất	
+để	
+theo_dõi	
+.	F
+
+Mỗi	
+thông_tin	
+tuyến	E
+sẽ	
+bao_gồm	
+bến_đầu	AE
+,	
+bến_cuối	AE
+,	
+giá_tuyến	AE
+,	
+thời_gian_dự_kiến	AE
+và	
+được_đặt	
+một	
+mã_tuyến	PK
+duy_nhất	
+để	
+quản_lý	
+.	F
+
+Một	O
+tuyến	E
+sẽ	
+có	R
+nhiều	M
+xe	E
+và	
+một	O
+xe	E
+chỉ	
+được_hoạt_động	R
+trong	
+một	O
+tuyến	E
+cụ_thể	
+.	F
+
+Mỗi	
+hành_khách	E
+có	
+một	
+mã_hành_khách	PK
+duy_nhất	
+để	
+phân_biệt	
+với	
+các	
+hành_khách	
+khác	
+,	
+có	
+họ_tên	AE
+,	
+giới_tính	AE
+,	
+số_chứng_minh_nhân_dân	AE
+.	F
+
+Mỗi	
+vé_xe	E
+có	
+một	
+mã_vé	PK
+duy_nhất	
+để	
+phân_biệt	
+,	
+có	
+ngày_mua	AE
+và	
+giá_vé	AE
+.	F
+
+Một	O
+hành_khách	E
+có_thể	
+mua	R
+nhiều	M
+vé_xe	E
+.	F
+
+Một	O
+tuyến	E
+cũng	
+được_bán	R
+trong	
+nhiều	M
+vé_xe	E
+.	F

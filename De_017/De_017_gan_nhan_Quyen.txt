@@ -1,0 +1,150 @@
+Một	
+website	
+học_lập_trình_online	
+muốn	
+quản_lý	
+thành_viên	
+và	
+quá_trình	
+giải	
+bài_tập	
+của	
+các	
+thành_viên	
+đã	
+thiết_kế	
+một	
+cơ_sở_dữ_liệu	
+để	
+quản_lý	
+như_sau	
+:	
+
+Mỗi	
+thành_viên	E
+có	
+một	
+mã_thành_viên	PK
+duy_nhất	
+để	
+phân_biệt	
+với	
+các	
+thành_viên	
+khác	
+,	
+có	
+tên_thành_viên	AE
+,	
+thứ_hạng	AE
+,	
+loại_thành_viên	AE
+,	
+ngày_đăng_ký	AE
+.	F
+
+Mỗi	
+bài_tập	E
+có	
+các	
+thông_tin	
+gồm	
+một	
+mã_bài_tập	PK
+duy_nhất	
+và	
+tên_bài_tập	AE
+.	F
+
+Mỗi	
+độ_khó	E
+có	
+các	
+thông_tin	
+gồm	
+một	
+mã_độ_khó	PK
+duy_nhất	
+và	
+điểm_độ_khó	AE
+.	F
+
+Một	O
+độ_khó	E
+có_thể	
+dùng	
+để	
+mô_tả	R
+mức_độ_khó	
+của	
+nhiều	M
+bài_tập	E
+.	F
+
+Một	O
+bài_tập	E
+chỉ	
+được_áp_dụng	R
+một	O
+độ_khó	E
+cụ_thể	
+.	F
+
+Sau_khi	
+làm_xong	
+bài_tập	
+,	
+các	
+thành_viên	
+sẽ	
+thực_hiện	
+nộp	
+bài_tập	
+lên_hệ_thống	
+.	F
+
+Thông_tin	
+nộp_bài	E
+bao_gồm	
+mã_bài_nộp	PK
+duy_nhất	
+để	
+phân_biệt	
+với	
+các_bài_nộp	
+khác	
+,	
+có	
+ngày_nộp	AE
+và	
+điểm_hệ_thống	AE
+.	F
+
+Một	O
+thành_viên	E
+được_phép	
+nộp_bài	
+nhiều	
+lần	
+nên	
+sẽ	
+có	R
+nhiều	M
+thông_tin	
+nộp_bài	E
+.	F
+
+Một	O
+bài_tập	E
+cũng	
+được_nộp	
+nhiều	
+lần	
+nên	
+cũng	
+sẽ	
+có	R
+nhiều	M
+thông_tin	
+nộp_bài	E
+.	F

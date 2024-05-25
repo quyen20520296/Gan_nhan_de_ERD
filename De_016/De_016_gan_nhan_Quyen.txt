@@ -1,0 +1,125 @@
+Một	
+cơ_sở_dữ_liệu	
+quản_lý	
+học_phần	
+được_thiết_kế	
+như_sau	
+:	
+
+Mỗi	
+sinh_viên	E
+gồm	
+một	
+mã_sinh_viên	PK
+duy_nhất	
+để	
+phân_biệt	
+với	
+các	
+sinh_viên	
+khác	
+,	
+có	
+họ_tên_sinh_viên	AE
+,	
+giới_tính	AE
+,	
+địa_chỉ	AE
+,	
+điện_thoại	AE
+và	
+khoa	AE
+mà	
+sinh_viên	
+đăng_ký	
+học	
+.	F
+
+Mỗi	
+môn_học	E
+gồm	
+mã_môn_học	PK
+duy_nhất	
+và	
+tên_môn_học	AE
+,	
+số_tín_chỉ	AE
+.	F
+
+Một	O
+môn_học	E
+được_dạy	R
+trong	
+nhiều	M
+khóa_học	E
+và	
+một	O
+khóa_học	E
+được_mở	R
+để	
+giảng_dạy	
+một	O
+môn_học	E
+cụ_thể	
+.	F
+
+Mỗi	
+khóa_học	E
+có	
+một	
+mã_khóa_học	PK
+duy_nhất	
+để	
+phân_biệt	
+với	
+các	
+khóa_học	
+khác	
+,	
+có	
+họ_tên_giảng_viên	AE
+,	
+học_kỳ	AE
+,	
+năm_học	AE
+,	
+ngày_bắt_đầu_khóa_học	AE
+và	
+ngày_kết_thúc_khóa_học	AE
+.	F
+
+Một	O
+sinh_viên	E
+có_thể	
+đăng_ký	R
+học	
+nhiều	M
+khóa_học	E
+và	
+một	O
+khóa_học	E
+cũng	
+cho_phép	
+nhiều	M
+sinh_viên	E
+đăng_ký	R
+.	F
+
+Sau_khi	
+hoàn_thành	
+khóa_học	
+thì	
+mỗi	
+sinh_viên	
+sẽ	
+phải	
+tham_gia	
+thi	
+để	
+ghi_nhận	
+kết_quả_thi	ER
+gồm	
+điểm	AR
+và	
+ngày_thi	AR
+.	F

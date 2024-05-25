@@ -1,0 +1,131 @@
+Người	
+quản_lý	
+của	
+một	
+cửa_hàng	
+bán	
+cây_cảnh_trang_trí	
+muốn	
+quản_lý	
+các	
+giao_dịch	
+mua_bán	
+,	
+đã	
+thiết_kế	
+một	
+cơ_sở_dữ_liệu	
+quản_lý	
+cửa_hàng	
+bán	
+cây_cảnh_trang_trí	
+như_sau	
+:	
+
+Mỗi	
+khách_hàng	E
+có	
+một	
+mã_khách_hàng	PK
+duy_nhất	
+để	
+phân_biệt	
+với	
+các	
+khách_hàng	
+khác	
+,	
+có	
+tên_khách_hàng	AE
+,	
+địa_chỉ	AE
+,	
+loại_khách_hàng	AE
+.	F
+
+Mỗi	
+loại_cây	E
+có	
+một	
+mã_loại_cây	PK
+duy_nhất	
+,	
+có	
+tên_loại_cây	AE
+,	
+xuất_xứ	AE
+,	
+giá	AE
+.	F
+
+Mỗi	
+khách_hàng	
+khi	
+đến	
+mua	
+cây_cảnh	
+sẽ	
+được_lập	
+một	
+hóa_đơn	
+.	F
+
+Vì	
+một	
+khách_hàng	
+có_thể	
+đến	
+mua	
+nhiều	
+lần	
+nên	
+một	O
+khách_hàng	E
+sẽ	
+có	R
+nhiều	M
+hóa_đơn	E
+.	F
+
+Mỗi	
+hóa_đơn	E
+sẽ	
+được_ghi_nhận	
+các	
+thông_tin	
+gồm	
+số_hóa_đơn	PK
+duy_nhất	
+,	
+ngày_hóa_đơn	AE
+,	
+số_phần_trăm_giá_được_giảm	AE
+trên	
+tổng_thành_tiền	AE
+.	F
+
+Một	O
+hóa_đơn	E
+có_thể	
+chứa	R
+nhiều	M
+loại_cây	E
+.	F
+
+Một	O
+loại_cây	E
+cũng	
+có_thể	
+được_chứa	R
+trong	
+nhiều	M
+hóa_đơn	E
+.	F
+
+Trong	
+chi_tiết_hóa_đơn	ER
+,	
+cần	
+ghi_lại	
+số_lượng_mua	AR
+.	F

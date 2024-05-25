@@ -1,0 +1,88 @@
+Một	
+cơ_sở_dữ_liệu	
+quản_lý	
+bài_hát	
+được_thiết_kế	
+như_sau	
+:	
+
+Mỗi	
+bài_hát	E
+có	
+các	
+thông_tin	
+gồm	
+mã_bài_hát	PK
+duy_nhất	
+,	
+có	
+tên_bài_hát	AE
+,	
+thể_loại	AE
+.	F
+
+Mỗi	
+ca_sĩ	E
+có	
+mã_ca_sĩ	PK
+duy_nhất	
+,	
+có	
+họ_tên	AE
+,	
+giới_tính	AE
+.	F
+
+Một	O
+ca_sĩ	E
+có_thể	
+trình_bày	R
+nhiều	M
+bài_hát	E
+.	F
+
+Một	
+danh_sách_phát	E
+bao_gồm	
+mã_danh_sách_phát	PK
+duy_nhất	
+để	
+phân_biệt	
+với	
+các	
+danh_sách_phát	
+khác	
+,	
+có	
+tên_danh_sách_phát	AE
+.	F
+
+Một	O
+danh_sách_phát	E
+có_thể	
+chứa	R
+nhiều	M
+bài_hát	E
+và	
+một	O
+bài_hát	E
+cũng	
+có_thể	
+thuộc	R
+nhiều	M
+danh_sách_phát	E
+.	F
+
+Khi	
+một	
+bài_hát	
+thuộc	ER
+một	
+danh_sách_phát	
+,	
+cần	
+phải_biết	
+số_thứ_tự	AR
+của	
+bài_hát	
+.	F

@@ -1,0 +1,145 @@
+Cho	
+lược_đồ	
+cơ_sở_dữ_liệu	
+quản_lý	
+bán	
+xe_máy	
+trả_góp	
+như_sau	
+:	
+
+Mỗi	
+khách_hàng	E
+được_ghi_nhận	
+tên_khách_hàng	AE
+,	
+ngày_sinh	AE
+,	
+địa_chỉ	AE
+,	
+số_chứng_minh_nhân_dân	AE
+và	
+được_ấn_định	
+một	
+mã_khách_hàng	PK
+duy_nhất	
+để	
+theo_dõi	
+.	F
+
+Mỗi	
+loại_xe	E
+được_ghi_nhận	
+các	
+thông_tin	
+bao_gồm	
+mã_loại_xe	PK
+duy_nhất	
+,	
+tên_loại_xe	AE
+,	
+công_nghệ_động_cơ	AE
+.	F
+
+Một	O
+loại_xe	E
+sẽ	
+có	R
+nhiều	M
+xe_máy	E
+.	F
+
+Mỗi	
+xe_máy	E
+bao_gồm	
+các	
+thông_tin	
+:	
+mã_xe_máy	PK
+duy_nhất	
+,	
+tên_xe_máy	AE
+,	
+năm_sản_xuất	AE
+,	
+trọng_lượng_xe	AE
+,	
+giá_bán	AE
+.	F
+
+Mỗi	
+loại_hình_trả_góp	
+có	
+các	
+thông_tin	
+chi_tiết	
+bao_gồm	
+:	
+mã_loại_hình	PK
+duy_nhất	
+,	
+tên_loại_hình	AE
+,	
+phần_trăm_trả_trước	AE
+,	
+kỳ_hạn	AE
+,	
+lãi_suất	AE
+,	
+phí_thu_hộ	AE
+.	F
+
+Một	O
+loại_hình_trả_góp	E
+sẽ	
+có	R
+nhiều	M
+thông_tin	
+trả_góp	E
+.	F
+
+Thông_tin	
+trả_góp	E
+chi_tiết	
+bao_gồm	
+:	
+mã_trả_góp	PK
+duy_nhất	
+,	
+ngày_mua	AE
+,	
+số_tiền_trả_trước	AE
+.	F
+
+Mỗi	
+khách_hàng	
+có_thể	
+đứng_tên	
+để	
+mua	
+trả_góp	
+được	
+nhiều	
+xe_máy	
+nên	
+một	O
+khách_hàng	E
+sẽ	
+được_ghi_nhận	R
+trong	
+nhiều	M
+thông_tin	
+trả_góp	E
+.	F
+
+Và	
+mỗi	O
+xe_máy	E
+cũng	
+có_thể	
+xuất_hiện	R
+trong	
+nhiều	M
+thông_tin	
+trả_góp	E
+.	F

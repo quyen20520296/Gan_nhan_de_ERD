@@ -1,0 +1,152 @@
+Một	
+cơ_sở_dữ_liệu	
+quản_lý	
+nhà_trọ	
+được_thiết_kế	
+như_sau	
+:	
+
+Mỗi	
+khách_hàng	E
+khi	
+đến	
+thuê	
+phòng_trọ	
+sẽ	
+được_ghi_lại	
+các	
+thông_tin	
+bao_gồm	
+:	
+mã_khách_hàng	PK
+duy_nhất	
+,	
+tên_khách_hàng	AE
+,	
+địa_chỉ	AE
+,	
+số_chứng_minh_nhân_dân	AE
+.	F
+
+Mỗi	
+chủ_nhà	E
+có	
+mã_chủ_nhà	PK
+duy_nhất	
+,	
+có	
+tên_chủ_nhà	AE
+,	
+địa_chỉ	AE
+,	
+số_chứng_minh_nhân_dân	AE
+.	F
+
+Một	O
+chủ_nhà	E
+có_thể	
+sở_hữu	R
+nhiều	M
+phòng_trọ	E
+.	F
+
+Mỗi	
+phòng_trọ	E
+có	
+mã_phòng_trọ	PK
+duy_nhất	
+để	
+phân_biệt	
+với	
+các	
+phòng_trọ	
+khác	
+và	
+có	
+giá_thuê	AE
+.	F
+
+Một	O
+phòng_trọ	E
+có_thể	
+được_thuê	R
+bởi	
+nhiều	M
+khách_hàng	E
+.	F
+
+Tuy_nhiên	
+,	
+trong	
+một	
+thời_điểm_thuê	
+,	
+một	O
+phòng_trọ	E
+chỉ	
+có	
+duy_nhất	
+một	O
+khách_hàng	E
+đứng_ra	
+làm	
+đại_diện_liên_lạc	R
+.	F
+
+Hàng_tháng	
+,	
+khách_hàng	
+khi	
+đang	
+thuê	
+trọ	
+phải	
+thanh_toán	
+tiền	
+trọ	
+.	F
+
+Hàng_tháng	
+,	
+khách_hàng	
+khi	
+đang	
+thuê_trọ	
+phải	
+thanh_toán	
+tiền_trọ	
+.	F
+
+Do_đó	
+,	
+một	O
+khách_hàng	E
+sẽ	
+có_thể	
+có	R
+nhiều	M
+lần	
+thanh_toán	E
+và	
+một	O
+phòng_trọ	E
+cũng	
+có_thể	
+có	R
+trong	
+nhiều	M
+lần	
+thanh_toán	E
+.	F
+
+Thông_tin	
+thanh_toán	E
+bao_gồm	
+:	
+số_hóa_đơn	PK
+duy_nhất	
+,	
+ngày_nộp	AE
+,	
+số_tiền	AE
+.	F

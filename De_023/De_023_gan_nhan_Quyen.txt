@@ -1,0 +1,166 @@
+Cho	
+lược_đồ	
+cơ_sở_dữ_liệu	
+Quản_lý	
+nhân_viên	
+phục_vụ	
+của	
+nhà_hàng_White_Palace	
+có	
+cấu_trúc	
+như_sau	
+:	
+
+Mỗi	
+nhân_viên	E
+được_ghi_nhận	
+một	
+mã_nhân_viên	PK
+duy_nhất	
+để	
+phân_biệt	
+với	
+các	
+nhân_viên	
+khác	
+.	F
+
+Ngoài_ra	
+nhân_viên	E
+còn	
+có	
+thêm	
+các	
+thông_tin	
+bao_gồm	
+họ_tên	AE
+,	
+ngày_sinh	AE
+,	
+số_chứng_minh_nhân_dân	AE
+,	
+ca_làm_việc	AE
+,	
+mức_lương	AE
+.	F
+
+Mỗi	
+sảnh	E
+có	
+một	
+mã_sảnh	PK
+duy_nhất	
+để	
+phân_biệt	
+với	
+các	
+sảnh	
+khác	
+,	
+có	
+tên_sảnh	AE
+,	
+loại_bàn	AE
+,	
+sức_chứa	AE
+.	F
+
+Mỗi	
+loại_tiệc	E
+có	
+một	
+mã_loại_tiệc	PK
+duy_nhất	
+,	
+có	
+tên_loại_tiệc	AE
+,	
+yêu_cầu_số_bàn_tối_thiểu	AE
+.	F
+
+Mỗi	
+tiệc	E
+có	
+các	
+thông_tin	
+bao_gồm	
+mã_tiệc	PK
+duy_nhất	
+,	
+chủ_tiệc	AE
+,	
+số_bàn	AE
+,	
+giá	AE
+,	
+thời_gian_bắt_đầu	AE
+,	
+thời_gian_kết_thúc	AE
+.	F
+
+Khi	
+lên	
+kế_hoạch	
+tổ_chức	
+tiệc	
+,	
+người_ta	
+sẽ	
+xác_định	
+xem	
+bữa_tiệc	
+đó	
+là	
+loại_tiệc	
+gì	
+và	
+sẽ	
+được_tổ_chức	
+ở	
+sảnh	
+nào	
+.	F
+
+Một	O
+sảnh	E
+sẽ	
+dùng	
+để	
+tổ_chức	R
+nhiều	M
+tiệc	E
+.	F
+
+Một	O
+loại_tiệc	E
+sẽ	
+có	R
+nhiều	M
+tiệc	E
+được_tổ_chức	
+.	F
+
+Một	O
+nhân_viên	E
+có_thể	
+phục_vụ	R
+nhiều	M
+tiệc	E
+và	
+một	O
+tiệc	E
+cũng	
+được_phục_vụ	R
+bởi	
+nhiều	M
+nhân_viên	E
+.	F
+
+Khi	
+ghi_lại	
+thông_tin	
+phục_vụ	ER
+,	
+cần_biết	
+thời_gian_phục_vụ	AR
+.	F
