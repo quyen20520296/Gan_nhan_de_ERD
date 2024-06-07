@@ -1,10 +1,6 @@
-Cho mô tả cơ sở dữ liệu quản lý khai thác khoáng sản như sau:
-Mỗi loại kháng sản được ghi nhận tên loại khoáng sản, phân loại và được ấn định một mã loại khoáng sản duy nhất để theo dõi.
-Một loại khoáng sản sẽ có nhiều khoáng sản.
-Mỗi khoáng sản được ghi nhận tên khoáng sản, trạng thái và được ấn định một mã khoáng sản duy nhất để theo dõi.
-Để thực hiện khai thác khoáng sản cần có các công ty đứng ra đảm nhiệm công việc khai khoáng và phải được cấp phép khai khoáng.
-Mỗi thông tin công ty sẽ bao gồm tên công ty, địa chỉ, ngày thành lập và được đặt một mã công ty duy nhất để quản lý.
-Mỗi mỏ khoáng sản được ghi nhận một mã mỏ khoáng sản định danh duy nhất, có tên mỏ, ngày phát hiện, tỉnh quản lý.
-Một mỏ khoáng sản chỉ có một khoáng sản cụ thể nhưng một khoáng sảng có thể có trong nhiều mỏ khoáng sản.
-Một công ty có thể được cấp phép để khai thác nhiều mỏ khoáng sản và một mỏ khoáng sản cũng có thể được khai thác bởi nhiều công ty.
-Khi các công ty thực hiện khai thác các mỏ khoáng sản, cần ghi lại thông tin bao gồm ngày cấp phép và ngày hết hạn.
+Một cơ sở dữ liệu quản lý bài hát được thiết kế như sau:
+Mỗi bài hát có các thông tin gồm mã bài hát duy nhất, có tên bài hát, thể loại.
+Mỗi ca sĩ có mã ca sĩ duy nhất, có họ tên, giới tính.
+Một ca sĩ có thể trình bày nhiều bài hát.
+Một danh sách phát bao gồm mã danh sách phát duy nhất để phân biệt với các danh sách phát khác, có tên danh sách phát.
+Một danh sách phát có thể chứa nhiều bài hát và một bài hát cũng có thể thuộc nhiều danh sách phát. Khi một bài hát nằm trong một danh sách phát, cần phải biết số thứ tự của bài hát.

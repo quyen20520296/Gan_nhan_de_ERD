@@ -1,6 +1,4 @@
-Một cơ sở dữ liệu quản lý bài hát được thiết kế như sau:
-Mỗi bài hát có các thông tin gồm mã bài hát duy nhất, có tên bài hát, thể loại.
-Mỗi ca sĩ có mã ca sĩ duy nhất, có họ tên, giới tính.
-Một ca sĩ có thể trình bày nhiều bài hát.
-Một danh sách phát bao gồm mã danh sách phát duy nhất để phân biệt với các danh sách phát khác, có tên danh sách phát.
-Một danh sách phát có thể chứa nhiều bài hát và một bài hát cũng có thể thuộc nhiều danh sách phát. Khi một bài hát nằm trong một danh sách phát, cần phải biết số thứ tự của bài hát.
+Để đảm bảo công tác phòng cháy chữa cháy, ban quản lý khu chung cư cần tổ chức cơ sở dữ liệu để quản lý các thiết bị và vật dụng chữa cháy, cụ thể như sau:
+Khu chung cư có nhiều tòa nhà, mỗi tòa nhà có mã tòa nhà để phân biệt giữa các tòa nhà, có tên tòa nhà, số tầng. Mỗi tòa nhà có nhiều tầng, một tầng chỉ thuộc một tòa nhà. Mỗi tầng có tên tầng, số lượng căn hộ của tầng đó và có một mã tầng duy nhất để phân biệt với các tầng của các tòa nhà khác.
+Các loại dụng cụ và thiết bị chữa cháy (sau đây gọi tắt là loại dụng cụ) cần được lưu trữ các thông tin như tên loại dụng cụ, mô tả loại dụng cụ và một mã loại dụng cụ duy nhất để phân biệt với các loại dụng cụ khác. Mỗi loại dụng cụ sẽ do một nhà sản xuất cung cấp, mỗi nhà sản xuất có thể cung cấp nhiều loại dụng cụ. Thông tin nhà sản xuất cần lưu trữ là mã nhà sản xuất, tên nhà sản xuất và địa chỉ.
+Mỗi loại dụng cụ này có thể được bố trí tại nhiều tầng trong tòa nhà với số lượng khác nhau. Một tầng có thể bố trí nhiều loại dụng cụ.

@@ -1,7 +1,8 @@
-Người quản trị của Công ty Cổ phần xe khách Phương Trang muốn quản lý các giao dịch mua vé xe khách trên các tuyến đường của hãng, đã thiết kế một cơ sở dữ liệu quản lý vé xe như sau:
-Mỗi xe được ghi nhận thông tin biển kiểm soát, số ghế tầng 1, số ghế tầng 2 và được ấn định một mã xe duy nhất để theo dõi.
-Mỗi thông tin tuyến sẽ bao gồm bến đầu, bến cuối, giá tuyến, thời gian dự kiến và được đặt một mã tuyến duy nhất để quản lý.
-Một tuyến sẽ có nhiều xe và một xe chỉ được hoạt động trong một tuyến cụ thể.
-Mỗi hành khách có một mã hành khách duy nhất để phân biệt với các hành khách khác, có họ tên, giới tính, số chứng minh nhân dân.
-Mỗi vé xe có một mã vé duy nhất để phân biệt, có ngày mua và giá vé.
-Một hành khách có thể mua nhiều vé xe. Một tuyến cũng được bán trong nhiều vé xe.
+Cho lược đồ cơ sở dữ liệu quản lý chi nhánh điện lực tại thành phố Hồ Chí Minh có cấu trúc như sau:
+Mỗi nhân viên có mã nhân viên duy nhất, họ tên, ngày sinh, ngày vào làm.
+Mỗi khách hàng có mã khách hàng duy nhất, tên khách hàng, ngày sinh và giới tính.
+Mỗi hợp đồng có số hợp đồng duy nhất, ngày ký, số điện kế, số kw định mức, đơn giá kw.
+Một khách hàng có thể sở hữu nhiều hợp đồng và một hợp đồng chỉ do một khách hàng sở hữu.
+Mỗi hóa đơn có một số hóa đơn duy nhất và có thông tin tháng, năm, số tiền.
+Một hóa đơn sẽ thuộc một hợp đồng cụ thể nào đó và một hợp đồng sẽ có nhiều hóa đơn.
+Một nhân viên có thể thu tiền nhiều hóa đơn.

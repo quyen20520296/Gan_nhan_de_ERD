@@ -1,88 +1,162 @@
-Một	
+Để	
+đảm_bảo	
+công_tác	
+phòng_cháy_chữa_cháy	
+,	
+ban_quản_lý	
+khu_chung_cư	
+cần	
+tổ_chức	
 cơ_sở_dữ_liệu	
+để	
 quản_lý	
-bài_hát	
-được_thiết_kế	
+các	
+thiết_bị	
+và	
+vật_dụng_chữa_cháy	
+,	
+cụ_thể	
 như_sau	
 :	
 
-Mỗi	
-bài_hát	E
+Khu_chung_cư	
 có	
+nhiều	
+tòa_nhà	
+,	
+mỗi	
+tòa_nhà	E
+có	
+mã_tòa_nhà	PK
+để	
+phân_biệt	
+giữa	
 các	
-thông_tin	
-gồm	
-mã_bài_hát	PK
-duy_nhất	
+tòa_nhà	
 ,	
 có	
-tên_bài_hát	AE
+tên_tòa_nhà	AE
 ,	
-thể_loại	AE
+số_tầng	AE
+.	F
+
+Mỗi	O
+tòa_nhà	E
+có	R
+nhiều	M
+tầng	E
+,	
+một	O
+tầng	E
+chỉ	
+thuộc	R
+một	O
+tòa_nhà	E
 .	F
 
 Mỗi	
-ca_sĩ	E
+tầng	E
 có	
-mã_ca_sĩ	PK
-duy_nhất	
+tên_tầng	AE
 ,	
+số_lượng_căn_hộ	AE
+của	
+tầng_đó	
+và	
 có	
-họ_tên	AE
-,	
-giới_tính	AE
-.	F
-
-Một	O
-ca_sĩ	E
-có_thể	
-trình_bày	R
-nhiều	M
-bài_hát	E
-.	F
-
-Một	
-danh_sách_phát	E
-bao_gồm	
-mã_danh_sách_phát	PK
+một	
+mã_tầng	PK
 duy_nhất	
 để	
 phân_biệt	
 với	
 các	
-danh_sách_phát	
+tầng	
+của	
+các	
+tòa_nhà	
 khác	
+.	F
+
+Các	
+loại_dụng_cụ	
+và	
+thiết_bị_chữa_cháy	
+(	
+sau_đây	
+gọi_tắt	
+là	
+loại_dụng_cụ	E
+)	
+cần	
+được_lưu_trữ	
+các	
+thông_tin	
+như	
+tên_loại_dụng_cụ	AE
 ,	
-có	
-tên_danh_sách_phát	AE
+mô_tả_loại_dụng_cụ	AE
+và	
+một	
+mã_loại_dụng_cụ	PK
+duy_nhất	
+để	
+phân_biệt	
+với	
+các	
+loại_dụng_cụ	
+khác	
+.	F
+
+Mỗi	O
+loại_dụng_cụ	E
+sẽ	
+do	
+một	O
+nhà_sản_xuất	E
+cung_cấp	R
+,	
+mỗi	O
+nhà_sản_xuất	E
+có_thể	
+cung_cấp	R
+nhiều	M
+loại_dụng_cụ	E
+.	F
+
+Thông_tin	
+nhà_sản_xuất	E
+cần	
+lưu_trữ	
+là	
+mã_nhà_sản_xuất	PK
+,	
+tên_nhà_sản_xuất	AE
+và	
+địa_chỉ	AE
 .	F
 
 Một	O
-danh_sách_phát	E
+loại_dụng_cụ	E
 có_thể	
-chứa	R
+được_bố_trí	R
+tại	
 nhiều	M
-bài_hát	E
-và	
-một	O
-bài_hát	E
-cũng	
+tầng	E
+.	F
+
+Một	O
+tầng	E
 có_thể	
-thuộc	R
+bố_trí	R
 nhiều	M
-danh_sách_phát	E
+loại_dụng_cụ	E
 .	F
 
 Khi	
-một	
-bài_hát	
-thuộc	ER
-một	
-danh_sách_phát	
+bố_trí	ER
 ,	
-cần	
-phải_biết	
-số_thứ_tự	AR
-của	
-bài_hát	
+phải	
+biết	
+số_lượng	AR
 .	F
