@@ -1,0 +1,4 @@
+Một công ty thương mại Y chuyên kinh doanh các mặt hàng điện tử. Công ty nhập các mặt hàng từ các nhà cung cấp khác nhau. Chi tiết về các mặt hàng gồm có: mã hàng (duy nhất), tên hàng và các mô tả mặt hàng
+Công ty cũng cần lưu giữ thông tin về các nhà cung cấp như tên, địa chỉ, điện thoại, fax. Mỗi nhà cung cấp có một mã duy nhất. Mỗi nhà cung cấp có thể cung cấp nhiều mặt hàng nhưng mỗi mặt hàng chỉ được cung cấp tử một nhà cung cấp.
+Các mặt hàng được lưu giữ trong các kho. Mỗi kho hàng có một diện tích khác nhau và chỉ chứa một loại mặt hàng.
+Công ty có nhiều cửa hàng đại lý để bán các mặt hàng. Hàng được cung cấp cho các cửa hàng thông qua các phiếu xuất. Thông tin trên mỗi phiếu xuất cần có mã số cửa hàng nhận hàng, ngảy xuất, thông tin về các mặt hàng được xuất như tên hàng, số lượng, đơn giả, thành tiền.

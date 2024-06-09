@@ -1,0 +1,6 @@
+Mỗi thí sinh có một số báo danh (SOBD) duy nhất, mỗi SOBD xác định
+họ và tên của thí sinh (HOTEN), ngày sinh (NGAYSINH), nơi sinh (NOISINH), ngành dự thi (MANGANH), năm dự thi (NAMDUTHI); giả sử một năm chỉ tổ chức một kỳ thi tuyển sinh cao học.
+Mỗi ngành dự thi có một mã ngành (MANGANH) duy nhất, mỗi mã ngành xác định tên ngành (TENNGANH).
+Mỗi môn thi có một mã môn thi (MAMT) duy nhất, mỗi mã môn thi xác định tên môn thi (TENMT), tinh chất môn thi- nếu là môn ngoại ngữ thì TINHCHAT là 1, ngược lại là 0. Giả sử mỗi thí sinh đều phải dự thi 3 môn: Môn cơ bản, môn cơ sở ngành và môn ngoại ngữ nào đó; tùy theo ngành thi mà sẽ có danh sách các môn cơ bản, cơ sở ngành và môn ngoại ngữ khác nhau. Có những môn thi sẽ được áp dụng cho nhiều ngành khác nhau, chẳng hạn môn căn bản có mã số là TH01 là môn cơ sở ngành cho cả 3 ngành cao học là Khoa học máy tính, Hệ thống thông tin và Kỹ thuật mạng máy tính.
+Mỗi thí sinh, ứng với một môn thi sẽ có một điểm thì (DIEMTHI) duy nhất. Giả sử rằng thí sinh trúng tuyển kỳ thi tuyển sinh cao học nếu thi sinh có điểm ngoại ngữ ≥ 5, không vắng thi môn nào và tổng điểm hai môn chuyên môn còn lại lớn hơn hoặc bằng diễm tuyển của ngành trong năm đó. Nếu thí sinh vắng thi môn nào thì môn đó bị điểm 0 và cần ghi chú thông tin là thi sinh đã “Vắng
+thì môn đó.

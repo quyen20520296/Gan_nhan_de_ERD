@@ -1,0 +1,12 @@
+Mỗi thí_sinh được xác định bởi duy nhất một số_báo_danh, họ_và_tên, ngày_sinh, nơi_sinh, năm_dự_thi.
+Giả sử một năm chỉ tổ chức một kỳ thi tuyển sinh cao học.
+Mỗi ngành_dự_thi được xác định bởi duy nhất một mã_ngành, tên_ngành.
+Một ngành_dự_thi có nhiều môn_thi.
+Mỗi môn_thi được xác định bởi duy nhất một mã_môn_thi, tên_môn_thi, tính_chất_môn_thi.
+Giả sử mỗi thí sinh đều phải dự thi 3 môn: Môn cơ bản, môn cơ sở ngành và môn ngoại ngữ nào đó.
+Tùy theo ngành thi mà sẽ có danh sách các môn cơ bản, cơ sở ngành và môn ngoại ngữ khác nhau. Có những môn thi sẽ được áp dụng cho nhiều ngành khác nhau, chẳng hạn môn căn bản có mã số là TH01 là môn cơ sở ngành cho cả 3 ngành cao học là Khoa học máy tính, Hệ thống thông tin và Kỹ thuật mạng máy tính.
+Một thí_sinh có thể thi nhiều môn_thi.
+Một môn_thi có thể được_thi bởi nhiều thí_sinh.
+Giả sử rằng thí sinh trúng tuyển kỳ thi tuyển sinh cao học nếu thi sinh có điểm ngoại ngữ ≥ 5, không vắng thi môn nào và tổng điểm hai môn chuyên môn còn lại lớn hơn hoặc bằng diễm tuyển của ngành trong năm đó. Nếu thí sinh vắng thi môn nào thì môn đó bị điểm 0 và cần ghi chú thông tin là thi sinh đã “Vắng
+thì môn đó.
+Khi ghi_điểm_thi, phải biết điểm_thi, ghi_chú.

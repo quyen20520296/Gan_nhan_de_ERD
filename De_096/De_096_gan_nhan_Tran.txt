@@ -1,0 +1,91 @@
+Một	O
+công_ty	
+có	
+một	O
+số	
+nhân_viên	
+.	F
+Thuộc_tính	
+của	
+nhân_viên	
+gồm	
+có	
+mã_nhân_viên	PK
+(	
+danh_định	
+)	
+,	
+tên_nhân_viên	
+,	
+địa_chỉ	
+,	
+ngày_sinh	
+.	F
+Hiện	
+công_ty	
+thực_hiện	
+một	O
+vài	
+dự_án	
+.	F
+Thông_tin	
+về	
+dự_án	
+bao_gồm	
+có	
+mã_dự_án	PK
+(	
+danh_định	
+)	
+,	
+tên_dự_án	
+và	
+ngày_bắt_đầu	
+.	F
+Một	O
+nhân_viên	
+có_thể	
+không	
+tham_gia	
+hoặc	
+tham_gia	
+một	O
+hay	
+nhiều	M
+dự_án	
+.	F
+Một	O
+dự_án	
+phải	
+có	
+ít_nhất	
+một	O
+nhân_viên	
+.	F
+Tiền_lương	
+tham_gia	
+số_dự_án	
+của	
+một	O
+nhân_viên	
+khác_nhau	
+theo	
+từng	
+dự_án	
+.	F
+Công_ty	
+cần	
+lưu	
+số_tiền	
+này	
+cho	
+mỗi	O
+nhân_viên	
+mỗi	O
+khi	
+phân_công	
+nhân_viên	
+vào	
+một	O
+dự_án	
+.	F

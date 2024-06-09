@@ -1,0 +1,159 @@
+thông_tin	
+về	
+mặt_hàng	E
+bao_gồm	
+mã_hàng	PK
+,	
+tên_mặt_hàng	AE
+,	
+nhà_cung_cấp	AE
+,	
+đơn_giá	AE
+.	F
+thông_tin	
+về	
+nhà_cung_cấp	E
+gồm	
+mã_nhà_cung_cấp	PK
+,	
+tên_nhà_cung_cấp	AE
+,	
+địa_chỉ	AE
+,	
+số_điện_thoại	AE
+(	
+có_thể	
+nhiều	
+số	
+)	
+,	
+họ_và_tên_người_đại_diện	AE
+.	F
+một	O
+mặt_hàng	E
+được	
+cung_cấp	R
+bởi	
+một	O
+nhà_cung_cấp	E
+,	
+nhưng	
+một	O
+nhà_cung_cấp	E
+có_thể	
+cung_cấp	R
+nhiều	M
+mặt_hàng	E
+(	
+lưu_ý	
+các	
+mặt_hàng	
+của	
+các	
+nhà_cung_cấp	
+có_thể	
+trùng	
+tên	
+)	
+.	F
+công_ty	
+có	
+một_số	
+cửa_hàng	
+,	
+mỗi	O
+cửa_hàng	E
+có	
+các	
+thông_tin	
+:	
+mã	PK
+,	
+tên_cửa_hàng	AE
+,	
+địa_chỉ	AE
+,	
+số_điện_thoại	AE
+(	
+01	
+số	
+)	
+.	F
+công_ty	
+có	
+nhiều	
+nhân_viên	E
+bán_hàng	
+,	
+mỗi	O
+nhân_viên	E
+có	
+các	
+thông_tin	
+:	
+mã_nhân_viên	PK
+,	
+họ_và_tên	AE
+,	
+ngày_sinh	AE
+,	
+số_điện_thoại_di_động	AE
+(	
+1	
+số	
+)	
+.	F
+các	M
+nhân_viên	E
+sẽ	
+bán_hàng	R
+tại	
+các	M
+cửa_hàng	E
+theo	
+các	
+thời_gian_biểu	
+do	
+công_ty	
+chỉ_định	
+(	
+không	
+cố_định	
+tại	
+một	
+cửa_hàng	
+,	
+các	
+nhân_viên	
+được	
+lưu_chuyển	
+giữa	
+các	
+cửa_hàng	
+)	
+.	F
+cứ	
+5	M
+nhân_viên	E
+bán_hàng	
+thì	
+có	
+một	O
+người	
+nhóm_trưởng	R
+.	F
+khi	
+bán_hàng	ER
+,	
+nhân_viên	
+phải	
+ghi	
+các	
+thông_tin	
+:	
+mã_hàng	AR
+,	
+số_lượng	AR
+,	
+mã_cửa_hàng	AR
+.	F

@@ -1,0 +1,108 @@
+Công_ty 
+hàng_không  
+Quantas 
+có  
+mở  
+nhiều   
+tuyến_bay   
+trong_nước  
+và  
+nước_ngoài  
+.   F
+Thông_tin   
+về  
+tuyến_bay   E
+gồm 
+:   
+mã_tuyến_bay    AE
+,   
+nước_khởi_hành  AE
+,   
+nước_đến    AE
+,   
+đơn_giá_vé  AE
+,   
+số_giờ_bay  AE
+.   F
+Mỗi O
+tuyến_bay   E
+có  R
+nhiều   M
+chuyến_bay  E
+.   F
+Thông_tin   
+về  
+chuyến_bay  E
+gồm 
+có  
+:   
+mã_chuyến_bay   AE
+,   
+loại_máy_bay    AE
+,   
+số_hành_khách_đi_trên_chuyến_bay    
+.   F
+Thông_tin   
+về  
+hành_khách  E
+gồm 
+:   
+mã_hành_khách   AE
+,   
+họ_tên  AE
+,   
+ngày_sinh   AE
+.   F
+Một O
+hành_khách  E
+có_thể  
+đi  ER
+trên    
+nhiều   
+chuyến_bay  E
+khác_nhau   
+.   F
+Công_ty 
+có  
+nhiều   
+đơn_vị_bay  E
+,   
+thông_tin   
+về  
+đơn_vị_bay  E
+gồm 
+:   
+mã_đơn_vị   AE
+,   
+tên_đơn_vị  AE
+.   F
+
+Mỗi O
+đơn_vị_bay  E
+gồm R
+nhiều   M
+phi_công    E
+.   F
+Thông_tin   
+về  
+phi_công    E
+gồm 
+:   
+mã_số_phi_công  AE
+,   
+họ_tên  AE
+.   F
+Mỗi O
+phi_công    E
+chỉ 
+thuộc   R
+một O
+đơn_vị_bay  E
+.   
+Một O
+phi_công    E
+có_thể  
+lái R
+nhiều   M
+chuyến_bay  E
+.   F

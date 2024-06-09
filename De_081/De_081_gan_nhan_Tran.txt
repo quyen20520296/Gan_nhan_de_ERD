@@ -1,0 +1,152 @@
+Một	
+trường	
+đại_học	
+cần	
+quản_lý	
+việc	
+đăng_ký	
+môn_học	
+của	
+các	
+sinh_viên	
+.	F
+	
+Thông_tin	
+về	
+sinh_viên	E
+hệ_thống	
+cần	
+nắm	
+được	
+là	
+mã	PK
+,	
+tên	AE
+,	
+ngày_sinh	AE
+,	
+quê_quán	AE
+,	
+giới_tính	AE
+,	
+địa_chỉ	AE
+.	F
+	
+Mỗi	O
+sinh_viên	E
+do	
+một	O
+khoa	E
+quản_lý	R
+.	F
+Thông_tin	
+cần	
+lưu	
+về	
+khoa	E
+là	
+mã khoa	PK
+,	
+tên_khoa	AE
+,	
+địa_điểm_văn_phòng_khoa	AE
+,	
+số_điện_thoại_liên_lạc	AE
+.	F
+	
+Sinh_viên	E
+có_thể	
+đăng_ký	R
+nhiều	M
+môn_học	E
+trong	
+một	
+học_kỳ	
+.	F
+	
+Thông_tin	
+về	
+môn_học	E
+bao_gồm	
+mã_môn_học	PK
+,	
+tên_môn_học	AE
+,	
+số_tín_chỉ	AE
+.	F
+	
+Mỗi	O
+môn_học	E
+có	
+các	
+điểm_kiểm_tra_trong_lớp	AR
+,	
+điểm_giữa_kỳ	AR
+và	
+cuối_kỳ	AR
+.	F
+	
+Hệ_thống	
+cần	
+ghi_nhận	ER
+lại	
+những	
+điểm_số	
+này	
+làm	
+cơ_sở	
+tính	
+điểm_trung_bình	
+của	
+môn_học	E
+.	F
+	
+Các	M
+môn_học	E
+có_thể	
+có	
+một_số	
+môn	E
+tiên_quyết	R
+.	F
+	
+Để	
+đăng_ký	
+được	
+một	
+môn_học	
+,	
+sinh_viên	
+phải	
+học	
+đạt	
+các	
+môn	
+tiên_quyết	
+của	
+môn_học	
+đó	
+.	F
+	
+Sinh_viên	E
+có_thể	
+đăng_ký	R
+một	O
+môn_học	E
+nhiều	M
+lần	
+và	
+kết_quả	
+của	
+tất_cả	
+các	
+lần	
+học	
+này	
+đều	
+phải	
+được	
+hệ_thống	
+lưu_trữ	
+lại	
+.	F

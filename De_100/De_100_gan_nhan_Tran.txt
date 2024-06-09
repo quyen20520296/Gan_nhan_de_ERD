@@ -1,0 +1,117 @@
+Thông_tin	
+về	
+tuyến_bay	
+bao_gồm	
+mã_tuyến_bay	PK
+,	
+tên_thành_phố_khởi_hành	
+,	
+tên_thành_phố_đến	
+,	
+đơn_giá_vé	
+,	
+số_giờ_bay	
+.	F
+Mỗi	O
+tuyến_bay	
+có	
+nhiều	M
+chuyến_bay	
+;	
+thông_tin	
+về	
+chuyến_bay	
+bao_gồm	
+mã_chuyến_bay	PK
+,	
+loại_máy_bay	
+,	
+các_phi_công_lái	
+,	
+các_hành_khách_đi_trên	
+chuyến_bay	
+.	F
+Thông_tin	
+về	
+khách_hàng	
+bao_gồm	
+mã_số	PK
+(")	
+,	
+họ_tên	
+,	
+ngày_sinh	
+,	
+phái	
+;	
+một	O
+hành_khách	
+có_thể	
+đi	
+trên	
+nhiều	M
+chuyến_bay	
+khác_nhau	
+.	F
+Công_ty	
+có	
+nhiều	M
+đơn_vị_bay	
+;	
+thông_tin	
+về	
+đơn_vị_bay	
+bao_gồm	
+mã_số	PK
+,	
+tên_đơn_vị	
+,	
+mỗi	O
+đơn_vị_bay	
+bao_gồm	
+nhiều	M
+phi_công	
+;	
+thông_tin	
+về	
+phi_công	
+bao_gồm	
+mã_số	PK
+,	
+họ_tên	
+,	
+ngày_sinh	
+,	
+phái	
+.	F
+Mỗi	O
+phi_công	
+chỉ	
+thuộc	
+một	O
+đơn_vị_bay	
+.	F
+Mỗi	O
+phi_công	
+có_thể	
+lái	
+nhiều	M
+chuyến_bay	
+.	F
+Hệ_thống	
+cần	
+lưu	
+lại	
+mã_số	PK
+duy_nhất	
+của	
+từng	
+người	
+để	
+phục_vụ	
+việc	
+chấm_điểm	
+cấp	
+thẻ	
+VIP	
+.	F

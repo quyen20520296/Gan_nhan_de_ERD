@@ -1,0 +1,15 @@
+BT2.5.
+Ứng dụng quản lý kỳ coi thi tuyển sinh đại học cao đẳng.
+Mỗi điểm_thi được xác định bởi duy nhất một mã_số_điểm_thi, địa_chỉ_điểm_thi.
+Mỗi thí_sinh được xác định bởi duy nhất một số_báo_danh, họ_và_tên, ngày_sinh, số_hiệu_phòng_thi.
+Mỗi thí_sinh được bố trí thì tại một phòng thi duy nhất và có một mã ngành đăng ký dự thi duy nhất.
+Mỗi ngành được xác định bởi duy nhất một mã_ngành, tên_ngành.
+Chẳng hạn mã ngành 524802 ứng với tên ngành là Công Nghệ Thông Tin, mã ngành 52140210 ứng với ngành Sư phạm tin học.....
+Mỗi phòng_thi được xác định bởi duy nhất một số_hiệu_phòng_thi.
+Một phòng_thi có nhiều thí_sinh.
+Một điểm_thi có nhiều phòng_thi.
+Một ngành có nhiều thí_sinh.
+Một cán_bộ_coi_thi chỉ có duy nhất một phòng_thi để thực hiện coi_thi.
+Ngoài ra một cán bộ giám sát có nhiệm vụ giám sát nhiều phòng thi.
+Hội đồng thi giả sử có 1 trưởng điểm thi, 1 phó điểm thi, một số thư ký và một số phục vụ điểm thì.
+Mỗi cán_bộ_coi_thi được xác định bởi duy nhất một mã_cán_bộ, tên_cán_bộ, đơn_vị.

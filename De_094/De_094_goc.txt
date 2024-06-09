@@ -1,0 +1,11 @@
+Ứng dụng quản lý kỳ coi thi tuyển sinh đại học cao đẳng
+Một hội đồng coi thi tuyển sinh đại học có nhiều địa điểm thi, mỗi điểm thỉ có một mã số điểm thi duy nhất (MADIEMTHI) để phản biệt với các điểm thì khác, các điểm thì được đánh số là 1,2,3,... Mỗi điểm thì xác định địa chỉ điểm
+thi (DIACHIDIEMTHI).
+Mỗi thí sinh đăng ký dự thi sẽ được cấp một số báo danh (SOBD) duy nhất để phân biệt với các thí sinh khác. Mỗi số báo danh xác định các thông tin:
+họ và tên (HOTEN), ngày sinh (NGAYSINH), mã ngành dăng ký dự thi (MANGANH) và số hiệu phòng thi (PHONGTHI). Mỗi thí sinh được bố trí thì tại một phòng thi duy nhất (PHONGTHI) và có một mã ngành đăng ký dự thi duy nhất (MANGANH).
+Mỗi ngành có một mã ngảnh (MANGANH) duy nhất để phân biệt với các ngành khác, mỗi mã ngành xác định tên ngành (TENNGANH), chẳng hạn mã ngành 524802 ứng với tên ngành là Công Nghệ Thông Tin, mã ngành 52140210 ứng với ngành Sư phạm tin học.....
+Mỗi phòng thi có một số hiệu phòng thi (PHONGTHI) duy nhất để phân biệt với các phòng thi khác, trong một phòng thì có thể có các thí sinh của nhiều ngành thi khác nhau. Mỗi phòng thì phải thuộc về một điểm thì duy nhất (MADIEMTHI).
+Mỗi phòng thi có 2 cản bộ coi thi trong phòng; ngoài ra một cán bộ giám sát có nhiệm vụ giám sát nhiều phòng thi. Hội đồng thi giả sử có 1 trưởng điểm thi, 1 phó điểm thi, một số thư ký và một số phục vụ điểm thì.
+Một cán bộ coi thi thuộc về một đơn vị nào đó (nếu là cán bộ từ một đơn
+vị ngoài trường thì ghi rõ tên của đơn vị đó. Ví dụ: Cán bộ coi thi A là giảng viên
+của trưởng THPT Nguyễn Thị Minh Khai).

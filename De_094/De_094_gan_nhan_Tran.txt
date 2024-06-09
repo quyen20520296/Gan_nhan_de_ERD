@@ -1,0 +1,275 @@
+Ứng_dụng	
+quản_lý	
+kỳ	
+coi_thi	
+tuyển_sinh	
+đại_học	
+cao_đẳng	
+Một	O
+hội_đồng	
+coi_thi	
+tuyển_sinh	
+đại_học	
+có	
+nhiều	M
+địa_điểm_thi	
+,	
+mỗi	O
+điểm_thi	
+có	
+một	O
+mã_số_điểm_thi	PK
+duy_nhất	
+(	
+MADIEMTHI	
+)	
+để	
+phân_biệt	
+với	
+các	
+điểm_thi	
+khác	
+,	
+các	
+điểm_thi	
+được	
+đánh_số	
+là	
+1	
+,	
+2	
+,	
+3	
+,	
+...	
+Mỗi	O
+điểm_thi	
+xác_định	
+địa_chỉ_điểm_thi	
+(	
+DIACHIDIEMTHI	
+)	
+.	F
+Mỗi	O
+thí_sinh	
+đăng_ký	
+dự_thi	
+sẽ	
+được	
+cấp	
+một	O
+số_báo_danh	
+(	
+SOBD	
+)	
+duy_nhất	
+để	
+phân_biệt	
+với	
+các	
+thí_sinh	
+khác	
+.	F
+Mỗi	O
+số_báo_danh	
+xác_định	
+các	
+thông_tin	
+:	
+họ_và_tên	
+(	
+HOTEN	
+)	
+,	
+ngày_sinh	
+(	
+NGAYSINH	
+)	
+,	
+mã_ngành	PK
+đăng_ký	
+dự_thi	
+(	
+MANGANH	
+)	
+và	
+số_hiệu	
+phòng_thi	
+(	
+PHONGTHI	
+)	
+.	F
+Mỗi	O
+thí_sinh	
+được	
+bố_trí	
+thi	
+tại	
+một	O
+phòng_thi	
+duy_nhất	
+(	
+PHONGTHI	
+)	
+và	
+có	
+một	O
+mã_ngành	PK
+đăng_ký	
+dự_thi	
+duy_nhất	
+(	
+MANGANH	
+)	
+.	F
+Mỗi	O
+ngành	
+có	
+một	O
+mã_ngành	PK
+(	
+MANGANH	
+)	
+duy_nhất	
+để	
+phân_biệt	
+với	
+các	
+ngành	
+khác	
+,	
+mỗi	O
+mã_ngành	PK
+xác_định	
+tên_ngành	
+(	
+TENNGANH	
+)	
+,	
+chẳng_hạn	
+mã_ngành	PK
+524802	
+ứng_với	
+tên_ngành	
+là	
+Công_Nghệ_Thông_Tin	
+,	
+mã_ngành	PK
+52140210	
+ứng_với	
+ngành	
+Sư_phạm	
+tin_học	
+...	
+Mỗi	O
+phòng_thi	
+có	
+một	O
+số_hiệu	
+phòng_thi	
+(	
+PHONGTHI	
+)	
+duy_nhất	
+để	
+phân_biệt	
+với	
+các	
+phòng_thi	
+khác	
+,	
+trong	
+một	O
+phòng_thi	
+có_thể	
+có	
+các	
+thí_sinh	
+của	
+nhiều	M
+ngành_thi	
+khác_nhau	
+.	F
+Mỗi	O
+phòng_thi	
+phải	
+thuộc	
+về	
+một	O
+điểm_thi	
+duy_nhất	
+(	
+MADIEMTHI	
+)	
+.	F
+Mỗi	O
+phòng_thi	
+có	
+2	
+cán_bộ	
+coi_thi	
+trong_phòng	
+;	
+ngoài_ra	
+một	O
+cán_bộ	
+giám_sát	
+có	
+nhiệm_vụ	
+giám_sát	
+nhiều	M
+phòng_thi	
+.	F
+Hội_đồng_thi	
+giả_sử	
+có	
+1	
+trưởng_điểm_thi	
+,	
+1	
+phó_điểm_thi	
+,	
+một_số	
+thư_ký	
+và	
+một_số	
+phục_vụ	
+điểm_thi	
+.	F
+Một	O
+cán_bộ	
+coi_thi	
+thuộc	
+về	
+một	O
+đơn_vị	
+nào_đó	
+(	
+nếu	
+là	
+cán_bộ	
+từ	
+một	O
+đơn_vị	
+ngoài_trường	
+thì	
+ghi	
+rõ	
+tên	
+của	
+đơn_vị	
+đó	
+.	F
+Ví_dụ	
+:	
+Cán_bộ	
+coi_thi	
+A	
+là	
+giảng_viên	
+của	
+trường	
+THPT	
+Nguyễn_Thị_Minh_Khai	
+)	
+.	F

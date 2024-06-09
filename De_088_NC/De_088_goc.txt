@@ -1,0 +1,9 @@
+Để quản lý vấn đề tổn kho của các mặt hàng trong các kho hàng của một công ty TNHH Tâm Bình cần có các thông tin và các quy tắc quản lý sau:
+Mỗi kho được cho mã số duy nhất (MSKHO) dùng để phân biệt các kho, một tên kho và một loại hàng mà kho đó chứa. Mỗi kho có một địa điểm nhất định được xác định bởi mã số địa điểm
+(MDD), địa chỉ của địa điểm, có một nhân viên phụ trách địa điểm và số điện thoại để liên lạc với kho tại địa điểm trên. Một kho chỉ chứa một loại hàng, một địa điểm có thể có nhiều kho.
+Mỗi mặt hàng được cho một mã số duy nhất (MSMH) để phân biệt các mặt hàng, một tên hàng. Một mặt hàng được xếp vào một loại hàng, và một loại hàng có nhiều mặt hàng. Mỗi loại hảng có một mã số duy nhất để phân biệt (MSLH), và có một tên loại hàng.
+Một mặt hàng có thể chứa ở nhiều kho, một kho có thể chứa nhiều mặt hàng cùng loại.
+Số lượng tồn kho của mỗi mặt hàng được xác định bởi phiếu nhập và phiếu xuất hàng.
+Mỗi phiếu nhập hàng có số phiếu duy nhất (SOPN) để phân biệt, và có ngày lập phiếu, phiếu nhập cho biết nhập tại kho nào, và có chữ ký của nhân viên phụ trách địa điểm của kho đó. Trong chi tiết của phiếu nhập cho biết số lượng nhập cho các mặt hàng của một phiếu nhập.
+Mỗi phiếu xuất hàng có số phiếu duy nhất (SOPX) để phân biệt, và có ngày lập phiếu, phiếu xuất cho biết xuất tại kho nào, chữ ký của nhân viên đi nhận hàng tại kho đó. Trong chi tiết của phiếu xuất cho biết số lượng xuất cho các mặt hàng của một phiếu xuất.
+Thông tin của nhân viên phụ trách địa điểm tại các kho và nhân viên đi nhận hàng từ các kho bao gồm: Mã số nhân viên (MSNV) để phân biệt giữa các nhân viên, có họ tên, phái, năm sinh, địa chỉ thường trú, số điện thoại của nhân viên.

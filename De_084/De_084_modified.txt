@@ -1,0 +1,8 @@
+Trường đại học cần tổ chức một CSDL để quản lý các đề tài nghiên cứu khoa học của sinh viên, cho biết một số thông tin liên quan sau.
+Mỗi đề_tài được xác định bởi duy nhất một mã_đề_tài, tên_đề_tài, lĩnh_vực_nghiên_cứu.
+Mỗi một_đề tài phải do một giáo_viên hướng dẫn.
+Một giáo_viên có nhiều đề_tài.
+Mỗi giáo_viên được xác định bởi duy nhất một mã_giáo_viên, họ_tên, học_hàm, học_vị.
+Mỗi sinh_viên được xác định bởi duy nhất một mã_sinh_viên, họ_tên, tên_lớp.
+Một đề_tài có nhiều sinh_viên.
+Một đề_tài chỉ có duy nhất một sinh_viên làm trưởng_nhóm.

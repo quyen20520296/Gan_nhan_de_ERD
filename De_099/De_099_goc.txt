@@ -1,0 +1,13 @@
+Ứng dụng quản lý bảo trì máy tính tại nhà
+Công ty tin học ABC hoạt động trong lĩnh vực bảo trì tại nhà các sự cố
+liên quan đến máy tính tại nhà (giả sử hệ thống chỉ quản lý các khách hàng lẻ:
+bảo trì lần nào thì tính phí bảo trì xong lần đó). Hệ thống cần quản lý các đối
+tượng sau:
+Mỗi khách hàng của công ty có các thông tin: mã khách hàng (MAKH), họ tên khách hàng (HOTENKH), địa chỉ (DIACHI), số điện thoại
+(ĐIENTHOAI).
+Mỗi nhân viên của công ty có các thông tin: mã nhân viên (MANV), họ tên (HOTEN). Ứng với mỗi lượt khách hàng mà công ty có thể phân công cho
+một hoặc nhiều nhân viên tham gia bảo trì.
+Mỗi lượt bảo trì sẽ có một phiếu nghiệm thu công việc riêng, mỗi phiếu
+nghiệm thu công việc có một mã số nghiệm thu (SONT) duy nhất, mỗi phiếu nghiệm thu công việc thuộc về một khách hàng nào đó (tất nhiên mỗi khách hàng có thể có nhiều phiếu nghiệm thu công việc). Mỗi phiếu nghiệm thu công việc cũng cần quản lý thêm các thông tin về chi phí bảo trì (SOTIEN), ngày đến bảo trì (NGAY), nội dung bảo trì (NOIDUNG).
+Sơ bộ về quy trình bảo trì máy tính cho khách hàng:
+Khi máy tính của khách hàng có sự cổ, khách hàng sẽ điện thoại bảo cho công ty thông tin sơ lược về sự cổ; công ty sẽ phân công nhân viên có kỹ năng phù hợp với sự cố đó đến bảo trì; khi bảo trì xong thì dại diện các nhân viên bảo trì sẽ ký một phiếu nghiệm thu công việc với khách hàng và đồng thời thu phí bảo trì. Các phiếu nghiệm thu công việc này cùng với số tiền thu được sẽ được chuyển về cho nhân viên kế toán của công ty để tổng hợp, lưu trữ, báo cáo.

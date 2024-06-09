@@ -1,0 +1,175 @@
+Ứng_dụng	
+quản_lý	
+các	
+đề_tài	
+khoa_học	
+của	
+giảng_viên	
+trong	
+một	
+khoa	
+.	F
+Mỗi	O
+giảng_viên	E
+có	
+một	O
+mã_giảng_viên	PK
+duy_nhất	O
+(MAGV)	
+,	
+mỗi	O
+mã_giảng_viên	PK
+xác_định	
+các	
+thông_tin	
+:	
+họ_tên	AE
+(HOTEN)	
+,	
+mã_bộ_môn	
+(MABM)	
+.	F
+	
+Mỗi	O
+bộ_môn	E
+có	
+một	O
+mã_bộ_môn	PK
+(MABM)	
+duy_nhất	O
+,	
+mỗi	O
+mã_bộ_môn	PK
+xác_định	
+tên_bộ_môn	AE
+(TENBM)	
+.	F
+	
+Mỗi	O
+đề_tài	E
+có	
+một	O
+mã_đề_tài	PK
+duy_nhất	
+(MADETAI)	
+,	
+mỗi	O
+mã_đề_tài	PK
+xác_định	
+tên_đề_tài	AE
+(TENDETAI)	
+,	
+kinh_phí_thực_hiện	AE
+(KINHPHI)	
+,	
+năm_thực_hiện	AE
+(NAM)	
+.	F
+Giả_sử	
+mỗi	
+đề_tài	E
+chỉ	
+được	
+thực_hiện	
+đúng	
+trong	
+01	
+năm	
+(nếu	
+đề_tài	E
+làm	
+trong	
+nhiều	
+năm	
+thì	
+xem	
+như	
+có	
+nhiều	
+đề_tài	
+con	
+,	
+và	
+mỗi	
+đề_tài	E
+con	
+này	
+sẽ	
+làm	
+không	
+quá	
+1	
+năm	
+–	
+ứng_dụng	
+này	
+không	
+quản_lý	
+công_việc	
+này)	
+và	
+có	
+một	O
+chủ_nhiệm_đề_tài	R
+(CHUNHIEM)	
+.	F
+Mỗi	O
+giảng_viên	E
+trong	
+một	O
+năm	
+chỉ	
+được	
+làm	
+chủ_nhiệm	R
+tối_đa	
+2	M
+đề_tài	E
+.	F
+Chủ_nhiệm_đề_tài	
+thuộc	
+bộ_môn	
+nào	
+thì	
+xem	
+như	
+đề_tài	
+được	
+tính	
+là	
+của	
+bộ_môn	
+đó	
+.	F
+	
+Mỗi	O
+giảng_viên	E
+có_thể	
+được	
+phân_công_thực_hiện	R
+nhiều	M
+đề_tài	E
+trong	
+một	O
+năm	
+(giảng_viên	
+tham_gia	
+không	
+quá	
+3	
+đề_tài)	
+và	
+mỗi	O
+đề_tài	E
+có_thể	
+phân_công	R
+cho	
+nhiều	M
+giảng_viên	E
+cùng	
+thực_hiện	
+(không	
+quá	
+4	
+giảng_viên)	
+.	F

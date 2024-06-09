@@ -1,0 +1,4 @@
+Trường đại học cần tổ chức một CSDL để quản lý các đề tài nghiên cứu khoa học của sinh viên, cho biết một số thông tin liên quan sau
+Mỗi một đề tải khi đăng kí thực hiện được cập mã số duy nhất. Ngoài ra mỗi một đề tài còn có tên đề tải và lĩnh vực nghiên cứu mà đề tải thực hiện
+Mỗi một đề tài phải do một giáo viên hướng dẫn. Thông tin giáo viên bao gồm mã giáo viên, họ tên, học hàm, học vị
+Thông tin về sinh viên được tổ chức trong CSDL bao gồm mã sinh viên, họ tên và tên lớp mà sinh viên đang theo học. Mỗi một đề tài phải có ít nhất một sinh viên tham gia và có không quá 5 sinh viên cùng tham gia trong một đề tài, trong đó phải có một sinh viên là người chủ trì đề tải (trưởng nhóm làm đề tài)

@@ -1,0 +1,4 @@
+Thông tin về tuyến bay gồm mã tuyến bay, tên thành phố khởi hành, tên thành phố đến, đơn giá vé, số giờ bay. Mỗi tuyến bay có nhiều chuyển bay; thông tin về chuyến bay gồm mã chuyến bay, loại máy bay, các phi công lái, các hành khách đi trên chuyến bay. Thông tin về khách hàng gồm mã số ("), họ tên, ngày sinh, phái; một hành khách có thể đi trên nhiều chuyến bay khác nhau.
+Công ty có nhiều đơn vị bay, thông tin về đơn vị bay gồm mã số, tên đơn vị, mỗi đơn vị bay gồm
+nhiều phi công, thông tin về phi công gồm mã số, họ tên, ngày sinh, phái. Mỗi phi công chỉ thuộc một đơn vị bay. Mỗi phi công có thể lái nhiều chuyến bay.
+Hệ thống cần lưu lại mã số duy nhất của từng người để phục vụ việc chấm điểm cấp thẻ VIP.

@@ -1,0 +1,207 @@
+Mỗi	O
+thí_sinh	e
+có	
+một	O
+số_báo_danh	PK
+(SOBD)	
+duy_nhất	O
+,	
+mỗi	O
+SOBD	PK
+xác_định	
+họ_và_tên	AE
+của	
+thí_sinh	
+(HOTEN)	
+,	
+ngày_sinh	AE
+(NGAYSINH)	
+,	
+nơi_sinh	AE
+(NOISINH)	
+,	
+ngành_dự_thi	AE
+(MANGANH)	
+,	
+năm_dự_thi	AE
+(NAMDUTHI)	
+;	
+giả_sử	
+một	
+năm	
+chỉ	
+tổ_chức	
+một	
+kỳ_thi	
+tuyển_sinh	
+cao_học	
+.	F
+	
+Mỗi	O
+ngành_dự_thi	E
+có	
+một	O
+mã_ngành	PK
+(MANGANH)	
+duy_nhất	O
+,	
+mỗi	O
+mã_ngành	PK
+xác_định	
+tên_ngành	AE
+(TENNGANH)	
+.	F
+	
+Mỗi	O
+môn_thi	E
+có	
+một	O
+mã_môn_thi	PK
+(MAMT)	
+duy_nhất	
+,	
+mỗi	O
+mã_môn_thi	PK
+xác_định	
+tên_môn_thi	AE
+(TENMT)	
+,	
+tính_chất_môn_thi	AE
+nếu	
+là	
+môn_ngoại_ngữ	
+thì	
+TINHCHAT	
+là	
+1	
+,	
+ngược_lại	
+là	
+0	
+.	F
+Giả_sử	
+mỗi	O
+thí_sinh	E
+đều	
+phải	
+dự_thi	R
+3	M
+môn	E
+:	
+Môn_cơ_bản	
+,	
+môn_cơ_sở_ngành	
+và	
+môn_ngoại_ngữ	
+nào_đó	
+;	
+tùy_theo	
+ngành_thi	E
+mà	
+sẽ	
+có	R
+danh_sách	
+các	M
+môn_cơ_bản	E
+,	
+cơ_sở_ngành	
+và	
+môn_ngoại_ngữ	
+khác_nhau	
+.	F
+Có	
+những	
+môn_thi	E
+sẽ	
+được	
+áp_dụng	
+cho	
+nhiều	M
+ngành	E
+khác_nhau	
+,	
+chẳng_hạn	
+môn_căn_bản	
+có	
+mã_số	
+là	
+TH01	
+là	
+môn_cơ_sở_ngành	
+cho	
+cả	
+3	
+ngành	
+cao_học	
+là	
+Khoa_học_máy_tính	
+,	
+Hệ_thống_thông_tin	
+và	
+Kỹ_thuật_mạng_máy_tính	
+.	F
+	
+Mỗi	O
+thí_sinh	E
+,	
+ứng_với	
+một	O
+môn_thi	E
+sẽ	
+có	
+một	O
+điểm_thi	AR
+(DIEMTHI)	
+duy_nhất	
+.	F
+Giả_sử	
+rằng	
+thí_sinh	
+trúng_tuyển	
+kỳ_thi	
+tuyển_sinh	
+cao_học	
+nếu	
+thí_sinh	
+có	
+điểm_ngoại_ngữ	
+≥ 5	
+,	
+không	
+vắng_thi	
+môn_nào	
+và	
+tổng_điểm	
+hai	
+môn	
+chuyên_môn	
+còn_lại	
+lớn_hơn	
+hoặc	
+bằng	
+điểm_tuyển	
+của	
+ngành	
+trong	
+năm_đó	
+.	F
+Nếu	
+thí_sinh	
+vắng_thi	
+môn_nào	
+thì	
+môn_đó	
+bị	
+điểm	
+0	
+và	
+cần	
+ghi_chú	AR
+thông_tin	
+là	
+thí_sinh	
+đã	
+“Vắng	
+thi”	
+môn_đó	
+.	F

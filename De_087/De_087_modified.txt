@@ -1,0 +1,9 @@
+Ứng dụng quản lý các đề tài khoa học của giảng viên trong một khoa.
+Mỗi giảng_viên được xác định bởi duy nhất một mã_giảng_viên, họ_tên.
+Mỗi bộ_môn được xác định bởi duy nhất một mã_bộ_môn, tên_bộ_môn.
+Một bộ_môn có nhiều giảng_viên.
+Mỗi đề_tài được xác định bởi duy nhất một mã_đề_tài, tên_đề_tài, kinh_phí_thực_hiện, năm_thực_hiện.
+Giả sử mỗi đề tài chỉ được thực hiện đúng trong 01 năm (nếu đề tài làm trong nhiều năm thì xem như có nhiều đề tài con, và mỗi đề tài con này sẽ làm không quá 1 năm – ứng dụng này không quản lý công việc này).
+Một đề_tài chỉ có duy nhất một giảng_viên làm chủ_nhiệm.
+Một giảng_viên có thể chủ_nhiệm nhiều đề_tài.
+Một đề_tài có thể được_chủ_nhiệm bởi nhiều giảng_viên. 

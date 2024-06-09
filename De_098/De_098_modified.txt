@@ -1,0 +1,6 @@
+Một môn học trong một trường cao đẳng có một hoặc nhiều khóa học đã lên lịch, hoặc chưa có khóa học nào. 
+Mỗi môn_học được xác định bởi duy nhất một mã_môn_học, tên_môn_học, số_tin_chi.
+Mỗi môn_học có thể có tiên_quyết bởi một môn_học khác.
+Một môn là tiên quyết của một hay nhiều môn, có thể không là tiên quyết của môn nào. 
+Mỗi khóa_học được xác định bởi duy nhất một mã_khóa_học, học_kỳ, năm_học.
+Một môn_học có nhiều khóa_học.

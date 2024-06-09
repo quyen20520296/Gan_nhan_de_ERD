@@ -1,0 +1,120 @@
+Một 
+công_ty 
+kinh_doanh  
+bất_động_sản    
+có  
+nhiều   
+văn_phòng   
+đặt_tại 
+nhiều   
+thành_phố
+.   F
+
+Thông_tin   
+về  
+mỗi O
+văn_phòng   E
+là  
+mã_số   PK
+và  
+địa_điểm    AE
+.   F
+
+Mỗi O
+văn_phòng   E
+có  R
+một O
+hoặc    
+nhiều   M
+nhân_viên   E
+.   F
+
+Nhân_viên   E
+có  
+mã_nhân_viên    PK
+và  
+tên_nhân_viên   AE
+.   F
+
+Một O
+nhân_viên   E
+chỉ 
+làm R
+tại 
+một O
+văn_phòng   E
+.   F
+
+Công_ty 
+cần 
+lưu 
+danh_sách   
+các 
+bất_động_sản    E
+.   F
+
+Thông_tin   
+về  
+bất_động_sản    E
+là  
+mã_bất_động_sản PK
+và  
+vị_trí  
+.   F
+
+Vị_trí  
+bất_động_sản    E
+bao_gồm 
+tên_đường   AE
+,   
+thành_phố   AE  
+,   
+mã_vùng AE
+.   F
+
+Mỗi O
+bất_động_sản    E
+chỉ 
+lưu R
+thông_tin   
+tại 
+một O
+văn_phòng   E
+.   F
+
+Một O
+văn_phòng   E
+có  R
+chứa 
+danh_sách   
+bất_động_sản    E
+.   F
+
+Mỗi O
+bất_động_sản    E
+có  ER
+một O
+hoặc    
+nhiều   M
+người_chủ   E
+.   F
+
+Thông_tin   
+về  
+người_chủ   E
+gồm 
+có  
+mã  AE
+và  
+tên AE
+.   F
+
+Một O
+người   E
+có_thể  ER
+là  
+chủ R
+của 
+nhiều   M
+bất_động_sản    E
+.   F

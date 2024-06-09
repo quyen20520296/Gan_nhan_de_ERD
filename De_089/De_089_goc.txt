@@ -1,0 +1,9 @@
+BT2.4. Ứng dụng quản lý kết quả học tập của sinh viên
+Mỗi sinh viên cần quản lý các thông tin như: họ và tên (HOTENSV), ngày sinh (NGAYSINH), giới tính (NU), nơi sinh (NOISINH), hộ khẩu thường trú (TINH). Mỗi sinh viên được cấp một mã số sinh viên duy nhất (MASV) để phân biệt với mọi sinh viên khác của trường, mỗi sinh viên chi thuộc về một lớp học tập nào đó.
+Mỗi lớp học có một mã số lớp (MALOP) duy nhất để phân biệt với tất cả
+các lớp học khác trong trường, có một tên gọi (TENLOP) của lớp, mỗi lớp chỉ
+thuộc về một khoa và có một cố vấn học tập duy nhất trong suốt cả khóa học; tất nhiên một giảng viên có thể cố vấn nhiều lớp.
+Mỗi khoa có một tên gọi (TENKHOA) và một mã số duy nhất (MAKHOA) để phân biệt với các khoa khác.
+Mỗi học phần có một tên gọi (TENHP) cụ thể, ứng với một số tín chỉ (SOTC) và một mã số duy nhất (MAHP) để phân biệt với các học phần khác.
+Mỗi giảng viên cần quản lý các thông tin: họ và tên (HOTENGV), cấp học vị (HOCVI), thuộc một chuyên ngành (CHUYENNGANH) và được gán cho một mã số duy nhất gọi là mã giảng viên (MAGV) để phân biệt với các giảng viên khác. Mỗi giảng viên có thể dạy nhiều môn ở nhiều khoa, nhưng chỉ thuộc về sự quản lý hành chính của một khoa. Thông tin giảng viên nhằm mục đích xác định thông tin cố vấn học tập cho các lớp (không quản lý việc phân công giảng viên).
+Mỗi sinh viên ứng với một học phần có một kết quả học tập (giả sử đây là điểm cuối cùng của học phần đó; nghĩa là nó đã được tổ hợp từ điểm thi và điểm quá trình).

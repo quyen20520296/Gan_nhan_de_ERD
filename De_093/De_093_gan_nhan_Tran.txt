@@ -1,0 +1,101 @@
+Thực_thể	
+Tác_giả	
+có	
+3	
+thuộc_tính	
+:	
+Bút_danh	
+,	
+số_chứng_minh_thư	
+,	
+địa_chỉ_email	
+;	
+thực_thể	
+Sách	
+có	
+thuộc_tính	
+:	
+Tên_sách	
+,	
+số_hiệu	
+ISBN	
+của	
+sách	
+và	
+tên_nhà_xuất_bản	
+;	
+trong_đó	
+các	
+thuộc_tính	
+khoá	
+được	
+gạch_chân	
+.	F
+Thuộc_tính	
+bút_danh	
+của	
+thực_thể	
+tác_giả	
+là	
+một	O
+thuộc_tính	
+đa_trị	
+,	
+nghĩa	
+là	
+mỗi	O
+tác_giả	
+có_thể	
+sử_dụng	
+nhiều	M
+bút_danh	
+khác_nhau	
+.	F
+Các	
+thuộc_tính	
+khác	
+của	
+hai	
+thực_thể	
+nói	
+trên	
+là	
+đơn_trị	
+.	F
+Giữa	
+hai	
+thực_thể	
+nói	
+trên	
+có	
+liên_kết	
+Viết	
+,	
+trong_đó	
+:	
++	
+Mỗi	O
+tác_giả	
+có_thể	
+viết	
+nhiều	M
+đầu	
+sách	
+.	F
+Mỗi	O
+cuốn_sách	
+có_thể	
+do	
+nhiều	M
+tác_giả	
+viết	
+và	
+số	
+tác_giả	
+của	
+một	O
+cuốn_sách	
+ít_nhất	
+là	
+1	
+.	F

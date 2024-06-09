@@ -1,0 +1,124 @@
+Một	O
+môn_học	
+trong	
+một	O
+trường	
+cao_đẳng	
+có	
+một	O
+hoặc	
+nhiều	M
+khóa_học	
+đã	
+lên_lịch	
+,	
+hoặc	
+chưa	
+có	
+khóa_học	
+nào	
+.	F
+Thuộc_tính	
+của	
+môn_học	
+gồm	
+mã_môn_học	PK
+,	
+tên_môn_học	
+,	
+số_tín_chỉ	
+.	F
+Mỗi	O
+môn_học	
+có_thể	
+không	
+cần	
+môn	
+tiên_quyết	
+,	
+nhưng	
+cũng	
+có_thể	
+yêu_cầu	
+một	O
+hoặc	
+nhiều	M
+môn	
+tiên_quyết	
+.	F
+Một	O
+môn	
+có_thể	
+là	
+tiên_quyết	
+của	
+một	O
+hay	
+nhiều	M
+môn	
+,	
+có_thể	
+không	
+là	
+tiên_quyết	
+của	
+môn	
+nào	
+.	F
+Thuộc_tính	
+của	
+khóa_học	
+gồm	
+mã_khóa_học	PK
+và	
+số	
+của	
+học_kỳ	
+.	F
+Số	
+của	
+học_kỳ	
+gồm	
+hai	
+phần	
+:	
+học_kỳ	
+,	
+năm_học	
+.	F
+Mã_khóa_học	PK
+là	
+một	O
+số	
+nguyên	
+(	
+như	
+1	
+,	
+2	
+,	
+..	
+)	
+,	
+phân_biệt	
+các	
+khóa_học	
+khác_nhau	
+của	
+một	O
+môn_học	
+,	
+nhưng	
+không	
+xác_định	
+duy_nhất	
+một	O
+khóa_học	
+trong	
+tất_cả	
+các	
+khóa_học	
+của	
+các	
+môn_học	
+.	F

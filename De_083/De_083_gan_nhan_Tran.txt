@@ -1,0 +1,143 @@
+Một	
+công_ty	
+thương_mại	
+Y	
+chuyên	
+kinh_doanh	
+các	
+mặt_hàng	
+điện_tử	
+.	F
+Công_ty	
+nhập	R
+các	
+mặt_hàng	E
+từ	
+các	M
+nhà_cung_cấp	E
+khác_nhau	
+.	F
+Chi_tiết	
+về	
+các	
+mặt_hàng	E
+gồm	
+có	
+:	
+mã_hàng	PK
+(duy_nhất)	
+,	
+tên_hàng	AE
+và	
+các	
+mô_tả_mặt_hàng	AE
+.	F
+Công_ty	
+cũng	
+cần	
+lưu_giữ	
+thông_tin	
+về	
+các	
+nhà_cung_cấp	E
+như	
+tên	AE
+,	
+địa_chỉ	AE
+,	
+điện_thoại	AE
+,	
+fax	AE
+.	F
+Mỗi	O
+nhà_cung_cấp	
+có	
+một	O
+mã	PK
+duy_nhất	
+.	F
+Mỗi	O
+nhà_cung_cấp	E
+có_thể	
+cung_cấp	R
+nhiều	M
+mặt_hàng	E
+nhưng	
+mỗi	O
+mặt_hàng	E
+chỉ	
+được	
+cung_cấp	R
+từ	
+một	O
+nhà_cung_cấp	E
+.	F
+	
+Các	M
+mặt_hàng	E
+được	
+lưu_giữ	R
+trong	
+các	M
+kho	E
+.	F
+Mỗi	O
+kho_hàng	E
+có	
+một	O
+diện_tích	AE
+khác_nhau	
+và	
+chỉ	
+chứa	R
+một	O
+loại	
+mặt_hàng	E
+.	F
+	
+Công_ty	
+có	
+nhiều	M
+cửa_hàng	E
+đại_lý	
+để	
+bán	R
+các	M
+mặt_hàng	E
+.	F
+Hàng	
+được	
+cung_cấp	R
+cho	
+các	M
+cửa_hàng	E
+thông_qua	
+các	M
+phiếu_xuất	E
+.	F
+Thông_tin	
+trên	
+mỗi	O
+phiếu_xuất	E
+cần	
+có	
+mã_số_cửa_hàng	ER	
+nhận_hàng	
+,	
+ngày_xuất	ER
+,	
+thông_tin	
+về	
+các	M
+mặt_hàng	E
+được	
+xuất	ER
+như	
+tên_hàng	AR
+,	
+số_lượng	AR
+,	
+đơn_giá	AR
+,	
+thành_tiền	AR
+.	F

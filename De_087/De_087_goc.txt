@@ -1,0 +1,7 @@
+Ứng dụng quản lý các đề tài khoa học của giảng viên trong một
+khoa
+Mỗi giảng viên có một mã giảng viên duy nhất (MAGV), mỗi mã giảng viên xác định các thông tin: họ tên (HOTEN), mã bộ môn (MABM).
+Mỗi bộ môn có một mã bộ môn (MABM) duy nhất, mỗi mã bộ môn xác định tên bộ môn (TENBM).
+Mỗi dề tài có một mã dề tài duy nhất (MADETAI), mỗi mã dề tài xác định tên đề tài (TENDETAI), kinh phi thực hiện (KINHPHI), năm thực hiện (NAM). Giả sử mỗi đề tài chỉ được thực hiện đúng trong 01 năm (nếu đề tài làm trong
+nhiều năm thì xem như có nhiều đề tài con, và mỗi đề tài con này sẽ làm không quá 1 năm – ứng dụng này không quản lý công việc này) và có một chủ nhiệm đề tài (CHUNHIEM). Mỗi giảng viên trong một năm chỉ được làm chủ nhiệm tối đa 2 đề tài. Chủ nhiệm đề tài thuộc bộ môn nào thì xem như đề tài được tinh là của bộ môn đó.
+Mỗi giảng viên có thể được phân công thực hiện nhiều đề tài trong một năm (giảng viên tham gia không quả 3 đề tài) và mỗi đề tài có thể phân công cho nhiều giảng viên cùng thực hiện (không quá 4 giảng viên).

@@ -1,0 +1,12 @@
+Công ty hàng không Quantas có mở nhiều tuyến bay trong nước và nước ngoài.
+Mỗi tuyến_bay được xác định bởi duy nhất một mã_tuyến_bay, nước_khởi_hành, nước_đến, đơn_giá_vé, số_giờ_bay.
+Mỗi tuyến_bay có nhiều chuyến_bay.
+Mỗi chuyến_bay được xác định bởi duy nhất một mã_chuyến_bay, loại_máy_bay, số_hành_khách_đi_trên_chuyến bay. 
+Mỗi hành_khách được xác định bởi duy nhất một mã_hành_khách, họ_tên, ngày_sinh. 
+Một hành_khách có thể đi trên nhiều chuyến_bay khác nhau. 
+Công_ty có nhiều đơn_vị_bay.
+Mỗi đơn_vị_bay được xác định bởi duy nhất một mã_đơn_vị, tên_đơn_vị.
+Mỗi đơn_vị_bay có nhiều phi_công. 
+Mỗi phi_công được xác định bởi duy nhất một mã_số_phi_công, họ_tên.
+mỗi_phi_công chỉ thuộc một đơn_vị_bay.
+Một phi_công có nhiều chuyến_bay.

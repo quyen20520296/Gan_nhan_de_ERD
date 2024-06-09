@@ -1,0 +1,5 @@
+Nhà máy có nhiều phân xưởng, mỗi phân xưởng có thông tin: Mã phân xưởng, tên phân xưởng, số điện thoại (mỗi phân xưởng có 01 điện thoại). Mỗi phân xưởng có 01 quản đốc, quản đốc cũng là một công nhân của nhà máy.
+Nhà máy có các công nhân, thông tin về mỗi công nhân gồm: Mã công nhân, họ và tên, ngày sinh, bậc thợ; mỗi công nhân thuộc một phân xưởng nào đó.
+Mỗi phân xưởng có thể sản xuất nhiều loại sản phẩm, nhiều phân xưởng có thể cùng sản xuất một loại sản phẩm. Mỗi loại sản phẩm có các thông tin: Mã loại sản phẩm, tên (loại) sản phẩm. Một phân xưởng có thể sản xuất nhiều sản phẩm thuộc cùng một loại sản phẩm.
+Mỗi sản phẩm của nhà máy bao gồm các thông tin: Mã loại sản phẩm, mà phân xưởng sản xuất, mã sản phẩm.
+Khi sản phẩm được sử dụng hay kiểm định, nếu có lỗi (sản phẩm không đạt chất lượng) thì thông tin được ghi lại như sau: Mã loại sản phẩm, mã phân xưởng sản xuất, nội dung lỗi (một sản phẩm có thể xảy ra nhiều lỗi).

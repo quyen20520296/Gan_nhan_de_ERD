@@ -1,0 +1,2 @@
+Thực thể Tác giả có 3 thuộc tính: Bút danh, số chứng minh thư, địa chỉ email; thực thể Sách có thuộc tính: Tên sách, số hiệu ISBN của sách và tên nhà xuất bản; trong đó các thuộc tính khoá được gạch chân. Thuộc tính bút danh của thực thể tác giả là một thuộc tỉnh đa trị, nghĩa là mỗi tác giả có thể sử dụng nhiều bút danh khác nhau. Các thuộc tính khác của hai thực thể nói trên là đơn trị. Giữa hai thực thể nói trên có liên kết Viết, trong đó: + Mỗi tác giả có thể viết nhiều dầu sách.
+Mỗi cuốn sách có thể do nhiều tác giả viết và số tác giả của một cuốn sách ít nhất là 1.

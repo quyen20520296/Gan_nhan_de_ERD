@@ -1,0 +1,4 @@
+Một môn học trong một trường cao đẳng có một hoặc nhiều khóa học đã lên lịch, hoặc chưa có khóa học nào. Thuộc tính của môn học gồm mã môn học, tên môn học, số tin chi. Mỗi môn học có thể
+không cần môn tiên quyết, nhưng cũng có thể yêu cầu một hoặc nhiều môn tiên quyết. Một môn có thể là tiên quyết của một hay nhiều môn, có thể không là tiên quyết của môn nào. Thuộc tính của khóa học
+gồm mã khóa học và số của học kỳ. Số của học kỳ gồm hai phần: học kỳ, năm học. Mã khóa học là một số nguyên (như 1, 2,..), phân biệt các khóa học khác nhau của một môn học, nhưng không xác định duy
+nhất một khóa học trong tất cả các khóa học của các môn học.

@@ -1,0 +1,9 @@
+Phòng thí nghiệm A có một số nhà khoa học làm việc trong một số dự án.
+Các nhà khoa học có thể sử dụng một số thiết bị cho mỗi dự án mà mình tham gia.
+Mỗi nhà_khoa_học được xác định bởi duy nhất một mã_nhân_viên, tên, số_điện_thoại.
+Mỗi dự_án được xác định bởi duy nhất một mã_dự_án, ngày_bắt_đầu_dự_án.
+Mỗi thiết_bị được xác định bởi duy nhất một mã_thiết_bị, giá_mua.
+Một nhà_khoa_học có thể sử_dụng nhiều thiết_bị.
+Một thiết_bị có thể được_sử_dụng bởi nhiều nhà_khoa_học.
+Khi quản_lý_sử_dụng, cần biết ngày_thiết_bị_được_giao.
+Mỗi nhà_khoa_học có nhiều dự_án.

@@ -1,0 +1,29 @@
+Để quản lý vấn đề doanh số bán hàng và tồn hàng của các mặt hàng trong các cửa hàng của một
+công ty bách hoả tổng hợp, cần có thông tin và các quy tắc quản lý sau.
+Mỗi cửa_hàng được xác định bởi duy nhất một MSCH, tên_cửa_hàng, loại_hàng_bán, địa_chỉ, số_điện_thoại_liên_lạc.
+Một cửa_hàng chỉ có duy nhất một nhân_viên làm phụ_trách.
+Mỗi cửa_hàng chỉ bán một loại_hàng.
+
+Mỗi mặt_hàng được xác định bởi duy nhất một MSMH, tên_hàng.
+Một mặt_hàng được xếp vào một loại_hàng.
+Một loại_hàng có nhiều mặt_hàng.
+Mỗi loại_hàng được xác định bởi duy nhất một MSLH, tên_loại_hàng.
+Một mặt_hàng có thể bán ở nhiều cửa_hàng.
+Một cửa_hàng có thể bán nhiều mặt_hàng. 
+
+Số lượng tồn của mỗi mặt hàng tại các cửa hàng được xác định bởi chi tiết phiếu thanh toán hàng và chi tiết phiếu giao hàng.
+Mỗi phiếu_giao_hàng được xác định bởi duy nhất một SOPG, ngày_lập_phiếu.
+Một cửa_hàng có nhiều phiếu_giao_hàng.
+Một nhân_viên có nhiều phiếu_giao_hàng.
+Một phiếu_giao_hàng có thể có nhiều mặt_hàng.
+Một mặt_hàng có thể có trên nhiều phiếu_giao_hàng.
+Khi chi_tiết_phiếu_giao_hàng, phải biết số_lượng_giao.
+
+Mỗi phiếu_thanh_toán được xác định bởi duy nhất một SOPTT, ngày_lập_phiếu.
+Một cửa_hàng có nhiều phiếu_thanh_toán.
+Một nhân_viên có nhiều phiếu_thanh_toán.
+Một phiếu_thanh_toán có thể có nhiều mặt_hàng.
+Một mặt_hàng có thể có trên nhiều phiếu_thanh_toán.
+Khi chi_tiết_phiếu_thanh_toán, phải biết số_lượng_thanh_thanh toán.
+
+Mỗi nhân_viên được xác định bởi duy nhất một MSNV, họ_tên, phái, năm_sinh, địa_chỉ_thường_trú, số_điện_thoại.

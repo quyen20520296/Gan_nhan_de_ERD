@@ -1,0 +1,12 @@
+Một trường đại học cần quản lý việc đăng ký môn học của các sinh viên.
+Mỗi sinh_viên được xác định bởi duy nhất một mã_sinh_viên, tên, ngày_sinh, quê_quán, giới_tính, địa_chỉ.
+Mỗi khoa có nhiều sinh_viên.
+Mỗi khoa được xác định bởi duy nhất một mã_khoa, tên_khoa, địa_điểm_văn_phòng_khoa, số_điện_thoại_liên lạc. 
+Một sinh_viên có thể đăng_ký nhiều môn_học.
+Một môn_học có thể được_đăng_ký bởi nhiều sinh_viên.
+Mỗi môn_học được xác định bởi duy nhất một mã_môn_học, tên_môn_học, số_tín_chỉ.
+Khi ghi_nhận_điểm_số, phải biết điểm_kiểm_tra_trong_lớp, điểm_giữa_kỳ, điểm_cuối_kỳ, học_kỳ.
+Hệ thống cần ghi nhận lại những điểm số này làm cơ sở tính điểm trung bình của môn học. 
+Một môn_học có thể có tiên_quyết bởi một môn_học khác.
+Để đăng ký được một môn học, sinh viên phải học đạt các môn tiên quyết của môn học đó. 
+Sinh viên có thể đăng ký một môn học nhiều lần và kết quả của tất cả các lần học này đều phải được hệ thống lưu trữ lại.

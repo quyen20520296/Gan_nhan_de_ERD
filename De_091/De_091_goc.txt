@@ -1,0 +1,9 @@
+Thông tin về mặt hàng bao gồm Mã hàng, Tên mặt hàng, Nhà cung cấp, Đơn giá.
+Thông tin về Nhà cung cấp gồm Mã nhà cung cấp, Tên nhà cung cấp, Địa chỉ, Số điện thoại (có thể nhiều số), Họ và tên người đại diện.
+Một mặt hàng được cung cấp bởi một nhà cung cấp, nhưng một nhà cung cấp có thể cung cấp nhiều mặt hàng (lưu ý các mặt hàng của các nhà cung cấp có thể trùng tên)
+Công ty có một số cửa hàng, mỗi Cửa hàng có các thông tin : Mã, Tên của hàng, Địa chỉ, Số điện thoại (01 số).
+Công ty có nhiều nhân viên bán hàng, mỗi Nhân viên có các thông tin : Mã nhân viên, Họ và tên, ngày sinh, Số điện thoại di động (1 số).
+Các nhân viên sẽ bán hàng tại các cửa hàng theo các thời gian biểu do công ty chỉ định (không cố định tại một cửa hàng, các nhân viên được lưu chuyển giữa các cửa hàng).
+Cứ 5 nhân viên bản hàng thì có một người nhóm trưởng.
+Khi bán hàng, nhân viên phải ghi các thông tin: Mã hàng, số lượng, mã cửa
+hàng

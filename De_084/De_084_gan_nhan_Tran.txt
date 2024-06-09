@@ -1,0 +1,124 @@
+Trường_đại_học	
+cần	
+tổ_chức	
+một	
+CSDL	
+để	
+quản_lý	
+các	
+đề_tài	
+nghiên_cứu_khoa_học	
+của	
+sinh_viên	
+,	
+cho	
+biết	
+một	O
+số	
+thông_tin	
+liên_quan	
+sau	
+:	
+	
+Mỗi	O
+một	O
+đề_tài	E
+khi	
+đăng_kí	
+thực_hiện	
+được	
+cập	
+mã_số	PK
+duy_nhất	
+.	F
+Ngoài_ra	
+,	
+mỗi	O
+một	O
+đề_tài	E
+còn	
+có	
+tên_đề_tài	AE
+và	
+lĩnh_vực_nghiên_cứu	AE
+mà	
+đề_tài	
+thực_hiện	
+.	F
+	
+Mỗi	O
+một	O
+đề_tài	E
+phải	
+do	
+một	O
+giáo_viên	E
+hướng_dẫn	R
+.	F
+Thông_tin	
+giáo_viên	E
+bao_gồm	
+mã_giáo_viên	PK
+,	
+họ_tên	AE
+,	
+học_hàm	AE
+,	
+học_vị	AE
+.	F
+	
+Thông_tin	
+về	
+sinh_viên	E
+được	
+tổ_chức	
+trong	
+CSDL	
+bao_gồm	
+mã_sinh_viên	PK
+,	
+họ_tên	AE
+và	
+tên_lớp	AE
+mà	
+sinh_viên	
+đang	
+theo_học	
+.	F
+Mỗi	O
+một	O
+đề_tài	E
+phải	
+có	
+ít_nhất	
+một	O
+sinh_viên	E
+tham_gia	R
+và	
+có	
+không	
+quá	
+5	M
+sinh_viên	E
+cùng	
+tham_gia	R
+trong	
+một	O
+đề_tài	E
+,	
+trong	
+đó	
+phải	
+có	
+một	O
+sinh_viên	E
+là	
+người	
+chủ_trì	
+đề_tài	
+(	
+trưởng_nhóm	R
+làm	
+đề_tài	E
+)	
+.	F

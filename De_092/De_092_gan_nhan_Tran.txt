@@ -1,0 +1,151 @@
+Nhà_máy	
+có	
+nhiều	
+phân_xưởng	
+,	
+mỗi	O
+phân_xưởng	E
+có	
+thông_tin	
+:	
+Mã_phân_xưởng	PK
+,	
+tên_phân_xưởng	AE
+,	
+số_điện_thoại	AE
+(	
+mỗi	
+phân_xưởng	
+có	
+01	
+điện_thoại	
+)	
+.	F
+Mỗi	O
+phân_xưởng	E
+có	
+01	O
+quản_đốc	R
+,	
+quản_đốc	R
+cũng	
+là	
+một	O
+công_nhân	E
+của	
+nhà_máy	
+.	F
+Nhà_máy	
+có	
+các	
+công_nhân	E
+,	
+thông_tin	
+về	
+mỗi	O
+công_nhân	E
+gồm	
+:	
+Mã_công_nhân	PK
+,	
+họ_và_tên	AE
+,	
+ngày_sinh	AE
+,	
+bậc_thợ	AE
+;	
+mỗi	O
+công_nhân	E
+thuộc	R
+một	O
+phân_xưởng	E
+nào_đó	
+.	F
+Mỗi	O
+phân_xưởng	E
+có_thể	
+sản_xuất	R
+nhiều	M
+loại_sản_phẩm	E
+,	
+nhiều	M
+phân_xưởng	E
+có_thể	
+cùng	
+sản_xuất	R
+một	O
+loại_sản_phẩm	E
+.	F
+Mỗi	O
+loại_sản_phẩm	E
+có	
+các	
+thông_tin	
+:	
+Mã_loại_sản_phẩm	PK
+,	
+tên_loại_sản_phẩm	AE
+.	F
+Một	O
+phân_xưởng	E
+có_thể	
+sản_xuất	R
+nhiều	M
+sản_phẩm	E
+thuộc	
+cùng	
+một	O
+loại_sản_phẩm	E
+.	F
+Mỗi	O
+sản_phẩm	E
+của	
+nhà_máy	
+bao_gồm	
+các	
+thông_tin	
+:	
+Mã_loại_sản_phẩm	AR
+,	
+mã_phân_xưởng	AR
+sản_xuất	
+,	
+mã_sản_phẩm	PK
+.	F
+Khi	
+sản_phẩm	
+được	
+sử_dụng	
+hay	
+kiểm_định	
+,	
+nếu	
+có	
+lỗi	
+(	
+sản_phẩm	
+không	
+đạt	
+chất_lượng	
+)	
+thì	
+thông_tin	
+được	
+ghi_lại	
+như_sau	
+:	
+Mã_loại_sản_phẩm	PK
+,	
+mã_phân_xưởng	PK
+sản_xuất	
+,	
+nội_dung_lỗi	
+(	
+một	O
+sản_phẩm	
+có_thể	
+xảy_ra	
+nhiều	M
+lỗi	
+)	
+.	F

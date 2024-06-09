@@ -1,0 +1,11 @@
+Một công ty mua và bán một trong các loại đồ cũ như đồ gỗ, quần áo, đồ sứ, đá quý. 
+Mỗi mặt_hàng được xác định bởi duy nhất một mã_mặt_hàng, đặc_tả_về_mặt_hàng, giá_đặt_hàng, tình_trạng.
+Trong số khách hàng của công ty có khách hàng chỉ mua hàng, có khách hàng chỉ bán, có khách hàng vừa mua vừa bán với công ty. 
+Mỗi khách_hàng được xác định bởi duy nhất một mã_khách_hàng, tên, địa_chỉ.
+Một khách_hàng có thể bán nhiều mặt_hàng.
+Một mặt_hàng có thể được_bán bởi nhiều khách_hàng.
+Khi bán_hàng, phải biết tiền_hoa_hồng, giá_bán_thật_sự, thuế _bán_hàng, ngày_bán. 
+Thuế bằng không là trường hợp được miễn thuế.
+Một khách_hàng có thể mua nhiều mặt_hàng.
+Một mặt_hàng có thể được_mua bởi nhiều khách_hàng.
+Khi mua_hàng, phải biết giá_mua, ngày_mua, tình_trạng_hàng_khi_mua.

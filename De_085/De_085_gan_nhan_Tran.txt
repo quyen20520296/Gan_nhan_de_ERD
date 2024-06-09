@@ -1,0 +1,106 @@
+Một	
+bệnh_viện	
+có	
+rất	
+nhiều	
+bác_sĩ	
+.	F
+Thuộc_tính	
+của	
+bác_sĩ	E
+gồm	
+:	
+mã_bác_sĩ	PK
+và	
+chuyên_môn	AE
+.	F
+Các	
+bệnh_nhân	E
+được	
+nhận	
+vào	
+bệnh_viện	
+thông_qua	
+các	
+bác_sĩ	E
+.	F
+Thuộc_tính	
+của	
+bệnh_nhân	E
+gồm	
+mã_bệnh_nhân	PK
+và	
+tên_bệnh_nhân	AE
+.	F
+Một	O
+bệnh_nhân	E
+do	
+một	O
+và	
+chỉ	
+một	O
+bác_sĩ	E
+nhận	R
+vào	
+bệnh_viện	
+.	F
+Một	O
+bác_sĩ	E
+có_thể	
+nhận	R
+nhiều	M
+bệnh_nhân	E
+.	F
+Khi	
+đã	
+được	
+nhận	
+vào	
+bệnh_viện	
+,	
+một	O
+bệnh_nhân	E
+sẽ	
+được	
+điều_trị	R
+bởi	
+ít_nhất	M
+là	
+một	O
+bác_sĩ	
+.	F
+Một	O
+bác_sĩ	E
+có_thể	
+không	O
+điều_trị	R
+cho	
+bệnh_nhân	E
+nào	
+hoặc	
+điều_trị	R
+nhiều	M
+bệnh_nhân	E
+.	F
+Bệnh_viện	
+cần	
+lưu	
+chi_tiết	
+về	
+mỗi	
+lần	
+một	O
+bác_sĩ	E
+điều_trị	R
+cho	
+một	O
+bệnh_nhân	E
+.	F
+Chi_tiết_điều_trị	ER
+bao_gồm	
+ngày_điều_trị	AR
+,	
+thời_gian_điều_trị	AR
+và	
+kết_quả	AR
+.	F

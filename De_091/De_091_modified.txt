@@ -1,0 +1,14 @@
+Mỗi mặt_hàng được xác định bởi duy nhất một mã_hàng, tên_mặt_hàng, đơn_giá.
+Mỗi nhà_cung_cấp được xác định bởi duy nhất một mã_nhà_cung_cấp, tên_nhà_cung_cấp, địa_chỉ, số_điện_thoại, họ_và_tên_người_đại_diện.
+Mỗi mặt_hàng được cung cấp bởi một nhà_cung_cấp.
+Một nhà_cung_cấp có nhiều mặt_hàng.
+công ty có một số cửa hàng.
+Mỗi cửa_hàng được xác định bởi duy nhất một mã_cửa_hàng, tên_cửa_hàng, địa_chỉ, số_điện_thoại.
+Công ty có nhiều nhân viên bán hàng.
+Mỗi nhân_viên được xác định bởi duy nhất một mã_nhân_viên, họ_và_tên, ngày_sinh, số_điện_thoại_di_động.
+Mỗi nhân_viên có thể có nhóm_trưỏng là một nhân_viên khác.
+
+Một cửa_hàng có nhiều nhân_viên.
+Một cửa_hàng có thể bán nhiều mặt_hàng.
+Một mặt_hàng có thể bán tại nhiều cửa_hàng.
+Khi thông_tin_bán_hàng, phải biết số_lượng.

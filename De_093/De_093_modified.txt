@@ -1,0 +1,5 @@
+Mỗi tác_giả được xác định bởi duy nhất một số_chứng_minh_thư, bút_danh, địa_chỉ_email.
+Mỗi sách được xác định bởi duy nhất một số_hiệu_ISBN, tên_sách, tên_nhà_xuất_bản.
+Giữa hai thực thể nói trên có liên kết Viết.
+Một tác_giả có thể viết nhiều sách.
+Một sách có thể được viết bởi nhiều tác_giả.

@@ -1,0 +1,15 @@
+Mỗi tuyến_bay được xác định bởi duy nhất một mã_tuyến_bay, tên_thành_phố_khởi_hành, tên_thành_phố_đến, đơn_giá_vé, số_giờ_bay.
+Mỗi tuyến_bay có nhiều chuyến_bay.
+Mỗi chuyến_bay được xác định bởi duy nhất một mã_chuyến_bay, loại_máy_bay.
+Mỗi khách_hàng được xác định bởi duy nhất một mã_số_khách_hàng, họ_tên, ngày_sinh, phái.
+Một khách_hàng có thể đi nhiều chuyến_bay.
+Một chuyến_bay có thể được đi bởi nhiều khách_hàng.
+Công ty có nhiều đơn_vị_bay.
+Mỗi đơn_vị_bay được xác định bởi duy nhất một mã_số_đơn_vị_bay, tên_đơn_vị.
+Mỗi đơn_vị_bay có nhiều phi_công.
+Mỗi phi_công được xác định bởi duy nhất một mã_số_phi_công, họ_tên, ngày_sinh, phái.
+Mỗi phi_công chỉ thuộc một đơn_vị_bay.
+Một phi_công có thể lái nhiều chuyến_bay.
+Một chuyến_bay có thể được_lái bởi nhiều phi_công.
+Hệ thống cần lưu lại mã số duy nhất của từng người để phục vụ việc chấm điểm cấp thẻ VIP.
+

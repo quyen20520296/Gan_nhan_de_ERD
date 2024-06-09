@@ -1,0 +1,286 @@
+Ứng_dụng	
+quản_lý	
+kết_quả	
+học_tập	
+của	
+sinh_viên	
+Mỗi	O
+sinh_viên	E
+cần	
+quản_lý	
+các	
+thông_tin	
+như	
+:	
+họ_và_tên	AE
+(	
+HOTENSV	
+)	
+,	
+ngày_sinh	AE
+(	
+NGAYSINH	
+)	
+,	
+giới_tính	AE
+(	
+NU	
+)	
+,	
+nơi_sinh	AE
+(	
+NOISINH	
+)	
+,	
+hộ_khẩu_thường_trú	AE
+(	
+TINH	
+)	
+.	F
+Mỗi	O
+sinh_viên	E
+được	
+cấp	
+một	O
+mã_số_sinh_viên	PK
+duy_nhất	
+(	
+MASV	
+)	
+để	
+phân_biệt	
+với	
+mọi	
+sinh_viên	E
+khác	
+của	
+trường	
+,	
+mỗi	O
+sinh_viên	E
+chỉ	
+thuộc	R
+về	
+một	O
+lớp_học	E
+tập	
+nào_đó	
+.	F
+Mỗi	O
+lớp_học	E
+có	
+một	O
+mã_số_lớp	PK
+(	
+MALOP	
+)	
+duy_nhất	
+để	
+phân_biệt	
+với	
+tất_cả	
+các	
+lớp_học	E
+khác	
+trong	
+trường	
+,	
+có	
+một	O
+tên_gọi	AE
+(	
+TENLOP	
+)	
+của	
+lớp	
+,	
+mỗi	O
+lớp	E
+chỉ	
+thuộc	R
+về	
+một	O
+khoa	E
+và	
+có	
+một	O
+cố_vấn_học_tập	AE
+duy_nhất	O
+trong	
+suốt	
+cả	
+khóa_học	
+;	
+tất_nhiên	
+một	O
+giảng_viên	E
+có_thể	
+cố_vấn	R
+nhiều	M
+lớp	E
+.	F
+Mỗi	O
+khoa	E
+có	
+một	O
+tên_gọi	AE
+(	
+TENKHOA	
+)	
+và	
+một	O
+mã_số	PK
+duy_nhất	
+(	
+MAKHOA	
+)	
+để	
+phân_biệt	
+với	
+các	
+khoa	
+khác	
+.	F
+Mỗi	O
+học_phần	E
+có	
+một	O
+tên_gọi	AE
+(	
+TENHP	
+)	
+cụ_thể	
+,	
+ứng_với	
+một	O
+số_tín_chỉ	AE
+(	
+SOTC	
+)	
+và	
+một	O
+mã_số	PK
+duy_nhất	
+(	
+MAHP	
+)	
+để	
+phân_biệt	
+với	
+các	
+học_phần	E
+khác	
+.	F
+Mỗi	O
+giảng_viên	E
+cần	
+quản_lý	
+các	
+thông_tin	
+:	
+họ_và_tên	AE
+(	
+HOTENGV	
+)	
+,	
+cấp_học_vị	AE
+(	
+HOCVI	
+)	
+,	
+thuộc	
+một	O
+chuyên_ngành	AE
+(	
+CHUYENNGANH	
+)	
+và	
+được_gán	
+cho	
+một	O
+mã_số	PK
+duy_nhất	
+gọi	
+là	
+mã_giảng_viên	PK
+(	
+MAGV	
+)	
+để	
+phân_biệt	
+với	
+các	
+giảng_viên	E
+khác	
+.	F
+Mỗi	O
+giảng_viên	E
+có_thể	
+dạy	R
+nhiều	M
+môn	
+ở	
+nhiều	M
+khoa	E
+,	
+nhưng	
+chỉ	O
+thuộc	R
+về	
+sự	
+quản_lý	
+hành_chính	
+của	
+một	O
+khoa	E
+.	F
+Thông_tin	
+giảng_viên	E
+nhằm	
+mục_đích	
+xác_định	
+thông_tin	
+cố_vấn_học_tập	R
+cho	
+các	M
+lớp	E
+(	
+không	
+quản_lý	
+việc	
+phân_công	
+giảng_viên	
+)	
+.	F
+Mỗi	O
+sinh_viên	E
+ứng_với	
+một	O
+học_phần	E
+có	
+một	O
+kết_quả_học_tập	ER
+(	
+giả_sử	
+đây	
+là	
+điểm	AR
+cuối	
+cùng	
+của	
+học_phần	
+đó	
+;	
+nghĩa	
+là	
+nó	
+đã	
+được	
+tổ_hợp	
+từ	
+điểm_thi	
+và	
+điểm	
+quá_trình	
+)	
+.	F

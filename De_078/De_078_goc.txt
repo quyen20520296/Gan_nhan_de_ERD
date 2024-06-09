@@ -1,0 +1,3 @@
+Một công ty kinh doanh bất động sản có nhiều văn phòng đặt tại nhiều thành phố. Thông tin về mỗi văn phòng là mã số và địa điểm. Mỗi văn phòng có một hoặc nhiều nhân viên. Nhân viên có mã nhân viên và tên nhân viên. Một nhân viên chỉ làm tại một văn phòng.
+Công ty cần lưu danh sách các bất động sản. Thông tin về bất động sản là mã bất động sản và vị trí. Vị trí bất động sản bao gồm tên đường, thành phố, mã vùng. Mỗi bất động sản chi lưu thông tin tại một văn phòng. Một văn phòng có thể chưa có danh sách bất động sản. Mỗi bất động sản có một hoặc nhiều người chủ. Thông tin về người chủ gồm có mã và tên. Một người có thể là chủ của nhiều bất
+động sản.

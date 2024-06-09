@@ -1,0 +1,15 @@
+Một công ty thương mại Y chuyên kinh doanh các mặt hàng điện tử. 
+Công ty nhập các mặt hàng từ các nhà cung cấp khác nhau. 
+Mỗi mặt_hàng được xác định bởi duy nhất một mã_hàng, tên_hàng, mô_tả_mặt_hàng.
+Mỗi nhà_cung_cấp được xác định bởi duy nhất một mã_nhà_cung_cấp, tên, địa_chỉ, điện_thoại, fax.
+Mỗi nhà_cung_cấp có nhiều mặt_hàng.
+Mỗi mặt_hàng chỉ được cung cấp từ một nhà_cung_cấp.
+Các mặt hàng được lưu giữ trong các kho. 
+Mỗi kho_hàng được xác định bởi duy nhất một mã_kho, diện_tích.
+Mỗi kho_hàng chỉ có duy nhất một mặt_hàng được_chứa.
+Một cửa_hàng có nhiều phiếu_xuất.
+Mỗi cửa_hàng được xác định bởi duy nhất một mã_số_cửa_hàng.
+Mỗi phiếu_xuất được xác định bởi duy nhất một mã_phiếu_xuất, mã_số_cửa_hàng, ngày_xuất.
+Một mặt_hàng có thể có nhiều phiếu_xuất.
+Một phiếu_xuất có thể xuất nhiều mặt_hàng.
+Khi thông_tin_xuất, phải biết số_lượng, đơn_giá, thành_tiền.

@@ -1,0 +1,14 @@
+BT2.4. Ứng dụng quản lý kết quả học tập của sinh viên
+Mỗi sinh_viên được xác định bởi duy nhất một mã_sinh_viên, họ_và_tên, ngày_sinh, giới_tính, nơi_sinh, hộ_khẩu_thường_trú.
+Mỗi sinh_viên chỉ thuộc về một lớp_học.
+Mỗi lớp_học được xác định bởi duy nhất một mã_số_lớp, tên_lớp.
+Mỗi lớp chỉ thuộc về một khoa và có một cố vấn học tập duy nhất trong suốt cả khóa học.
+Một giảng_viên có nhiều lớp_học.
+Mỗi khoa được xác định bởi duy nhất một mã_khoa, tên_khoa.
+Mỗi học_phần được xác định bởi duy nhất một mã_học_phần, tên_học_phần, số_tín_chỉ.
+Mỗi giảng_viên được xác định bởi duy nhất một mã_giảng_viên, họ_và_tên, cấp_học_vị, chuyên_ngành.
+Một khoa có nhiều giảng_viên.
+Thông tin giảng viên nhằm mục đích xác định thông tin cố vấn học tập cho các lớp (không quản lý việc phân công giảng viên).
+Một sinh_viên có thể đăng_kí nhiều học_phần.
+Một học_phần có thể được_đăng_kí bởi nhiều sinh_viên.
+Khi kết_quả_học_tập, phải biết điểm.

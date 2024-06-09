@@ -1,0 +1,10 @@
+Một công ty kinh doanh bất động sản có nhiều văn phòng đặt tại nhiều thành phố.
+Mỗi văn_phòng được xác định bởi duy nhất một mã_văn_phòng, địa_điểm. 
+Mỗi văn_phòng có nhiều nhân_viên. 
+Mỗi nhân_viên được xác định bởi duy nhất một mã_nhân_viên, tên_nhân_viên. 
+Công ty cần lưu danh sách các bất động sản.
+Mỗi bất_động_sản được xác định bởi duy nhất một mã_bất_động_sản, tên_đường, thành_phố, mã_vùng.
+Một văn_phòng có nhiều bất_động_sản. 
+Mỗi người_chủ được xác định bởi duy nhất một mã_người_chủ, tên. 
+Mỗi bất_động_sản có thể có nhiều người_chủ. 
+Một người_chủ có thể có nhiều bất_động_sản.

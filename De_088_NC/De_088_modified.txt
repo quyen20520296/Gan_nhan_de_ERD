@@ -1,0 +1,31 @@
+Để quản lý vấn đề tổn kho của các mặt_hàng trong các kho hàng của một công ty TNHH Tâm Bình cần có các thông tin và các quy tắc quản lý sau:
+Mỗi kho được xác định bởi duy nhất một MSKHO, tên_kho, loại_hàng_chứa.
+Mỗi kho có một địa điểm nhất định.
+Mỗi địa_điểm được xác định bởi duy nhất một MDD, địa_chỉ, nhân_viên_phụ_trách, số_điện_thoại_liên_lạc.
+Một kho chỉ chứa một loại_hàng.
+Một địa_điểm có nhiều kho.
+Một địa_điểm chỉ có duy nhất một nhân_viên làm phụ_trách.
+
+Mỗi mặt_hàng được xác định bởi duy nhất một MSMH, tên_hàng.
+Một mặt_hàng được xếp vào một loại_hàng.
+Một loại_hàng có nhiều mặt_hàng.
+Mỗi loại_hàng được xác định bởi duy nhất một MSLH, tên_loại_hàng.
+Một mặt_hàng có thể chứa ở nhiều kho.
+Một kho có thể chứa nhiều mặt_hàng.
+
+Số lượng tồn kho của mỗi mặt_hàng được xác định bởi phiếu nhập và phiếu xuất hàng.
+Mỗi phiếu_nhập_hàng được xác định bởi duy nhất một SOPN, ngày_lập_phiếu.
+Một kho có nhiều phiếu_nhập_hàng.
+Một nhân_viên có nhiều phiếu_nhập_hàng.
+Một phiếu_nhập_hàng có thể có nhiều mặt_hàng.
+Một mặt_hàng có thể có trên nhiều phiếu_nhập_hàng.
+Khi chi_tiết_phiếu_nhập, phải biết số_lượng_nhập.
+
+Mỗi phiếu_xuất_hàng được xác định bởi duy nhất một SOPX, ngày_lập_phiếu.
+Một kho có nhiều phiếu_xuất_hàng.
+Một nhân_viên có nhiều phiếu_xuất_hàng.
+Một phiếu_xuất_hàng có thể có nhiều mặt_hàng.
+Một mặt_hàng có thể có trên nhiều phiếu_xuất_hàng.
+Khi chi_tiết_phiếu_xuất, phải biết số_lượng_xuất.
+Mỗi nhân_viên được xác định bởi duy nhất một MSNV, họ_tên, phái, năm_sinh, địa_chỉ_thường_trú, số_điện_thoại.
+

@@ -1,0 +1,6 @@
+Thông tin về sản phẩm bao gồm: Mã sản phẩm, Tên sản phẩm, Đơn giả.
+Thông tin về Nhà cung cấp gồm: Mã nhà cung cấp, Tên nhà cung cấp, Địa chỉ. Một nhà cung cấp có nhiều sản phẩm.
+Thông tin về khách hàng: Mã, họ tên, năm sinh, quê quán.
+Công ty có nhiều nhân viên tiếp thị, nhân viên có các thông tin : Mã nhân viên, Họ và tên, ngày sinh, Số điện thoại di động. Mỗi nhân viên phụ trách 1 tới 5 tỉnh để giới thiệu sản phẩm.
+Các nhân viên sẽ giới thiệu sản phẩm tại các tỉnh do mình phụ trách. Thông tin đợt giới thiệu bao gồm : Mã nhân viên giới thiệu, các sản phẩm được giới thiệu, số người được giới thiệu, chi phí giới thiệu.
+Khi có khách hàng phản hồi, Công ty sẽ ghi các thông tin: Mã khách hàng, Mã sản phẩm khách quan tâm, địa chỉ (tỉnh, nơi được giới thiệu).

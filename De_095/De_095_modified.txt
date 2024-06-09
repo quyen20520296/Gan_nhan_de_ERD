@@ -1,0 +1,12 @@
+Mỗi sản_phẩm được xác định bởi duy nhất một mã_sản_phẩm, tên_sản_phẩm, đơn_giả.
+Mỗi nhà_cung_cấp được xác định bởi duy nhất một mã_nhà_cung_cấp, tên_nhà_cung cấp, địa_chỉ. 
+Mỗi nhà_cung_cấp có nhiều sản_phẩm.
+Mỗi khách_hàng được xác định bởi duy nhất một mã_khách_hàng, họ_tên, năm_sinh, quê_quán.
+Công ty có nhiều nhân_viên_tiếp_thị.
+Mỗi nhân_viên được xác định bởi duy nhất một mã_nhân_viên, họ_và_tên, ngày_sinh, số_điện_thoại_di_động.
+Một nhân_viên có thể giới_thiệu nhiều sản_phẩm.
+Một sản_phẩm có thể được giới_thiệu bởi nhiều nhân_viên.
+Khi thông_tin_giới_thiệu, phải biết số_người_được_giới_thiệu, chi_phí_giới_thiệu.
+Một khách_hàng có thể phản_hồi nhiều sản_phẩm.
+Một sản_phẩm có thể được phản_hồi bởi nhiều khách_hàng.
+Khi phản_hồi, phải biết địa_chỉ.
