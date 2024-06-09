@@ -1,0 +1,137 @@
+Người	
+quản_trị	
+của	
+một	
+Mạng_xã_hội_Video	
+đã	
+thiết_kế	
+một	
+cơ_sở_dữ_liệu	
+quản_lý	
+Mạng_xã_hội_Video	
+.	F
+
+Sau_đây	
+là	
+một	
+phần	
+của	
+lược_đồ	
+cơ_sở_dữ_liệu	
+.	F
+
+Lược_đồ	
+quan_hệ	
+người_dùng	
+nhằm	
+mô_tả	
+cho	
+những	
+người_dùng	
+đang	
+được_quản_lý	
+.	F
+
+Mỗi	
+người_dùng	E
+được	
+ghi_nhận	
+tên_người_dùng	AE
+,	
+mật_khẩu	AE
+,	
+ngày_đăng_ký	AE
+,	
+quốc_tịch	AE
+và	
+được_ấn_định	
+một	
+mã_người_dùng	PK
+duy_nhất	
+để	
+theo_dõi	
+.	F
+
+Lược_đồ	
+quan_hệ	
+kênh	
+nhằm	
+mô_tả	
+thông_tin	
+kênh	
+chia_sẻ	
+của	
+một	
+người_dùng	
+.	F
+
+Mỗi	
+thông_tin	
+kênh	E
+sẽ	
+bao_gồm	
+tên_kênh	AE
+,	
+số_lượng_người_theo_dõi	AE
+,	
+ngày_tạo_kênh	AE
+và	
+được_đặt	
+một	
+mã_kênh	PK
+duy_nhất	
+để	
+quản_lý	
+.	F
+
+Một	O
+người_dùng	E
+được_phép	
+sở_hữu	R
+nhiều	M
+kênh	E
+khác_nhau	
+.	F
+
+Lược_đồ	
+quan_hệ	E
+video	
+nhằm	
+mô_tả	
+thông_tin	
+những	
+video	
+được_đăng_tải	
+.	F
+
+Thông_tin	
+được_ghi_nhận	
+bao_gồm	
+:	
+mã_video	PK
+duy_nhất	
+,	
+tiêu_đề	AE
+,	
+thời_lượng	AE
+,	
+giới_hạn_độ_tuổi	AE
+.	F
+
+Một	O
+kênh	E
+có_thể	
+chia_sẻ	R
+nhiều	M
+video	E
+và	
+một	O
+video	E
+cũng	
+có_thể	
+được_chia_sẻ	R
+bởi	
+nhiều	M
+kênh	E
+khác_nhau	E
+.	F

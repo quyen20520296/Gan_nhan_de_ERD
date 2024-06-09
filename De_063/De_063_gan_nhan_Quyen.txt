@@ -1,0 +1,149 @@
+Cho	
+lược_đồ	
+cơ_sở_dữ_liệu	
+sau_đây	
+quản_lý	
+kết_quả	
+học_tập	
+của	
+sinh_viên	
+:	
+
+Mỗi	
+sinh_viên	E
+được_xác_định	
+bởi	
+một	
+mã_số_sinh_viên	PK
+duy_nhất	
+,	
+có	
+tên_sinh_viên	AE
+,	
+ngày_sinh	AE
+.	F
+
+Mỗi	
+lớp	E
+có	
+một	
+mã_số_lớp	PK
+duy_nhất	
+để	
+phân_biệt	
+với	
+các	
+lớp	
+khác	
+,	
+có	
+tên_lớp	AE
+,
+sỉ_số	AE
+.	F
+
+Mỗi	
+khoa	E
+có	
+các	
+thông_tin	
+gồm	
+mã_số_khoa	PK
+duy_nhất	
+,	
+tên_khoa	AE
+,	
+văn_phòng	AE
+.	F
+
+Một	O
+khoa	E
+có	
+mở	R
+nhiều	M
+lớp	E
+để	
+sinh_viên	
+đăng_ký	
+học	
+.	F
+
+Do_đó	
+,	
+một	O
+khoa	E
+cũng	
+có	R
+nhiều	M
+sinh_viên	E
+.	F
+
+Một	O
+lớp	E
+cũng	
+có	R
+nhiều	M
+sinh_viên	E
+theo_học	
+.	F
+
+Mỗi	
+môn	E
+có	
+một	
+mã_số_môn	PK
+duy_nhất	
+để	
+phân_biệt	
+với	
+các	
+môn	
+khác	
+,	
+có	
+tên_môn	AE
+,	
+số_tín_chỉ	AE
+.	F
+
+Một	O
+khoa	E
+quản_lý	R
+nhiều	M
+môn	E
+thuộc	
+khoa	
+đó	
+.	F
+
+Một	O
+sinh_viên	E
+có_thể	
+học	R
+nhiều	M
+môn	E
+và	
+một	O
+môn	E
+cũng	
+có_thể	
+được_học	R
+bởi	
+nhiều	M
+sinh_viên	E
+.	F
+
+Khi	
+ghi_lại	
+kết_quả	ER
+,	
+phải	
+biết	
+số_điểm	AR
+của	
+sinh_viên	
+khi	
+theo_học	
+môn	
+đó	
+.	F

@@ -1,0 +1,149 @@
+Cho	
+cơ_sở_dữ_liệu	
+quản_lý	
+hộ_khẩu	
+gồm	
+các	
+quan_hệ	
+như_sau	
+:	
+
+Mỗi	
+người_dân	E
+có	
+các	
+thông_tin	
+gồm	
+số_chứng_minh_nhân_dân	PK
+duy_nhất	
+,	
+có	
+họ_tên	AE
+,	
+ngày_sinh	AE
+,	
+quê_quán	AE
+.	F
+
+Mỗi	O
+người_dân	E
+sống	R
+tại	
+một	O
+địa_chỉ	E
+xác_định	
+và	
+một	O
+địa_chỉ	E
+có_thể	
+có	R
+nhiều	M
+người_dân	E
+cùng	
+sinh_sống	
+.	F
+
+Mỗi	
+địa_chỉ	E
+có	
+các	
+thông_tin	
+gồm	
+mã_địa_chỉ	PK
+duy_nhất	
+,	
+số_nhà	AE
+,	
+tên_đường	AE
+,	
+phường	AE
+,	
+quận	AE
+.	F
+
+Mỗi	
+hộ_khẩu	E
+có	
+một	
+mã_hộ_khẩu	PK
+duy_nhất	
+để	
+phân_biệt	
+với	
+các	
+hộ_khẩu	
+khác	
+.	F
+
+Mỗi	O
+hộ_khẩu	E
+chỉ	
+có	
+duy_nhất	
+một	O
+địa_chỉ	E
+là	
+địa_chỉ	
+thường_trú	R
+của	
+hộ_khẩu	
+đó	
+.	F
+
+Một	O
+người_dân	E
+có_thể	
+được_ghi_nhận	
+trong	
+chi_tiết_hộ_khẩu	R
+của	
+nhiều	M
+hộ_khẩu	E
+và	
+một	O
+hộ_khẩu	E
+cũng	
+có_thể	
+được_đồng_sở_hữu	R
+bởi	
+nhiều	M
+người_dân	E
+.	F
+
+Mỗi	
+quan_hệ_hộ_khẩu	
+thể_hiện	
+mối_quan_hệ	
+giữa	
+những	
+người_dân	
+sở_hữu	
+hộ_khẩu	
+.	F
+
+Thông_tin	
+quan_hệ_hộ_khẩu	E
+gồm	
+một	
+mã_quan_hệ	PK
+duy_nhất	
+để	
+phân_biệt	
+với	
+các	
+quan_hệ	
+khác	
+và	
+có	
+mô_tả_quan_hệ	AE
+.	F
+
+Do_đó	
+,	
+một	O
+quan_hệ_hộ_khẩu	E
+sẽ	
+có	R
+nhiều	M
+chi_tiết_hộ_khẩu	E
+.	F

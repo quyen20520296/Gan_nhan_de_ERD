@@ -1,0 +1,146 @@
+Cho	
+cơ_sở_dữ_liệu	
+quản_lý	
+các	
+khóa_học	
+gồm	
+các	
+quan_hệ	
+như_sau	
+:	
+
+Mỗi	
+thông_tin	E
+phòng_học	
+lưu_trữ	
+một	
+mã_phòng	PK
+duy_nhất	
+và	
+số_lượng_người_tối_đa	AE
+.	F
+
+Mỗi	
+thiết_bị	E
+có	
+các	
+thông_tin	
+gồm	
+mã_thiết_bị	PK
+duy_nhất	
+,	
+tên_thiết_bị	AE
+,	
+số_lượng_hiện_tại	AE
+.	F
+
+Mỗi	
+giảng_viên	E
+có	
+một	
+mã_giảng_viên	PK
+duy_nhất	
+để	
+phân_biệt	
+với	
+các	
+giảng_viên	
+khác	
+,	
+có	
+tên_giảng_viên	AE
+,	
+năm_sinh	AE
+,	
+phái	AE
+.	F
+
+Mỗi	
+khóa_học	E
+có	
+một	
+mã_khóa_học	PK
+duy_nhất	
+để	
+quản_lý	
+,	
+có	
+ngày_bắt_đầu	AE
+,	
+số_ngày	AE
+,	
+số_người_tham_gia	AE
+.	F
+
+Một	O
+phòng_học	E
+có	R
+nhiều	M
+khóa_học	E
+.	F
+
+Một	O
+khóa_học	E
+có_thể	
+sử_dụng	R
+nhiều	M
+thiết_bị	E
+để	
+phục_vụ	
+cho	
+công_tác	
+giảng_dạy	
+.	F
+
+Một	O
+thiết_bị	E
+cũng	
+có_thể	
+được_sử_dụng	R
+để	
+giảng_dạy	
+trong	
+nhiều	M
+khóa_học	E
+.	F
+
+Khi	
+ghi_lại	
+thông_tin	
+sử_dụng_thiết_bị	ER
+,	
+cần	
+phải	
+biết	
+số_lượng_sử_dụng	AR
+.	F
+
+Một	O
+giảng_viên	E
+có_thể	
+giảng_dạy	R
+trong	
+nhiều	M
+khóa_học	E
+và	
+một	O
+khóa_học	E
+có_thể	
+được_giảng_dạy	R
+bởi	
+nhiều	M
+giảng_viên	E
+.	F
+
+Khi	
+ghi_lại	
+thông_tin	
+giảng_dạy	ER
+,	
+hệ_thống	
+cần	
+lưu_trữ	
+ngày_bắt_đầu	AR
+và	
+ngày_kết_thúc	AR
+.	F

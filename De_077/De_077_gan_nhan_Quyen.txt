@@ -1,0 +1,172 @@
+Để	
+quản_lý	
+việc	
+phân_công	
+các	
+nhân_viên	
+tham_gia	
+vào	
+xây_dựng	
+các	
+công_trình	
+,	
+công_ty_xây_dựng_ABC	
+tổ_chức	
+quản_lý	
+như_sau	
+:	
+
+Cùng	
+một	
+lúc	
+công_ty	
+có_thể	
+tham_gia	
+xây_dựng	
+nhiều	
+công_trình	
+,	
+mỗi	
+công_trình	E
+có	
+một	
+mã_công_trình	PK
+duy_nhất	
+,	
+mỗi	
+mã_công_trình	
+xác_định	
+các	
+thông_tin	
+như	
+:	
+tên_công_trình	AE
+,	
+địa_điểm	AE
+,	
+ngày_công_trình_được_cấp_phép_xây_dựng	AE
+,	
+ngày_khởi_công	AE
+,	
+ngày_hoàn_thành	AE
+.	F
+
+Mỗi	
+nhân_viên	E
+của	
+công_ty_ABC	
+có	
+một	
+mã_nhân_viên	PK
+duy_nhất	
+,	
+một	
+mã_nhân_viên	
+xác_định	
+các	
+thông_tin	
+như	
+:	
+họ_tên	AE
+,	
+ngày_sinh	AE
+,	
+phái	AE
+,	
+địa_chỉ	AE
+.	F
+
+Mỗi	O
+nhân_viên	E
+phải	
+chịu	
+sự	
+quản_lý_hành_chánh	R
+bởi	
+một	O
+phòng_ban	E
+.	F
+
+Tất_nhiên	
+một	O
+phòng_ban	E
+quản_lý_hành_chánh	R
+nhiều	M
+nhân_viên	E
+.	F
+
+Công_ty	
+có	
+nhiều	
+phòng_ban	
+(	
+Phòng_kế_toán	
+,	
+phòng_kinh_doanh	
+,	
+phòng_kỹ_thuật	
+,	
+phòng_tổ_chức	
+,	
+phòng_chuyên_môn	
+,	
+phòng_phục_vụ	
+,	
+…	
+)	
+.	F
+
+Mỗi	
+phòng_ban	E
+có	
+một	
+mã_phòng_ban	PK
+duy_nhất	
+,	
+mã_phòng_ban	
+xác_định	
+tên_phòng_ban	AE
+.	F
+
+Công_ty	
+phân_công	
+các	
+nhân_viên	
+tham_gia	
+vào	
+các	
+công_trình	
+,	
+mỗi	O
+công_trình	E
+có_thể	
+được_phân	R
+cho	
+nhiều	M
+nhân_viên	E
+và	
+mỗi	O
+nhân_viên	E
+cùng_lúc	
+cũng	
+có_thể	
+tham_gia	R
+vào	
+nhiều	M
+công_trình	E
+.	F
+
+Với	
+mỗi	
+công_trình	
+một	
+nhân_viên	
+có	
+một	
+số_lượng_ngày_công	AR
+đã	
+tham_gia	ER
+vào	
+công_trình	
+đó	
+.	F

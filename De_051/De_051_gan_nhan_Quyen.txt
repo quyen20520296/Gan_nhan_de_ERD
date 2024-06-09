@@ -1,0 +1,152 @@
+Hệ_thống	
+phòng_khám	
+quốc_tế	
+Singapore	
+tại	
+Sài_Gòn	
+có	
+một	
+phần	
+lược_đồ	
+cơ_sở_dữ_liệu	
+toàn_cục	
+như_sau	
+:	
+
+Thông_tin	
+phòng_khám	E
+bao_gồm	
+:	
+mã_phòng_khám	PK
+duy_nhất	
+,	
+tên_phòng_khám	AE
+,	
+địa_chỉ	AE
+,	
+quận	AE
+,	
+điện_thoại	AE
+.	F
+
+Một	O
+phòng_khám	E
+sẽ	
+có	R
+nhiều	M
+chuyên_khoa	E
+.	F
+
+Thông_tin	
+chuyên_khoa	E
+bao_gồm	
+:	
+mã_chuyên_khoa	PK
+duy_nhất	
+,	
+tên_khoa	AE
+.	F
+
+Thông_tin	
+bệnh_nhân	E
+bao_gồm	
+:	
+mã_bệnh_nhân	PK
+duy_nhất	
+,	
+tên_bệnh_nhân	AE
+,	
+ngày_sinh	AE
+,	
+địa_chỉ	AE
+,	
+điện_thoại	AE
+,	
+giới_tính	AE
+.	F
+
+Thông_tin	
+bác_sĩ	E
+bao_gồm	
+:	
+mã_bác_sĩ	PK
+duy_nhất	
+,	
+tên_bác_sĩ	AE
+,	
+tên_đăng_nhập	AE
+,	
+mật_khẩu	AE
+.	F
+
+Một	O
+bác_sĩ	E
+thuộc	R
+một	O
+chuyên_khoa	E
+cụ_thể	
+và	
+một	O
+chuyên_khoa	E
+sẽ	
+có	R
+nhiều	M
+bác_sĩ	E
+.	F
+
+Thông_tin	
+khám_bệnh	E
+bao_gồm	
+:	
+mã_khám_bệnh	PK
+duy_nhất	
+,	
+yêu_cầu_khám	AE
+,	
+ngày_khám	AE
+,	
+kết_luận	AE
+.	F
+
+Một	O
+bệnh_nhân	E
+có	
+khả_năng	
+đến_khám	
+nhiều	
+lần	
+nên	
+sẽ	
+có	R
+nhiều	M
+khám_bệnh	E
+.	F
+
+Một	O
+bác_sĩ	E
+thực_hiện	
+khám	
+nhiều	
+lần	
+nên	
+cũng	
+có	R
+nhiều	M
+khám_bệnh	E
+.	F
+
+Một	O
+phòng_khám	E
+được_lập_ra	
+để	
+khám	
+cho	
+nhiều	
+người	
+nên	
+cũng	
+sẽ	
+có	R
+nhiều	M
+khám_bệnh	E
+.	F

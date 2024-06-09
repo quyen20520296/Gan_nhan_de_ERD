@@ -1,0 +1,73 @@
+Một	
+công_ty	
+có	
+một_số	
+nhân_viên	
+.	F
+
+Thuộc_tính	
+của	
+nhân_viên	E
+gồm_có	
+mã_nhân_viên	PK
+(	
+danh_định	
+)	
+,	
+tên_nhân_viên	AE
+,	
+địa_chỉ	AE
+,	
+ngày_sinh	AE
+.	F
+
+Hiện	
+công_ty	
+thực_hiện	
+một_vài	
+dự_án	
+.	F
+
+Thông_tin	
+về	
+dự_án	E
+bao_gồm	
+có	
+mã_dự_án	PK
+(	
+danh_định	
+)	
+,	
+tên_dự_án	AE
+và	
+ngày_bắt_đầu	AE
+.	F
+
+Một	O
+nhân_viên	E
+có_thể	
+không	
+tham_gia	
+hoặc	
+tham_gia	R
+một	
+hay	
+nhiều	M
+dự_án	E
+.	F
+
+Một	O
+dự_án	E
+có_thể	
+có	R
+nhiều	M
+nhân_viên	E
+.	F
+
+Khi	
+tham_gia	ER
+,	
+phải	
+biết	
+tiền_lương	AR
+.	F

@@ -1,0 +1,108 @@
+Cho	
+lược_đồ	
+toàn_cục	
+của	
+cơ_sở_dữ_liệu	
+dành_cho	
+quản_lý	
+giao_dịch	
+ngân_hàng	
+:	
+
+Mỗi	
+chi_nhánh	E
+có	
+một	
+mã_chi_nhánh	PK
+duy_nhất	
+và	
+tên_chi_nhánh	AE
+.	F
+
+Một	O
+chi_nhánh	E
+có	R
+nhiều	M
+nhân_viên	E
+làm_việc	
+.	F
+
+Mỗi	
+nhân_viên	E
+có	
+một	
+mã_nhân_viên	PK
+duy_nhất	
+,	
+có	
+tên_nhân_viên	AE
+.	F
+
+Mỗi	
+khách_hàng	E
+có	
+một	
+mã_khách_hàng	PK
+duy_nhất	
+,	
+có	
+tên_khách_hàng	AE
+.	F
+
+Một	O
+chi_nhánh	E
+có	R
+nhiều	M
+khách_hàng	E
+đến	
+giao_dịch	
+.	F
+
+Mỗi	
+giao_dịch	E
+ngân_hàng	
+có	
+một	
+mã_giao_dịch	PK
+duy_nhất	
+,	
+có	
+số_tiền	AE
+,	
+ngày_giao_dịch	AE
+,	
+nội_dung	AE
+.	F
+
+Một	
+khách_hàng	
+có_thể	
+ghé	
+ngân_hàng	
+giao_dịch	
+nhiều	
+lần	
+nên	
+một	O
+khách_hàng	E
+sẽ	
+có	R
+nhiều	M
+giao_dịch	E
+.	F
+
+Một	O
+nhân_viên	E
+có	
+nhiệm_vụ	
+thực_hiện	
+giao_dịch	
+cho	
+khách_hàng	
+nên	
+cũng	
+sẽ	
+có	R
+nhiều	M
+giao_dịch	E
+.	F

@@ -1,0 +1,122 @@
+Mỗi	
+khách_hàng	E
+có	
+một	
+mã_khách_hàng	PK
+duy_nhất	
+,	
+mỗi	
+mã_khách_hàng	
+xác_định_được	
+các	
+thông_tin	
+về	
+khách_hàng	
+như	
+:	
+họ_tên_khách_hàng	AE
+,	
+địa_chỉ	AE
+,	
+số_điện_thoại	AE
+.	F
+
+Các	
+mặt_hàng	
+được	
+phân_loại	
+theo	
+từng	
+nhóm_hàng	
+,	
+mỗi	
+nhóm_hàng	E
+có	
+một	
+mã_nhóm	PK
+duy_nhất	
+,	
+mỗi	
+mã_nhóm	
+xác_định	
+tên_nhóm	AE
+,	
+tất_nhiên	
+một	O
+nhóm_hàng	E
+có_thể	
+có	R
+nhiều	M
+mặt_hàng	E
+.	F
+
+Mỗi	
+mặt_hàng	E
+được	
+đánh	
+một	
+mã_hàng	PK
+duy_nhất	
+,	
+mỗi	
+mã_hàng	
+này	
+xác_định	
+các	
+thông_tin	
+về	
+mặt_hàng	
+đó	
+như	
+:	
+tên_hàng	AE
+,	
+đơn_giá_bán	AE
+,	
+đơn_vị_tính	AE
+.	F
+
+Mỗi	
+hóa_đơn	E
+được_xác_định	
+bởi	
+duy_nhất	
+một	
+số_hóa_đơn	PK
+,	
+ngày_lập_hóa_đơn	AE
+,	
+ngày_giao_hàng	AE
+.	F
+
+Một	O
+khách_hàng	E
+có	R
+nhiều	M
+hóa_đơn	E
+.	F
+
+Một	O
+mặt_hàng	E
+có_thể	
+xuất_bán	R
+trong	
+nhiều	M
+hóa_đơn	E
+.	F
+
+Một	O
+hóa_đơn	E
+có_thể	
+chứa	R
+nhiều	M
+mặt_hàng	E
+.	F
+
+Khi	
+xuất_bán	ER
+,	
+phải	
+biết	
+số_lượng_bán	AR
+.	F

@@ -1,0 +1,82 @@
+Xét	
+cơ_sở_dữ_liệu	
+của	
+một	
+công_ty	
+phần_mềm	
+:	
+
+Bảng	
+nhân_viên	E
+gồm	
+mã_nhân_viên	PK
+(	
+danh_định	
+)	
+,	
+tên_nhân_viên	AE
+.	F
+
+Bảng	
+chức_vụ	E
+gồm	
+tên_chức_vụ	PK
+(	
+danh_định	
+)	
+,	
+mức_lương	AE
+.	F
+
+Một	O
+chức_vụ	E
+sẽ	
+được_gán	R
+cho	
+nhiều	M
+nhân_viên	E
+khác_nhau	
+.	F
+
+Bảng	
+dự_án	E
+gồm	
+mã_dự_án	PK
+(	
+danh_định	
+)	
+,	
+tên_dự_án	AE
+,	
+ngân_sách	AE
+.	F
+
+Một	O
+nhân_viên	E
+có_thể	
+triển_khai	R
+nhiều	M
+dự_án	E
+và	
+một	O
+dự_án	E
+có_thể	
+được_triển_khai	R
+bởi	
+nhiều	M
+nhân_viên	E
+.	F
+
+Khi	
+ghi_lại	
+hồ_sơ	ER
+triển_khai	
+dự_án	
+,	
+cần	
+phải	
+biết	
+nhiệm_vụ	AR
+và	
+thời_gian	AR
+.	F

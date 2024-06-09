@@ -1,0 +1,135 @@
+Cho	
+lược_đồ	
+cơ_sở_dữ_liệu	
+quản_lý	
+thi_tốt_nghiệp	
+tại	
+các	
+trường	
+Phổ_thông_Trung_học	
+Quận_9	
+như_sau	
+:	
+
+Mỗi	
+trường_thi	E
+có	
+mã_trường_thi	PK
+duy_nhất	
+,	
+tên_trường_thi	AE
+,	
+địa_chỉ_trường_thi	AE
+.	F
+
+Một	O
+trường_thi	E
+có	R
+nhiều	M
+phòng_thi	E
+.	F
+
+Mỗi	
+phòng_thi	E
+có	
+một	
+số_phòng_thi	PK
+duy_nhất	
+để	
+phân_biệt	
+với	
+các	
+phòng_thi	
+khác	
+,	
+có	
+sức_chứa	AE
+.	F
+
+Một	O
+phòng_thi	E
+có	R
+nhiều	M
+thí_sinh	E
+tập_trung_thi	
+.	F
+
+Mỗi	
+thí_sinh	E
+có	
+một	
+số_báo_danh	PK
+duy_nhất	
+để	
+phân_biệt	
+với	
+các	
+thí_sinh	
+khác	
+,	
+có	
+họ_tên_thí_sinh	AE
+,	
+ngày_sinh	AE
+,	
+giới_tính	AE
+,	
+địa_chỉ	AE
+.	F
+
+Mỗi	
+môn_thi	E
+có	
+một	
+mã_môn_thi	PK
+duy_nhất	
+để	
+phân_biệt	
+với	
+các	
+môn_thi	
+khác	
+,	
+có	
+tên_môn_thi	AE
+,	
+buổi_thi	AE
+,	
+ngày_thi	AE
+.	F
+
+Một	O
+thí_sinh	E
+có_thể	
+tham_gia	
+thi	R
+nhiều	M
+môn_thi	E
+và	
+một	O
+môn_thi	E
+cũng	
+có_thể	
+được_tổ_chức	R
+cho	
+nhiều	M
+thí_sinh	E
+thi	
+.	F
+
+Khi	
+lưu_trữ	
+kết_quả_thi	ER
+,	
+cần	
+phải	
+ghi_lại	
+điểm_thi	AR
+và	
+trạng_thái	
+thí_sinh	
+có	
+vắng_thi	AR
+hay	
+không	
+.	F

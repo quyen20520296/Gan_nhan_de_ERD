@@ -1,0 +1,137 @@
+Ngân_hàng_ABC	
+muốn	
+xây_dựng	
+một	
+hệ_thống_thông_tin	
+quản_lý	
+tài_khoản	
+khách_hàng	
+với	
+cơ_sở_dữ_liệu	
+như_sau	
+:	
+
+Thông_tin	
+chi_nhánh	E
+gồm	
+:	
+mã_chi_nhánh	PK
+duy_nhất	
+để	
+phân_biệt	
+với	
+các	
+chi_nhánh	
+khác	
+,	
+tên_chi_nhánh	AE
+và	
+thành_phố	AE
+.	F
+
+Mỗi	O
+chi_nhánh	E
+có	R
+nhiều	M
+khách_hàng	E
+.	F
+
+Lược_đồ	
+khách_hàng	E
+gồm	
+:	
+mã_khách_hàng	PK
+duy_nhất	
+,	
+họ_tên_khách_hàng	AE
+,	
+ngày_sinh	AE
+,	
+địa_chỉ	AE
+,	
+nghề_nghiệp	AE
+,	
+nơi_công_tác	AE
+,	
+điện_thoại	AE
+,	
+chứng_minh_nhân_dân	AE
+.	F
+
+Thông_tin	
+loại_tài_khoản	E
+có	
+mã_loại_tài_khoản	PK
+duy_nhất	
+,	
+tên_loại_tài_khoản	AE
+và	
+mô_tả	AE
+.	F
+
+Thông_tin	
+tài_khoản	E
+có	
+số_tài_khoản	PK
+duy_nhất	
+để	
+phân_biệt	
+với	
+các	
+tài_khoản	
+khác	
+,	
+ngày_mở	AE
+,	
+ngày_đóng	AE
+,	
+lãi_suất	AE
+,	
+trạng_thái	AE
+.	F
+
+Một	O
+loại_tài_khoản	E
+có	R
+nhiều	M
+tài_khoản	E
+.	F
+
+Một	O
+chi_nhánh	E
+có	R
+nhiều	M
+tài_khoản	E
+.	F
+
+Một	O
+tài_khoản	E
+có_thể	
+thuộc_về	R
+một	
+hay	
+nhiều	M
+khách_hàng	E
+.	F
+
+Một	O
+khách_hàng	E
+cũng	
+có_thể	
+có	R
+nhiều	M
+tài_khoản	E
+.	F
+
+Khi	
+lưu	
+thông_tin	
+tài_khoản_khách_hàng	ER
+,	
+phải	
+biết	
+số_tiền	AR
+có	
+trong	
+tài_khoản	
+.	F

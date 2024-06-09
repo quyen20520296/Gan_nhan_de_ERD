@@ -1,0 +1,113 @@
+Cho	
+lược_đồ	
+toàn_cục	
+của	
+cơ_sở_dữ_liệu	
+dành_cho	
+quản_lý	
+hệ_thống	
+cửa_hàng_tiện_lợi	
+:	
+
+Mỗi	
+cửa_hàng	E
+có	
+một	
+mã_cửa_hàng	PK
+duy_nhất	
+và	
+tên_cửa_hàng	AE
+.	F
+
+Một	O
+cửa_hàng	E
+có	R
+nhiều	M
+nhân_viên	E
+làm_việc	
+.	F
+
+Mỗi	
+nhân_viên	E
+có	
+một	
+mã_nhân_viên	PK
+duy_nhất	
+,	
+có	
+tên_nhân_viên	AE
+.	F
+
+Mỗi	
+khách_hàng	E
+có	
+một	
+mã_khách_hàng	PK
+duy_nhất	
+,	
+có	
+tên_khách_hàng	AE
+.	F
+
+Một	O
+cửa_hàng	E
+sẽ	
+có	R
+nhiều	M
+khách_hàng	E
+đăng_ký	
+làm	
+thành_viên	
+.	F
+
+Mỗi	
+hóa_đơn	E
+mua_sắm	
+tại	
+cửa_hàng	
+có	
+một	
+mã_hóa_đơn	PK
+duy_nhất	
+,	
+có	
+số_tiền	AE
+,	
+ngày_hóa_đơn	AE
+và	
+nội_dung	AE
+.	F
+
+Mỗi	O
+khách_hàng	E
+được_phép	
+mua_sắm	
+nhiều	
+lần	
+tại	
+cửa_hàng	
+nên	
+sẽ	
+có	R
+nhiều	M
+hóa_đơn	E
+.	F
+
+Nhiệm_vụ	
+của	
+nhân_viên	
+bao_gồm	
+việc	
+xuất	
+hóa_đơn	
+cho	
+khách_hàng	
+nên	
+một	O
+nhân_viên	E
+cũng	
+sẽ	
+có	R
+nhiều	M
+hóa_đơn	E
+.	F

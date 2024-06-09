@@ -1,0 +1,88 @@
+Cho	
+cơ_sở_dữ_liệu	
+quản_lý	
+sản_phẩm	
+gồm	
+các	
+quan_hệ	
+như_sau	
+:	
+
+Thông_tin	
+loại_sản_phẩm	E
+được_lưu_trữ	
+gồm	
+:	
+mã_loại	PK
+(	
+danh_định	
+)	
+,	
+mô_tả	AE
+,	
+hạn_lưu_kho	AE
+.	F
+
+Thông_tin	
+sản_phẩm	E
+được_lưu_trữ	
+gồm	
+:	
+mã_sản_phẩm	PK
+(	
+danh_định	
+)	
+,	
+tên_sản_phẩm	AE
+.	F
+
+Một	O
+loại_sản_phẩm	E
+có	R
+nhiều	M
+sản_phẩm	E
+.	F
+
+Thông_tin	
+phiếu_nhập_xuất	E
+được_lưu_trữ	
+gồm	
+:	
+mã_số_phiếu	PK
+(	
+danh_định	
+)	
+,	
+ngày_nhập_xuất	AE
+,	
+loại_phiếu	AE
+.	F
+
+Một	O
+phiếu_nhập_xuất	E
+có_thể	
+ghi_nhận	R
+nhiều	M
+sản_phẩm	E
+.	F
+
+Một	O
+sản_phẩm	E
+có_thể	
+được_lưu_trữ	R
+trong	
+nhiều	M
+phiếu_nhập_xuất	E
+.	F
+
+Khi	
+ghi_lại	
+thông_tin	
+chi_tiết_phiếu	ER
+,	
+phải	
+biết	
+số_lượng	AR
+của	
+sản_phẩm	
+.	F

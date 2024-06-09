@@ -1,0 +1,101 @@
+Cho	
+cơ_sở_dữ_liệu	
+về	
+quản_lý	
+đề_tài	
+gồm	
+các	
+quan_hệ	
+sau	
+:	
+
+Quan_hệ	
+đề_tài	E
+có	
+mã_đề_tài	PK
+duy_nhất	
+và	
+tên_đề_tài	AE
+.	F
+
+Mỗi	
+một	O
+đề_tài	E
+thuộc	R
+duy_nhất	
+một	O
+khoa	E
+quản_lý	
+và	
+một	O
+khoa	E
+sẽ	
+quản_lý	R
+nhiều	M
+đề_tài	E
+.	F
+
+Quan_hệ	
+khoa	E
+có	
+mã_khoa	PK
+duy_nhất	
+và	
+tên_khoa	AE
+.	F
+
+Quan_hệ	
+sinh_viên	E
+có	
+mã_sinh_viên	PK
+duy_nhất	
+,	
+họ_và_tên_đệm_sinh_viên	AE
+,	
+tên_sinh_viên	AE
+.	F
+
+Mỗi	
+một	O
+sinh_viên	E
+thuộc	R
+duy_nhất	
+một	O
+khoa	E
+quản_lý	
+và	
+một	O
+khoa	E
+sẽ	
+quản_lý	R
+nhiều	M
+sinh_viên	E
+.	F
+
+Một	O
+sinh_viên	E
+có_thể	
+làm	R
+nhiều	M
+đề_tài	E
+và	
+một	O
+đề_tài	E
+có_thể	
+do	
+một	
+nhóm	M
+sinh_viên	E
+cùng_làm	R
+.	F
+
+Khi	
+ghi_lại	
+thông_tin	
+thực_hiện_đề_tài	ER
+,	
+phải	
+có	
+giá_trị	
+trưởng_nhóm	AR
+.	F

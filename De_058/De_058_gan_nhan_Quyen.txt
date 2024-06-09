@@ -1,0 +1,92 @@
+Một	
+bệnh_viện	
+đang	
+vận_hành	
+có	
+lược_đồ	
+cơ_sở_dữ_liệu	
+quản_lý	
+phòng_khám	
+như_sau	
+:	
+
+Mỗi	
+phòng_khám	E
+có	
+mã_phòng_khám	PK
+duy_nhất	
+,	
+tên_phòng_khám	AE
+,	
+thành_phố	AE
+,	
+điện_thoại	AE
+.	F
+
+Mỗi	
+bệnh_nhân	E
+có	
+mã_bệnh_nhân	PK
+duy_nhất	
+,	
+tên_bệnh_nhân	AE
+,	
+giới_tính	AE
+,	
+địa_chỉ	AE
+,	
+điện_thoại	AE
+và	
+ngày_sinh	AE
+.	F
+
+Mỗi	
+bác_sĩ	E
+có	
+mã_bác_sĩ	PK
+duy_nhất	
+,	
+tên_bác_sĩ	AE
+,	
+tên_đăng_nhập	AE
+,	
+mật_khẩu	AE
+.	F
+
+Mỗi	O
+bác_sĩ	E
+có	R
+nhiều	M
+khám_bệnh	E
+.	F
+
+Mỗi	O
+bệnh_nhân	E
+có	R
+nhiều	M
+khám_bệnh	E
+.	F
+
+Mỗi	O
+phòng_khám	E
+có	R
+nhiều	M
+khám_bệnh	E
+.	F
+
+Bệnh_nhân	
+mỗi	
+lần	
+đến	
+khám_bệnh	E
+có	
+mã_khám_bệnh	PK
+duy_nhất	
+,	
+có	
+yêu_cầu_khám	AE
+,	
+ngày_khám	AE
+,	
+kết_luận	AE
+.	F

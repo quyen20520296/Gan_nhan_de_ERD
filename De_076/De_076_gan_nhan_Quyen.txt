@@ -1,0 +1,130 @@
+Một	
+thư_viện	
+tổ_chức	
+việc	
+cho_mượn_sách	
+như_sau	
+:	
+
+Mỗi	
+quyển_sách	E
+được	
+đánh	
+một	
+mã_sách	PK
+dùng	
+để	
+phân_biệt	
+với	
+các	
+quyển_sách	
+khác	
+(	
+giả_sử	
+nếu	
+một	
+tác_phẩm	
+có	
+nhiều	
+bản	
+giống_nhau	
+hoặc	
+có	
+nhiều	
+tập	
+thì	
+cũng	
+xem	
+là	
+có	
+mã_sách	
+khác_nhau	
+)	
+,	
+mỗi	
+mã_sách	
+xác_định	
+các	
+thông_tin	
+khác	
+như	
+:	
+tên_sách	AE
+,	
+tên_tác_giả	AE
+,	
+nhà_xuất_bản	AE
+,	
+năm_xuất_bản	AE
+.	F
+
+Mỗi	
+độc_giả	E
+được	
+thư_viện	
+cấp_cho	
+một	
+thẻ_thư_viện	
+,	
+trong_đó	
+có	
+ghi_rõ	
+mã_độc_giả	PK
+,	
+cùng_với	
+các	
+thông_tin	
+khác	
+như	
+:	
+họ_tên	AE
+,	
+ngày_sinh	AE
+,	
+địa_chỉ	AE
+,	
+nghề_nghiệp	AE
+.	F
+
+Mỗi	
+phiếu_mượn	E
+được_xác_định	
+bởi	
+duy_nhất	
+một	
+số_phiếu_mượn	PK
+,	
+ngày_mượn	AE
+.	F
+
+Một	O
+độc_giả	E
+có	R
+nhiều	M
+phiếu_mượn	E
+.	F
+
+Một	O
+phiếu_mượn	E
+có_thể	
+mượn	R
+nhiều	M
+quyển_sách	E
+.	F
+
+Một	O
+quyển_sách	E
+có_thể	
+được_mượn	R
+trong	
+nhiều	M
+phiếu_mượn	E
+.	F
+
+Khi
+mượn	ER
+,	
+phải	
+biết	
+ngày_trả	AR
+.	F

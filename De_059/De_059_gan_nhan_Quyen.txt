@@ -1,0 +1,152 @@
+Cho	
+một	
+lược_đồ	
+cơ_sở_dữ_liệu	
+quản_lý	
+ghi_danh	
+tại	
+một	
+trung_tâm_thể_thao	
+gồm	
+các	
+quan_hệ	
+như_sau	
+:	
+
+Quan_hệ	
+khóa_học	E
+có	
+mã_khóa_học	PK
+duy_nhất	
+để	
+phân_biệt	
+với	
+các	
+khóa_học	
+khác	
+,	
+có	
+tên_khóa_học	AE
+,	
+ngày_bắt_đầu	AE
+,	
+ngày_kết_thúc	AE
+.	F
+
+Quan_hệ	
+giáo_viên	E
+có	
+các	
+thông_tin	
+gồm	
+:	
+mã_giáo_viên	PK
+duy_nhất	
+,	
+tên_giáo_viên	AE
+,	
+địa_chỉ	AE
+,	
+điện_thoại	AE
+.	F
+
+Quan_hệ	
+học_viên	E
+có	
+mã_học_viên	PK
+duy_nhất	
+để	
+quản_lý	
+,	
+có	
+tên_học_viên	AE
+,	
+phái	AE
+,	
+ngày_sinh	AE
+,	
+địa_chỉ	AE
+.	F
+
+Quan_hệ	
+lớp_học	E
+gồm	
+các	
+thông_tin	
+:	
+mã_lớp	PK
+(	
+danh_định	
+)	
+và	
+học_phí	AE
+.	F
+
+Một	O
+giáo_viên	E
+sẽ	
+được_chỉ_định	
+dạy	R
+trong	
+nhiều	M
+lớp_học	E
+.	F
+
+Một	O
+khóa_học	E
+mở	R
+nhiều	M
+lớp_học	E
+để	
+giảng_dạy	
+.	F
+
+Khi	
+học_viên	
+đóng	
+học_phí	
+sẽ	
+được_ghi_nhận_lại	
+biên_lai	
+.	F
+
+Quan_hệ	
+biên_lai	E
+gồm	
+các	
+thông_tin	
+:	
+số_biên_lai	PK
+(	
+danh_định	
+)	
+,	
+ngày_nộp	AE
+,	
+số_tiền	AE
+.	F
+
+Mỗi	
+học_viên	
+có_thể	
+học	
+nhiều	
+lớp_học	
+tại	
+trung_tâm	
+nên	
+mỗi	O
+học_viên	E
+sẽ	
+có	R
+nhiều	M
+biên_lai	E
+và	
+một	O
+lớp_học	E
+cũng	
+được_ghi_nhận	R
+trong	
+nhiều	M
+biên_lai	E
+.	F

@@ -1,0 +1,116 @@
+Một	
+bệnh_viện	
+có	
+rất	
+nhiều	
+bác_sĩ	
+.	F
+
+Thuộc_tính	
+của	
+bác_sĩ	E
+gồm	
+mã_bác_sĩ	PK
+(	
+danh_định	
+)	
+,	
+tên_bác_sĩ	AE
+,	
+ngày_vào_làm_việc	AE
+và	
+chuyên_môn	AE
+.	F
+
+Các	
+bệnh_nhân	
+được_nhận	
+vào	
+bệnh_viện	
+thông_qua	
+các	
+bác_sĩ	
+.	F
+
+Thuộc_tính	
+của	
+bệnh_nhân	E
+bao_gồm	
+mã_bệnh_nhân	PK
+(	
+danh_định	
+)	
+và	
+tên_bệnh_nhân	AE
+.	F
+
+Một	O
+bệnh_nhân	E
+do	
+một	O
+(	
+và	
+chỉ	
+một	
+)	
+bác_sĩ	E
+nhận	R
+vào	
+bệnh_viện	
+.	F
+
+Một	O
+bác_sĩ	E
+có_thể	
+nhận	R
+nhiều	M
+bệnh_nhân	E
+.	F
+
+Một	O
+bệnh_nhân	E
+có_thể	
+được_điều_trị	R
+bởi	
+nhiều	M
+bác_sĩ	E
+.	F
+
+Một	O
+bác_sĩ	E
+có_thể	
+không	
+điều_trị	
+cho	
+bệnh_nhân	
+nào	
+hoặc	
+điều_trị	R
+nhiều	M
+bệnh_nhân	E
+.	F
+
+Bệnh_viện	
+cần	
+lưu	
+chi_tiết	
+về	
+mỗi	
+lần	
+một	
+bác_sĩ	
+điều_trị	
+cho	
+một	
+bệnh_nhân	
+.	F
+
+Chi_tiết_điều_trị	ER
+bao_gồm	
+:	
+ngày_điều_trị	AR
+,	
+thời_gian_điều_trị	AR
+và	
+kết_quả	AR
+.	F

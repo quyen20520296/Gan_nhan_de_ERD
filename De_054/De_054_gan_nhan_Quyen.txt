@@ -1,0 +1,152 @@
+Người	
+quản_trị	
+của	
+một	
+sân_bay	
+muốn	
+quản_lý	
+các	
+chuyến_bay	
+,	
+đã	
+thiết_kế	
+một	
+cơ_sở_dữ_liệu	
+quản_lý	
+chuyến_bay	
+như_sau	
+:	
+
+Lược_đồ	
+quan_hệ	
+hãng_hàng_không	
+nhằm	
+mô_tả	
+cho	
+những	
+hãng_hàng_không	
+đang	
+được_quản_lý	
+.	F
+
+Mỗi	
+hãng_hàng_không	E
+được_ghi_nhận	
+tên_hãng	AE
+,	
+ngày_thành_lập	AE
+,	
+số_đường_bay	AE
+và	
+được_ấn_định	
+một	
+mã_hãng	PK
+duy_nhất	
+để	
+theo_dõi	
+.	F
+
+Một	O
+hãng_hàng_không	E
+sẽ	
+có	R
+nhiều	M
+chuyến_bay	E
+hoạt_động	
+.	F
+
+Lược_đồ	
+quan_hệ	
+chuyến_bay	
+nhằm	
+mô_tả	
+thông_tin	
+các	
+chuyến_bay	
+.	F
+
+Mỗi	
+thông_tin	
+chuyến_bay	E
+sẽ	
+bao_gồm	
+điểm_xuất_phát	AE
+,	
+điểm_đến	AE
+,	
+thời_điểm_bắt_đầu	AE
+,	
+thời_gian_bay_dự_kiến	AE
+và	
+được_đặt	
+một	
+mã_chuyến_bay	PK
+duy_nhất	
+để	
+quản_lý	
+.	F
+
+Lược_đồ	
+quan_hệ	
+nhân_viên	E
+nhằm	
+mô_tả	
+thông_tin	
+những	
+nhân_viên	
+của	
+hãng_hàng_không	
+.	F
+
+Thông_tin	
+được_ghi_nhận	
+bao_gồm	
+:	
+mã_nhân_viên	PK
+duy_nhất	
+,	
+họ_tên	AE
+,	
+giới_tính	AE
+,	
+ngày_sinh	AE
+,	
+ngày_vào_làm	AE
+,	
+chuyên_môn	AE
+.	F
+
+Một	O
+chuyến_bay	E
+có_thể	
+phân_công	R
+cho	
+nhiều	M
+nhân_viên	E
+làm_việc	
+.	F
+
+Một	O
+nhân_viên	E
+cũng	
+có_thể	
+được_phân_công	R
+làm_việc	
+trên	
+nhiều	M
+chuyến_bay	E
+.	F
+
+Khi	
+ghi_lại	
+thông_tin	
+phân_công	ER
+,	
+hệ_thống	
+cần	
+biết	
+nhiệm_vụ	AR
+của	
+nhân_viên	
+được_phân_công	
+.	F

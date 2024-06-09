@@ -1,0 +1,133 @@
+Cho	
+cơ_sở_dữ_liệu	
+về	
+quản_lý	
+các	
+dự_án	
+gồm	
+các	
+quan_hệ	
+sau	
+:	
+
+Quan_hệ	
+nhân_viên	E
+lưu_trữ	
+các	
+thông_tin	
+gồm	
+:	
+mã_nhân_viên	PK
+(	
+danh_định	
+)	
+,	
+họ_và_tên_đệm	AE
+,	
+tên	AE
+,	
+ngày_sinh	AE
+,	
+địa_chỉ	AE
+,	
+giới_tính	AE
+,	
+bậc_lương	AE
+.	F
+
+Mỗi	O
+nhân_viên	E
+thuộc	R
+một	O
+phòng	E
+quản_lý	
+và	
+một	O
+phòng	E
+sẽ	
+quản_lý	R
+nhiều	M
+nhân_viên	E
+.	F
+
+Quan_hệ	
+phòng	E
+lưu_trữ	
+các	
+thông_tin	
+gồm	
+:	
+mã_phòng	PK
+(	
+danh_định	
+)	
+,	
+tên_phòng	AE
+.	F
+
+Mỗi	O
+phòng	E
+có	
+một	O
+nhân_viên	E
+làm	
+trưởng_phòng	R
+.	F
+
+Quan_hệ	
+dự_án	E
+lưu_trữ	
+các	
+thông_tin	
+gồm	
+:	
+mã_dự_án	E
+(	
+danh_định	
+)	
+,	
+tên_dự_án	AE
+.	F
+
+Mỗi	O
+dự_án	E
+do	
+một	O
+phòng	E
+cụ_thể	
+thực_hiện	R
+và	
+một	O
+phòng	E
+sẽ	
+thực_hiện	R
+nhiều	M
+dự_án	E
+.	F
+
+Mỗi	O
+dự_án	E
+có_thể	
+có	R
+nhiều	M
+nhân_viên	E
+tham_gia	
+và	
+mỗi	O
+nhân_viên	E
+có_thể	
+tham_gia	R
+nhiều	M
+dự_án	E
+.	F
+
+Khi	
+ghi_lại	
+thông_tin	
+tham_gia	ER
+,	
+cần	
+phải	
+biết	
+số_ngày	AR
+.	F

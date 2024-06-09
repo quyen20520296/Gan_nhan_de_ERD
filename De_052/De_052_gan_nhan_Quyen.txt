@@ -1,0 +1,179 @@
+Marie_Stoopes_International	
+hiện	
+đang	
+vận_hành	
+các	
+phòng_khám_đa_khoa	
+tại	
+Việt_Nam	
+.	F
+
+Cho_biết	
+lược_đồ	
+cơ_sở_dữ_liệu	
+quan_hệ	
+toàn_cục	
+của	
+phòng_khám	
+như_sau	
+:	
+
+Thông_tin	
+phòng_khám	E
+bao_gồm	
+:	
+mã_phòng_khám	PK
+(	
+danh_định	
+)	
+,	
+tên_phòng_khám	AE
+,	
+thành_phố	AE
+,	
+điện_thoại	AE
+.	F
+
+Thông_tin	
+bệnh_nhân	E
+bao_gồm	
+:	
+mã_bệnh_nhân	PK
+(	
+danh_định	
+)	
+,	
+tên_bệnh_nhân	AE
+,	
+ngày_sinh	AE
+,	
+địa_chỉ	AE
+,	
+điện_thoại	AE
+,	
+giới_tính	AE
+.	F
+
+Thông_tin	
+bác_sĩ	E
+bao_gồm	
+:	
+mã_bác_sĩ	PK
+(	
+danh_định	
+)	
+,	
+tên_bác_sĩ	AE
+,	
+tên_đăng_nhập	AE
+,	
+mật_khẩu	AE
+.	F
+
+Thông_tin	
+khám_bệnh	E
+bao_gồm	
+:	
+mã_khám_bệnh	PK
+(	
+danh_định	
+)	
+,	
+yêu_cầu_khám	AE
+,	
+ngày_khám	AE
+,	
+kết_luận	AE
+.	F
+
+Một	O
+bệnh_nhân	E
+sẽ	
+có	R
+nhiều	M
+khám_bệnh	E
+.	F
+
+Một	O
+bác_sĩ	E
+cũng	
+có	R
+nhiều	M
+khám_bệnh	E
+.	F
+
+Một	O
+phòng_khám	E
+được_lập_ra	
+để	
+khám_bệnh	
+nên	
+cũng	
+sẽ	
+có	R
+nhiều	M
+khám_bệnh	E
+.	F
+
+Sau_khi	
+khám_bệnh	
+cho	
+bệnh_nhân	
+xong	
+thì	
+hệ_thống	
+sẽ	
+xác_nhận	
+thông_tin	
+thu_phí	
+dịch_vụ	
+khám	
+.	F
+
+Thông_tin	
+dịch_vụ	E
+bao_gồm	
+:	
+mã_dịch_vụ	PK
+(	
+danh_định	
+)	
+,	
+tên_dịch_vụ	AE
+,	
+đơn_giá	AE
+.	F
+
+Thông_tin	
+thu_phí	E
+bao_gồm	
+:	
+mã_thu_phí	PK
+(	
+danh_định	
+)	
+,	
+số_lượng	AE
+,	
+thành_tiền	AE
+.	F
+
+Một	O
+khám_bệnh	E
+sẽ	
+có	R
+nhiều	M
+thông_tin	
+thu_phí	E
+khác_nhau	
+.	F
+
+Một	O
+dịch_vụ	E
+cũng	
+sẽ	
+được_liệt_kê	R
+trong	
+nhiều	
+thu_phí	E
+.	F

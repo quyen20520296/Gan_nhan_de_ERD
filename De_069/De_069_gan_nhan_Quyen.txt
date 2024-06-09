@@ -1,0 +1,101 @@
+Cho	
+cơ_sở_dữ_liệu	
+quản_lý	
+các	
+đề_tài	
+của	
+sinh_viên	
+gồm	
+các	
+quan_hệ	
+như_sau	
+:	
+
+Mỗi	
+giảng_viên	E
+có	
+mã_giảng_viên	PK
+duy_nhất	
+để	
+phân_biệt	
+với	
+các	
+giảng_viên	
+khác	
+và	
+có	
+họ_tên_giảng_viên	AE
+.	F
+
+Mỗi	
+sinh_viên	E
+có	
+mã_sinh_viên	PK
+duy_nhất	
+để	
+quản_lý	
+,	
+có	
+họ_tên_sinh_viên	AE
+,	
+năm_nhập_học	AE
+.	F
+
+Mỗi	
+loại_đề_tài	E
+gồm	
+mã_loại_đề_tài	PK
+duy_nhất	
+và	
+tên_loại	AE
+.	F
+
+Mỗi	
+đề_tài	E
+được_xác_định	
+bởi	
+một	
+mã_đề_tài	PK
+duy_nhất	
+và	
+có	
+tên_đề_tài	AE
+.	F
+
+Một	O
+loại_đề_tài	E
+có	R
+nhiều	M
+đề_tài	E
+.	F
+
+Một	O
+giảng_viên	E
+hướng_dẫn	R
+nhiều	M
+đề_tài	E
+.	F
+
+Một	O
+sinh_viên	E
+có_thể	
+tham_gia	
+làm	R
+một	
+hay	
+nhiều	M
+đề_tài	E
+.	F
+
+Một	O
+đề_tài	E
+có_thể	
+có	R
+một	
+hoặc	
+nhiều	M
+sinh_viên	E
+cùng	
+tham_gia	
+làm	
+.	F

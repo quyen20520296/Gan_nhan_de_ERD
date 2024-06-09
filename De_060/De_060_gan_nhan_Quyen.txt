@@ -1,0 +1,102 @@
+Cho	
+cơ_sở_dữ_liệu	
+của	
+một	
+công_ty_máy_tính	
+thực_hiện	
+các	
+dự_án	
+phần_mềm	
+gồm	
+các	
+quan_hệ	
+sau	
+:	
+
+Quan_hệ	
+dự_án	E
+gồm	
+các	
+thông_tin	
+:	
+mã_dự_án	PK
+(	
+danh_định	
+)	
+,	
+tên	AE
+,	
+kinh_phí	AE
+,	
+vị_trí	AE
+.	F
+
+Quan_hệ	
+nhân_viên	E
+gồm	
+các	
+thông_tin	
+:	
+mã_nhân_viên	PK
+(	
+danh_định	
+)	
+,	
+tên_nhân_viên	AE
+.	F
+
+Quan_hệ	
+lương	E
+gồm	
+các	
+thông_tin	
+:	
+chức_vụ	PK
+(	
+danh_định	
+)	
+,	
+mức_lương	AE
+.	F
+
+Một	O
+quan_hệ	
+lương	E
+sẽ	
+được_gán	R
+cho	
+nhiều	M
+quan_hệ	
+nhân_viên	E
+.	F
+
+Một	O
+nhân_viên	E
+có_thể	
+đảm_nhiệm	R
+nhiều	M
+dự_án	E
+và	
+một	O
+dự_án	E
+cũng	
+có_thể	
+được_phân_công	R
+cho	
+nhiều	M
+nhân_viên	E
+đảm_nhiệm	
+.	F
+
+Khi	
+ghi_lại	
+thông_tin	
+trách_nhiệm	ER
+,	
+cần	
+phải	
+biết	
+trách_nhiệm_của_nhân_viên	AR
+và	
+thời_gian_thực_hiện	AR
+.	F

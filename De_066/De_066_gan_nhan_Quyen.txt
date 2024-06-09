@@ -1,0 +1,151 @@
+Cho	
+cơ_sở_dữ_liệu	
+về	
+quản_lý	
+thi_Olympic_tin_học	
+gồm	
+các	
+quan_hệ	
+sau	
+:	
+
+Mỗi	
+thành_phố	E
+có	
+duy_nhất	
+một	
+mã_thành_phố	PK
+,	
+có	
+tên_thành_phố	AE
+,	
+khu_vực	AE
+.	F
+
+Trong	
+mỗi	O
+thành_phố	E
+sẽ	
+có	R
+nhiều	M
+trường	E
+.	F
+
+Mỗi	
+trường	E
+có	
+một	
+mã_trường	PK
+duy_nhất	
+để	
+phân_biệt	
+với	
+các	
+trường	
+khác	
+và	
+có	
+tên_trường	AE
+.	F
+
+Mỗi	
+hình_thức_thi	E
+có	
+một	
+mã_hình_thức_thi	PK
+duy_nhất	
+,	
+có	
+tên_hình_thức_thi	AE
+,	
+số_lượng_thí_sinh_tối_đa	AE
+.	F
+
+Mỗi	
+thí_sinh	E
+có	
+một	
+mã_thí_sinh	PK
+duy_nhất	
+để	
+phân_biệt	
+,	
+có	
+họ_tên_thí_sinh	AE
+,	
+năm_học	AE
+,	
+giới_tính	AE
+và	
+kiểu	
+tham_gia_thi	
+có_phải	
+là_cá_nhân	AE
+hay	
+không	
+.	F
+
+Một	O
+trường	E
+sẽ	
+có	R
+nhiều	M
+thí_sinh	E
+tham_gia_thi	
+.	F
+
+Mỗi	
+đội	E
+có	
+một	
+mã_đội	PK
+duy_nhất	
+và	
+có	
+tên_đội	AE
+.	F
+
+Một	O
+hình_thức_thi	E
+có	R
+nhiều	M
+đội	E
+.	F
+
+Một	O
+trường	E
+có	R
+nhiều	M
+đội	E
+.	F
+
+Một	O
+thí_sinh	E
+có_thể	
+tham_gia	R
+nhiều	M
+đội	E
+và	
+một	O
+đội	E
+có_thể	
+có	R
+nhiều	M
+thí_sinh	E
+tham_gia	
+.	F
+
+Khi	
+ghi_lại	
+thông_tin	
+danh_sách_đội	ER
+,	
+phải	
+biết	
+thí_sinh	
+đó	
+có_phải	
+là_đội_trưởng	AR
+hay	
+không	
+.	F

@@ -1,0 +1,107 @@
+Cho	
+cơ_sở_dữ_liệu	
+quản_lý	
+thư_viện	
+gồm	
+các	
+quan_hệ	
+như_sau	
+:	
+
+Quan_hệ	
+sách	E
+lưu_trữ	
+thông_tin	
+gồm	
+một	
+mã_sách	PK
+duy_nhất	
+để	
+phân_biệt	
+với	
+các	
+sách	
+khác	
+,	
+có	
+tên_sách	AE
+,	
+tác_giả	AE
+,	
+ngôn_ngữ	AE
+,	
+chuyên_ngành	AE
+,	
+năm_xuất_bản	AE
+,	
+nhà_xuất_bản	AE
+.	F
+
+Quan_hệ	
+quyển_sách	E
+có	
+mã_quyển_sách	PK
+duy_nhất	
+để	
+phân_biệt	
+và	
+có	
+tình_trạng	AE
+.	F
+
+Mỗi	O
+sách	E
+trong	
+thư_viện	
+có	R
+nhiều	M
+quyển_sách	E
+.	F
+
+Quan_hệ	
+bạn_đọc	E
+được_xác_định	
+bởi	
+một	
+mã_bạn_đọc	PK
+duy_nhất	
+,	
+có	
+họ_và_tên_đệm	AE
+,	
+tên	AE
+,	
+ngày_cấp_thẻ	AE
+,	
+ngày_hết_hạn	AE
+.	F
+
+Một	O
+bạn_đọc	E
+có_thể	
+mượn	R
+nhiều	M
+quyển_sách	E
+khác_nhau	
+và	
+một	O
+quyển_sách	E
+có_thể	
+được_mượn	R
+bởi	
+nhiều	M
+bạn_đọc	E
+.	F
+
+Khi	
+ghi_lại	
+thông_tin	
+mượn_sách	ER
+,	
+cần	
+phải	
+biết	
+ngày_mượn	AR
+và	
+ngày_trả	AR
+.	F

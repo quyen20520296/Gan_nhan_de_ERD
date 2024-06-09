@@ -1,0 +1,153 @@
+Thông_tin	
+về	
+mỗi	
+cuốn_sách	E
+:	
+mã_sách	PK
+(	
+danh_định	AE
+)	
+,	
+tên_sách	AE
+,	
+nhà_xuất_bản	AE
+,	
+số_trang	AE
+,	
+số_lượng	AE
+cuốn_sách	
+đó	
+có_còn	
+trong	
+hệ_thống	
+.	F
+
+Mỗi	O
+cuốn_sách	E
+có_thể	
+do	
+nhiều	M
+tác_giả	E
+viết	R
+,	
+mỗi	O
+tác_giả	E
+có_thể	
+viết	R
+nhiều	M
+cuốn_sách	E
+.	F
+
+Thông_tin	
+về	
+tác_giả	E
+gồm_có	
+:	
+mã_tác_giả	PK
+(	
+danh_định	
+)	
+,	
+họ_và_tên	AE
+,	
+ngày_sinh	AE
+,	
+địa_chỉ	AE
+.	F
+
+Mỗi	
+tác_giả	
+chỉ	
+tồn_tại	
+khi	
+có	
+ít_nhất	
+một	
+cuốn_sách	
+của	
+tác_giả	
+đó	
+trong	
+hệ_thống	
+.	F
+
+Một	O
+nhà_xuất_bản	E
+có	R
+nhiều	M
+cuốn_sách	E
+.	F
+
+Mỗi	
+nhà_xuất_bản	E
+có	
+các	
+thông_tin	
+:	
+mã_nhà_xuất_bản	PK
+(	
+danh_định	
+)	
+,	
+tên_nhà_xuất_bản	AE
+,	
+địa_chỉ	AE
+.	F
+
+Thông_tin	
+về	
+bạn_đọc	E
+bao_gồm	
+:	
+số_thẻ	PK
+(	
+danh_định	
+)	
+,	
+họ_và_tên	AE
+,	
+địa_chỉ	AE
+.	F
+
+Khi	
+bạn_đọc	
+mượn_trả_sách	ER
+,	
+thư_viện	
+sẽ	
+ghi_nhận	
+thông_tin	
+:	
+ngày_mượn	AR
+và	
+giảm	
+số_lượng	
+của	
+cuốn_sách	
+đi	
+1	
+(	
+khi	
+trả	
+thì	
+chỉ	
+cập_nhật	
+ngày_trả	AR
+,	
+và	
+tăng	
+số_lượng_sách	
+)	
+–	
+không	
+có	
+hạn_chế	
+về	
+số	
+lần	
+cũng_như	
+số	
+sách	
+bạn_đọc	
+được_mượn	
+.	F
