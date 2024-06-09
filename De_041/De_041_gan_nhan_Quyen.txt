@@ -1,0 +1,114 @@
+Cho	
+lược_đồ	
+cơ_sở_dữ_liệu	
+quản_lý	
+món_ăn	
+như_sau	
+:	
+
+Lược_đồ	
+nguyên_liệu	
+mô_tả	
+thông_tin	
+về	
+nguyên_liệu	
+để	
+chế_biến	
+món_ăn	
+.	F
+
+Mỗi	
+nguyên_liệu	E
+có	
+một	
+mã_nguyên_liệu	PK
+duy_nhất	
+,	
+tên_nguyên_liệu	AE
+,	
+chỉ_số_calori_của_nguyên_liệu	AE
+,	
+chỉ_số_protein_của_nguyên_liệu	AE
+.	F
+
+Lược_đồ	
+món_ăn	
+mô_tả	
+thông_tin	
+về	
+món_ăn	
+.	
+
+Mỗi	
+món_ăn	E
+có	
+một	
+mã_món_ăn	PK
+duy_nhất	
+,	
+tên_món_ăn	AE
+,	
+giá_thành	AE
+,	
+chỉ_số_calori_của_món_ăn	AE
+,	
+chỉ_số_protein_của_món_ăn	AE
+.	F
+
+Một	O
+loại_món_ăn	E
+có	R
+nhiều	M
+món_ăn	E
+.	F
+
+Quan_hệ	
+loại_món_ăn	
+mô_tả	
+thông_tin	
+các	
+loại_món_ăn	
+.	F
+
+Mỗi	
+loại_món_ăn	E
+có	
+một	
+mã_loại_món_ăn	PK
+duy_nhất	
+và	
+tên_loại_món_ăn	AE
+.	F
+
+Một	O
+món_ăn	E
+có_thể	
+được_chế_biến	R
+từ	
+nhiều	M
+nguyên_liệu	E
+khác_nhau	
+.	F
+
+Một	O
+nguyên_liệu	E
+cũng	
+có_thể	
+được_dùng	
+để	
+chế_biến	R
+nhiều	M
+món_ăn	E
+.	F
+
+Khi	
+xác_định	
+thành_phần_món_ăn	ER
+,	
+cần_biết	
+trọng_lượng_của_nguyên_liệu	AR
+dùng	
+để	
+chế_biến	
+tương_ứng	
+.	F

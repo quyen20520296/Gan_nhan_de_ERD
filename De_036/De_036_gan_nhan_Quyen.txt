@@ -1,0 +1,123 @@
+Cho	
+lược_đồ	
+cơ_sở_dữ_liệu	
+Quản_lý	
+Xe	
+của	
+hãng_xe_Honda	
+gồm	
+các	
+quan_hệ	
+như_sau	
+:	
+
+Mỗi	
+xe	E
+có	
+một	
+mã_xe	PK
+duy_nhất	
+để	
+phân_biệt	
+với	
+các	
+xe	
+khác	
+,	
+có	
+số_khung	AE
+,	
+số_máy	AE
+,	
+màu	AE
+.	F
+
+Mỗi	
+bảng_giá	E
+được_xác_định	
+bởi	
+một	
+kiểu_xe	PK
+duy_nhất	
+và	
+có	
+giá_bán	AE
+.	F
+
+Một	O
+bảng_giá	E
+được_áp_dụng	R
+cho	
+nhiều	M
+xe	E
+.	F
+
+Mỗi	
+khách_hàng	E
+có	
+các	
+thông_tin	
+gồm	
+mã_khách_hàng	PK
+duy_nhất	
+,	
+tên_khách_hàng	AE
+,	
+thành_phố	AE
+,	
+số_điện_thoại	AE
+,	
+loại_khách_hàng	AE
+.	F
+
+Khách_hàng	
+khi	
+đến	
+mua	
+xe	
+sẽ	
+được_lập	
+hóa_đơn	
+.	F
+
+Một	O
+khách_hàng	E
+có_thể	
+mua	
+nhiều	
+lần	
+nên	
+sẽ	
+có	R
+nhiều	E
+hóa_đơn	E
+.	F
+
+Mỗi	
+hóa_đơn	E
+được_xác_định	
+bởi	
+một	
+số_hóa_đơn	PK
+duy_nhất	
+,	
+có	
+ngày_bán	AE
+.	F
+
+Khách_hàng	
+có_thể	
+mua	
+nhiều	
+xe	
+trong	
+một	
+lần	
+nên	
+một	O
+hóa_đơn	E
+có_thể	
+chứa	R
+nhiều	M
+xe	E
+.	F

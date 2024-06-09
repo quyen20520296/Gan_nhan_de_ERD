@@ -1,0 +1,149 @@
+Cho	
+lược_đồ	
+cơ_sở_dữ_liệu	
+Quản_lý	
+đơn_đặt_hàng	
+có	
+cấu_trúc	
+như_sau	
+:	
+
+Quan_hệ	
+mặt_hàng	
+chứa	
+thông_tin	
+về	
+các	
+mặt_hàng	
+.	F
+
+Thông_tin	
+mặt_hàng	E
+gồm_có	
+:	
+mã_mặt_hàng	PK
+duy_nhất	
+,	
+tên_mặt_hàng	AE
+,	
+đơn_vị_tính	AE
+và	
+nước_sản_xuất	AE
+.	F
+
+Quan_hệ	
+nhà_cung_cấp	
+chứa	
+thông_tin	
+về	
+các	
+nhà_cung_cấp	
+.	F
+
+Thông_tin	
+nhà_cung_cấp	E
+gồm_có	
+:	
+mã_nhà_cung_cấp	PK
+duy_nhất	
+,	
+tên_nhà_cung_cấp	AE
+và	
+địa_chỉ_nhà_cung_cấp	AE
+.	F
+
+Một	O
+nhà_cung_cấp	E
+có_thể	
+cung_cấp	R
+nhiều	M
+mặt_hàng	E
+và	
+một	O
+mặt_hàng	E
+cũng	
+có_thể	
+được_cung_cấp	R
+bởi	
+nhiều	M
+nhà_cung_cấp	E
+.	F
+
+Khi	
+cung_cấp	ER
+,	
+cần	
+ghi_lại	
+ngày_bắt_đầu_cung_cấp	AR
+.	F
+
+Quan_hệ	
+đơn_đặt_hàng	
+chứa	
+thông_tin	
+về	
+các	
+đơn_đặt_hàng	
+.	F
+
+Thông_tin	
+đơn_đặt_hàng	E
+gồm_có	
+:	
+
+mã_đơn_hàng	PK
+duy_nhất	
+,	
+ngày_đặt_hàng	AE
+,	
+tổng_trị_giá	AE
+,	
+số_mặt_hàng	AE
+.	F
+
+Khi	
+thêm	
+mới	
+đơn_đặt_hàng	
+thì	
+tổng_trị_giá	
+và	
+số_mặt_hàng	
+sẽ	
+được_gán	
+giá_trị	
+mặc_định	
+là	
+0	
+.	F
+
+Một	O
+đơn_đặt_hàng	E
+có_thể	
+chứa	R
+nhiều	M
+mặt_hàng	E
+.	F
+
+Một	O
+mặt_hàng	E
+cũng	
+có_thể	
+có	R
+trong	
+nhiều	M
+đơn_đặt_hàng	E
+.	F
+
+Khi	
+ghi_lại	
+chi_tiết	ER
+,	
+cần	
+biết	
+số_lượng	AR
+,	
+đơn_giá	AR
+và	
+trị_giá	AR
+.	F

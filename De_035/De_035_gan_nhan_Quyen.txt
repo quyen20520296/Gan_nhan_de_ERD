@@ -1,0 +1,170 @@
+Cho	
+lược_đồ	
+cơ_sở_dữ_liệu	
+Quản_lý	
+hệ_thống	
+rạp_chiếu_phim_Galaxy	
+có	
+cấu_trúc	
+như_sau	
+:	
+
+Bảng	
+thành_viên	E
+lưu_trữ	
+thông_tin	
+của	
+một	
+thành_viên	
+,	
+bao_gồm	
+:	
+mã_thành_viên	PK
+duy_nhất	
+,	
+họ_tên	AE
+,	
+ngày_sinh	AE
+,	
+giới_tính	AE
+,	
+điện_thoại	AE
+,	
+quận	AE
+,	
+loại_thành_viên	AE
+.	F
+
+Bảng	
+phim	E
+chứa	
+các	
+thông_tin	
+bộ_phim	
+,	
+bao_gồm	
+:	
+mã_phim	PK
+duy_nhất	
+,	
+tên_phim	AE
+,	
+năm_sản_xuất	AE
+,	
+thể_loại	AE
+,	
+thời_lượng	AE
+,	
+tình_trạng	AE
+,	
+số_lượt_xem	AE
+.	F
+
+Bảng	
+rạp_phim	E
+lưu_trữ	
+thông_tin	
+của	
+một	
+rạp	
+,	
+bao_gồm	
+:	
+mã_rạp_phim	PK
+duy_nhất	
+,	
+tên_rạp_phim	AE
+,	
+số_lượng_vé_đã_bán	AE
+,	
+địa_chỉ	AE
+,	
+thành_phố	AE
+.	F
+
+Bảng	
+lịch_chiếu	E
+chứa	
+các	
+thông_tin	
+lịch_chiếu_phim	
+,	
+bao_gồm	
+:	
+mã_lịch_chiếu	PK
+duy_nhất	
+,	
+phòng_chiếu	AE
+,	
+suất_chiếu	AE
+,	
+sức_chứa	AE
+,	
+ngày_bắt_đầu_lịch_chiếu	AE
+,	
+ngày_kết_thúc_lịch_chiếu	AE
+.	F
+
+Một	O
+phim	E
+có	R
+nhiều	M
+lịch_chiếu	E
+.	F
+
+Một	O
+rạp_phim	E
+cũng	
+có	R
+nhiều	M
+lịch_chiếu	E
+.	F
+
+Bảng	
+vé	E
+lưu_trữ	
+thông_tin	
+bán_vé	
+,	
+bao_gồm	
+:	
+mã_vé	PK
+duy_nhất	
+,	
+ngày_mua	AE
+,	
+loại_vé	AE
+,	
+giá_tiền	AE
+.	F
+
+Một	O
+thành_viên	E
+có_thể	
+xem	
+phim	
+nhiều	
+lần	
+nên	
+có_thể	
+mua	R
+nhiều	M
+vé	E
+.	F
+
+Trong	
+thời_gian_chiếu	
+,	
+một	O
+lịch_chiếu	E
+cũng	
+chiếu
+phim	
+nhiều	
+lần	
+nên	
+cũng	
+có	R
+nhiều	M
+vé	E
+.	F

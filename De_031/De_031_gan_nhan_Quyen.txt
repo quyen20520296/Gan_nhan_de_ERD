@@ -1,0 +1,185 @@
+Cho	
+lược_đồ	
+cơ_sở_dữ_liệu	
+Quản_lý	
+bài_viết	
+của	
+một	
+website_đăng_tin	
+có	
+cấu_trúc	
+như_sau	
+:	
+
+Lược_đồ	
+quan_hệ	
+thành_viên	
+nhằm	
+mô_tả	
+thông_tin	
+toàn_bộ	
+người_dùng	
+của	
+trang_web	
+.	F
+
+Mỗi	
+thành_viên	E
+có	
+một	
+tên_thành_viên	AE
+,	
+ngày_tham_gia	AE
+,	
+cấp_bậc	AE
+,	
+ngày_truy_cập_gần_nhất	AE
+và	
+mỗi	
+thành_viên	
+sẽ	
+được_ấn_định	
+một	
+mã_thành_viên	PK
+duy_nhất	
+để	
+quản_lý	
+.	F
+
+Lược_đồ	
+quan_hệ	
+bài_viết	
+nhằm	
+mô_tả	
+cho	
+những	
+bài_viết	
+đang	
+được_quản_lý	
+.	F
+
+Mỗi	
+bài_viết	E
+được_ghi_nhận	
+tiêu_đề	AE
+,	
+nội_dung	AE
+,	
+ngày_đăng	AE
+,	
+số_lượt_yêu_thích	AE
+và	
+được_ấn_định	
+một	
+mã_bài_viết	PK
+duy_nhất	
+để	
+theo_dõi	
+.	F
+
+Một	O
+thành_viên	E
+có	R
+nhiều	M
+bài_viết	E
+.	F
+
+Lược_đồ	
+quan_hệ	
+chủ_đề	
+nhằm	
+mô_tả	
+thông_tin	
+các	
+chủ_đề	
+được_quản_lý	
+.	F
+
+Mỗi	
+thông_tin	
+chủ_đề	E
+sẽ	
+bao_gồm	
+mã_chủ_đề	PK
+duy_nhất	
+,	
+tên_chủ_đề	AE
+,	
+mô_tả	AE
+.	F
+
+Một	O
+chủ_đề	E
+có_thể	
+là	
+chủ_đề_cha	R
+của	
+nhiều	M
+chủ_đề_khác	E
+.	F
+
+Một	O
+bài_viết	E
+có_thể	
+thuộc	R
+một	
+hay	
+nhiều	M
+chủ_đề	E
+.	F
+
+Một	O
+chủ_đề	E
+cũng	
+có_thể	
+chứa	R
+một	
+hay	
+nhiều	M
+bài_viết	E
+.	F
+
+Lược_đồ	
+quan_hệ	
+bình_luận	
+nhằm	
+mô_tả	
+thông_tin	
+bình_luận	
+về	
+bài_viết	
+.	F
+
+Thông_tin	
+bình_luận	E
+được_ghi_nhận	
+bao_gồm	
+:	
+nội_dung_bình_luận	AE
+,	
+thời_gian_bình_luận	AE
+.	F
+
+Mỗi	
+bình_luận	
+được_đặt	
+một	
+mã_bình_luận	PK
+duy_nhất	
+để	
+quản_lý	
+.	F
+
+Mỗi	O
+bài_viết	E
+có	R
+nhiều	M
+bình_luận	E
+.	F
+
+Mỗi	O
+thành_viên	E
+có	R
+nhiều	M
+bình_luận	E
+.	F

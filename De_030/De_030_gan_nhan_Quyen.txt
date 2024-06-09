@@ -1,0 +1,138 @@
+Một	
+hệ_thống	
+cho_thuê_xe	
+muốn	
+xây_dựng	
+một	
+cơ_sở_dữ_liệu	
+cho_thuê	
+như_sau	
+:	
+
+Mỗi	
+khách_hàng	E
+khi	
+đến	
+thuê_xe	
+sẽ	
+được_ghi_nhận_lại	
+một	
+mã_khách_hàng	PK
+duy_nhất	
+để	
+phân_biệt	
+với	
+các	
+khách_hàng	
+khác	
+cùng_với	
+các	
+thông_tin	
+bao_gồm	
+họ_tên_khách_hàng	AE
+,	
+số_điện_thoại	AE
+.	F
+
+Mỗi	
+nhà_xe	E
+có	
+một	
+mã_nhà_xe	PK
+duy_nhất	
+,	
+có	
+tên_nhà_xe	AE
+và	
+địa_chỉ	AE
+.	F
+
+Một	O
+nhà_xe	E
+sở_hữu	R
+nhiều	M
+xe	E
+.	F
+
+Mỗi	
+xe	E
+có	
+một	
+biển_số_xe	PK
+duy_nhất	
+để	
+phân_biệt	
+với	
+các	
+xe	
+khác	
+.	F
+
+Ngoài_ra	
+còn	
+được_lưu_trữ	
+thêm	
+các	
+thông_tin	
+:	
+tên_xe	AE
+,	
+số_lượng_chỗ	AE
+.	F
+
+Một	O
+loại_xe	E
+có	R
+nhiều	M
+xe	E
+.	F
+
+Mỗi	
+loại_xe	E
+có	
+một	
+mã_loại	PK
+duy_nhất	
+cùng_với	
+tên_loại	AE
+.	F
+
+Các	
+khách_hàng	
+khi	
+đặt_xe	
+thì	
+sẽ	
+phải	
+thực_hiện	
+gọi_đặt_chỗ	
+.	F
+
+Một	O
+khách_hàng	E
+có_thể	
+gọi_đặt_chỗ	R
+cho	
+nhiều	M
+xe	E
+.	F
+
+Một	O
+xe	E
+cũng	
+có_thể	
+được_đặt_chỗ	R
+bởi	
+nhiều	M
+khách_hàng	E
+.	F
+
+Khi	
+khách_hàng	
+gọi_đặt_chỗ	ER
+,	
+hệ_thống	
+phải	
+ghi_lại	
+thời_gian_đặt_chỗ	AR
+.	F

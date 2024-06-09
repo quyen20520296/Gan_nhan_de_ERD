@@ -1,0 +1,164 @@
+Cho	
+lược_đồ	
+cơ_sở_dữ_liệu	
+quản_lý	
+bán_hàng	
+của	
+một	
+cửa_hàng_hoa	
+như_sau	
+:	
+
+Quan_hệ	
+nhà_vườn	E
+lưu_trữ	
+thông_tin	
+nhà_vườn	
+cung_cấp	
+các	
+sản_phẩm	
+mà	
+cửa_hàng	
+bán_ra	
+.	F
+
+Các	
+thông_tin	
+gồm	
+:	
+mã_nhà_vườn	PK
+duy_nhất	
+,	
+họ_tên_người_đại_diện	AE
+,	
+số_điện_thoại	AE
+và	
+địa_chỉ_liên_hệ	AE
+.	F
+
+Quan_hệ	
+sản_phẩm	E
+lưu_trữ	
+thông_tin	
+tất_cả	
+sản_phẩm	
+mà	
+cửa_hàng	
+bán_ra	
+.	F
+
+Các	
+thuộc_tính	
+gồm_có	
+:	
+mã_sản_phẩm	PK
+duy_nhất	
+,	
+tên_sản_phẩm	AE
+,	
+đơn_vị_tính	AE
+,	
+thể_loại	AE
+,	
+giá_nhập	AE
+,	
+giá_bán	AE
+.	F
+
+Một	O
+nhà_vườn	E
+cung_cấp	R
+nhiều	M
+sản_phẩm	E
+cho	
+cửa_hàng	
+.	F
+
+Quan_hệ	
+đơn_hàng	E
+lưu_trữ	
+thông_tin	
+các	
+đơn_hàng	
+của	
+cửa_hàng	
+bán_ra	
+gồm	
+:	
+mã_đơn_hàng	PK
+duy_nhất	
+,	
+ngày_bán	AE
+,	
+tổng_tiền	AE
+và	
+số_tiền_đã_thanh_toán	AE
+.	F
+
+Một	O
+đơn_hàng	E
+có_thể	
+bao_gồm	R
+nhiều	M
+sản_phẩm	E
+và	
+một	O
+sản_phẩm	E
+cũng	
+có_thể	
+được_liệt_kê	R
+trong	
+nhiều	M
+đơn_hàng	E
+.	F
+
+Khi	
+lập	
+chi_tiết_hóa_đơn	ER
+,	
+cần	
+biết	
+số_lượng_của_sản_phẩm	AR
+trong	
+đơn_hàng	
+.	F
+
+Quan_hệ	
+giao_hàng	E
+lưu_trữ	
+thông_tin	
+cho	
+những	
+đơn_hàng	
+cần_giao	
+gồm_có	
+:	
+mã_giao_hàng	PK
+duy_nhất	
+,	
+ngày_giao	AE
+,	
+người_giao	AE
+,	
+số_điện_thoại_người_giao	AE
+,	
+người_nhận	AE
+,	
+số_điện_thoại_người_nhận	AE
+,	
+địa_chỉ	AE
+,	
+phí_ship	AE
+,	
+trạng_thái_giao_hàng	AE
+.	F
+
+Mỗi	O
+giao_hàng	E
+chỉ	
+đảm_nhận	
+giao	R
+một	O
+đơn_hàng	E
+duy_nhất	
+.	F

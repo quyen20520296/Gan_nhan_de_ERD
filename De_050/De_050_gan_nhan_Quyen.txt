@@ -1,0 +1,92 @@
+Một	
+hệ_thống	
+cho_thuê	
+băng_đĩa	
+có	
+thiết_kế	
+cơ_sở_dữ_liệu	
+như_sau	
+:	
+
+Mỗi	
+khách_hàng	E
+có	
+các	
+thông_tin	
+gồm	
+mã_khách_hàng	PK
+duy_nhất	
+,	
+họ_tên	AE
+,	
+địa_chỉ	AE
+,	
+số_điện_thoại	AE
+,	
+loại_khách_hàng	AE
+.	F
+
+Mỗi	
+băng_đĩa	E
+có	
+một	
+mã_băng_đĩa	PK
+duy_nhất	
+để	
+phân_biệt	
+với	
+các	
+băng_đĩa	
+khác	
+,	
+có	
+tên_băng_đĩa	AE
+và	
+thể_loại	AE
+.	F
+
+Một	O
+khách_hàng	E
+sẽ	
+có	R
+nhiều	M
+phiếu_thuê	E
+nếu	
+đến_thuê	
+băng_đĩa	
+nhiều	
+lần	
+.	F
+
+Mỗi	
+phiếu_thuê	E
+gồm	
+các	
+thông_tin	
+:	
+mã_phiếu_thuê	PK
+duy_nhất	
+,	
+ngày_thuê	AE
+,	
+ngày_trả	AE
+,	
+số_lượng_thuê	AE
+.	F
+
+Một	O
+phiếu_thuê	E
+có_thể	
+có	R
+nhiều	M
+băng_đĩa	E
+.	F
+
+Một	O
+băng_đĩa	E
+có_thể	
+được_thuê	R
+trong	
+nhiều	M
+phiếu_thuê	E
+.	F

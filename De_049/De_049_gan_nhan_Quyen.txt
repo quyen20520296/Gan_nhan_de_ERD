@@ -1,0 +1,90 @@
+Cho	
+lược_đồ	
+quan_hệ	
+quản_lý	
+tình_trạng	
+thuê_sách	
+của	
+độc_giả	
+như_sau	
+:	
+
+Thông_tin	
+độc_giả	E
+bao_gồm	
+:	
+mã_độc_giả	PK
+(	
+danh_định	
+)	
+,	
+họ_tên	AE
+,	
+ngày_sinh	AE
+,	
+địa_chỉ	AE
+,	
+số_điện_thoại	AE
+.	F
+
+Thông_tin	
+sách	E
+bao_gồm	
+:	
+mã_sách	PK
+(	
+danh_định	
+)	
+,	
+tên_sách	AE
+,	
+thể_loại	AE
+,	
+nhà_xuất_bản	AE
+.	F
+
+Một	O
+độc_giả	E
+khi	
+đến	
+thuê_sách	
+nhiều	
+lần	
+sẽ	
+có	R
+nhiều	M
+phiếu_thuê	E
+.	F
+
+Thông_tin	
+phiếu_thuê	E
+bao_gồm	
+:	
+mã_phiếu_thuê	PK
+(	
+danh_định	
+)	
+,	
+ngày_thuê	AE
+,	
+ngày_trả	AE
+,	
+số_sách_thuê	AE
+.	F
+
+Một	O
+phiếu_thuê	E
+có_thể	
+có	R
+nhiều	M
+sách	E
+và	
+một	O
+sách	E
+cũng	
+có_thể	
+có	R
+trong	
+nhiều	M
+phiếu_thuê	E
+.	F

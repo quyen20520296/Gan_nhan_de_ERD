@@ -1,0 +1,146 @@
+Cho	
+hệ_thống	
+cơ_sở_dữ_liệu	
+quản_lý	
+dạy_học	
+lái_xe	
+như_sau	
+:	
+
+Bảng	
+xếp_loại	E
+lưu_trữ	
+thông_tin	
+xếp_loại	
+gồm	
+:	
+mã_xếp_loại	PK
+duy_nhất	
+,	
+tên_xếp_loại	AE
+.	F
+
+Bảng	
+học_viên	E
+lưu_trữ	
+thông_tin	
+học_viên	
+gồm	
+:	
+mã_học_viên	PK
+duy_nhất	
+,	
+họ_tên	AE
+,	
+ngày_sinh	AE
+,	
+địa_chỉ	AE
+,	
+email	AE
+,	
+số_điện_thoại	AE
+.	F
+
+Một	O
+xếp_loại	E
+có	R
+nhiều	M
+học_viên	E
+.	F
+
+Bảng	
+giáo_viên	E
+lưu_trữ	
+thông_tin	
+giáo_viên	
+gồm	
+:	
+mã_giáo_viên	PK
+duy_nhất	
+,	
+họ_tên	AE
+,	
+ngày_sinh	AE
+,	
+ngày_vào_làm	AE
+.	F
+
+Bảng	
+xe	E
+lưu_trữ	
+thông_tin	
+xe	
+gồm	
+:	
+mã_xe	PK
+duy_nhất	
+,	
+biển_số	AE
+,	
+tên_loại_xe	AE
+.	F
+
+Bảng	
+bài_học	E
+lưu_trữ	
+thông_tin	
+bài_học	
+gồm	
+:	
+mã_bài_học	PK
+duy_nhất	
+,	
+ngày_học	AE
+,	
+số_giờ	AE
+,	
+giá	AE
+.	F
+
+Để	
+một	
+bài_học	
+có_thể	
+bắt_đầu	
+,	
+cần	
+phải	
+có	
+sự_có_mặt	
+của	
+học_viên	
+và	
+giáo_viên	
+cùng_với	
+xe	
+dùng	
+để	
+dạy_lái	
+.	F
+
+Do_đó	
+,	
+một	O
+xe	E
+sẽ	
+có	R
+nhiều	M
+bài_học	E
+.	F
+
+Một	O
+giáo_viên	E
+sẽ	
+có	R
+nhiều	M
+bài_học	E
+.	F
+
+Một	O
+học_viên	E
+cũng	
+sẽ	
+có	R
+nhiều	M
+bài_học	E
+.	F

@@ -1,0 +1,94 @@
+Người_ta	
+muốn	
+xây_dựng	
+một	
+hệ_thống	
+cơ_sở_dữ_liệu	
+quản_lý	
+nhân_viên	
+như_sau	
+:	
+
+Bảng	
+nhân_viên	E
+sẽ	
+lưu_trữ	
+các	
+thông_tin	
+bao_gồm	
+:	
+mã_nhân_viên	PK
+danh_định	
+,	
+họ_tên	AE
+,	
+ngày_sinh	AE
+,	
+mức_lương	AE
+.	F
+
+Bảng	
+phòng_ban	E
+gồm	
+các	
+thuộc_tính	
+:	
+mã_phòng_ban	PK
+duy_nhất	
+để	
+phân_biệt	
+với	
+các	
+phòng_ban_khác	
+và	
+tên_phòng_ban	AE
+.	F
+
+Một	O
+phòng_ban	E
+có	R
+nhiều	M
+nhân_viên	E
+.	F
+
+Bảng	
+kỹ_năng	E
+sẽ	
+được_ghi_nhận	
+các	
+thông_tin	
+:	
+mã_kỹ_năng	PK
+duy_nhất	
+,	
+tên_kỹ_năng	AE
+.	F
+
+Một	O
+nhân_viên	E
+có_thể	
+có	R
+nhiều	M
+kỹ_năng	E
+và	
+một	O
+kỹ_năng	E
+cũng	
+có_thể	
+được_sở_hữu	R
+bởi	
+nhiều	M
+nhân_viên	E
+.	F
+
+Khi	
+ghi_lại	
+chi_tiết_kỹ_năng_sở_hữu	ER
+,	
+hệ_thống	
+cần	
+biết	
+mức_độ_kỹ_năng	AR
+và	
+ngày_đăng_ký	AR
+.	F

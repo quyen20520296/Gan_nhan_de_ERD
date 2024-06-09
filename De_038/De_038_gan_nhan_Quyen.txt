@@ -1,0 +1,196 @@
+Cho	
+lược_đồ	
+cơ_sở_dữ_liệu	
+quản_lý	
+bán	
+căn_hộ_trả_góp	
+như_sau	
+:	
+
+Lược_đồ	
+quan_hệ	
+khách_hàng	
+mô_tả	
+cho	
+những	
+khách_hàng	
+đang	
+được_quản_lý	
+.	F
+
+Mỗi	
+khách_hàng	E
+được_ghi_nhận	
+tên_khách_hàng	AE
+,	
+ngày_sinh	AE
+,	
+địa_chỉ	AE
+,	
+số_chứng_minh_nhân_dân	AE
+và	
+được_ấn_định	
+một	
+mã_khách_hàng	PK
+duy_nhất	
+để	
+theo_dõi	
+.	F
+
+Lược_đồ	
+quan_hệ	
+loại_căn_hộ	
+mô_tả	
+thông_tin	
+phân_loại	
+của	
+căn_hộ	
+.	F
+
+Thông_tin	
+loại_căn_hộ	E
+được_ghi_nhận	
+bao_gồm	
+:	
+mã_loại_căn_hộ	PK
+,	
+tên_loại_căn_hộ	AE
+,	
+nhóm_chung_cư	AE
+.	F
+
+Lược_đồ	
+quan_hệ	
+căn_hộ	
+mô_tả	
+thông_tin	
+các	
+căn_hộ	
+đang	
+được_bán	
+tại	
+dự_án	
+.	F
+
+Mỗi	
+thông_tin	
+căn_hộ	E
+sẽ	
+bao_gồm	
+:	
+mã_căn_hộ	PK
+duy_nhất	
+,	
+tên_căn_hộ	AE
+,	
+diện_tích	AE
+,	
+vị_trí	AE
+,	
+số_phòng	AE
+,	
+giá	AE
+.	F
+
+Mỗi	O
+loại_căn_hộ	E
+có	R
+nhiều	M
+căn_hộ	E
+và	
+một	O
+căn_hộ	E
+chỉ	
+thuộc	R
+một	O
+loại_căn_hộ	E
+.	F
+
+Lược_đồ	
+quan_hệ	
+hình_thức_trả_góp	
+mô_tả	
+hình_thức_trả_góp	
+mà	
+dự_án	
+có	
+hỗ_trợ	
+.	F
+
+Thông_tin	
+hình_thức_trả_góp	E
+bao_gồm	
+:	
+mã_hình_thức	PK
+duy_nhất	
+,	
+tên_hình_thức	AE
+,	
+phần_trăm_trả_trước	AE
+,	
+lãi_suất	AE
+,	
+kỳ_hạn	AE
+.	F
+
+Lược_đồ	
+trả_góp	
+mô_tả	
+thông_tin	
+bán	
+trả_góp	
+căn_hộ	
+cho	
+khách_hàng	
+.	F
+
+Thông_tin	
+trả_góp	E
+bao_gồm	
+:	
+mã_trả_góp	PK
+duy_nhất	
+,	
+ngày_mua	AE
+,	
+số_tiền_trả_trước	AE
+.	F
+
+Một	O
+khách_hàng	E
+sẽ	
+có	R
+nhiều	M
+trả_góp	E
+vì	
+được_phép	
+mua	
+trả_góp	
+nhiều	
+căn_hộ	
+.	F
+
+Mỗi	O
+căn_hộ	E
+cũng	
+sẽ	
+có	R
+nhiều	M
+trả_góp	E
+.	F
+
+Mỗi	O
+trả_góp	E
+sẽ	
+thuộc	R
+một	O
+hình_thứ_trả_góp	E
+cụ_thể	
+và	
+một	O
+hình_thức_trả_góp	E
+sẽ	
+có	R
+nhiều	M
+trả_góp	E
+.	F

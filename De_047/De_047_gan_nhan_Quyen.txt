@@ -1,0 +1,123 @@
+Cho	
+lược_đồ	
+cơ_sở_dữ_liệu	
+quản_lý	
+sách	
+như_sau	
+:	
+
+Mỗi	
+sách	E
+có	
+các	
+thông_tin	
+gồm	
+:	
+mã_sách	PK
+duy_nhất	
+để	
+phân_biệt	
+với	
+các	
+sách	
+khác	
+,	
+có	
+tên_sách	AE
+,	
+thể_loại	AE
+.	F
+
+Mỗi	
+tác_giả	E
+có	
+một	
+mã_tác_giả	PK
+duy_nhất	
+để	
+phân_biệt	
+,	
+có	
+họ_tên	AE
+,	
+địa_chỉ	AE
+,	
+ngày_sinh	AE
+,	
+số_điện_thoại	AE
+.	F
+
+Một	O
+tác_giả	E
+có_thể	
+sáng_tác	R
+nhiều	M
+sách	E
+và	
+một	O
+sách	E
+có_thể	
+được_đồng_sáng_tác	R
+bởi	
+nhiều	M
+tác_giả	E
+.	F
+
+Các	
+sách	
+sau_khi	
+được_duyệt_qua	
+thì	
+có_thể	
+được_phát_hành	
+ra	
+thị_trường	
+để	
+người_đọc	
+tiếp_cận	
+.	F
+
+Thông_tin	
+phát_hành	E
+bao_gồm	
+:	
+mã_phát_hành	PK
+duy_nhất	
+(	
+danh_định	
+)	
+,	
+ngày_phát_hành	AE
+,	
+số_lượng	AE
+,	
+nhà_xuất_bản	AE
+.	F
+
+Với	
+mỗi	O
+thông_tin	
+phát_hành	E
+chỉ	
+có	R
+một	O
+sách	E
+cụ_thể	
+nhưng	
+một	O
+sách	E
+sẽ	
+có_thể	
+có	R
+nhiều	M
+phát_hành	E
+nếu	
+có	
+tiềm_năng	
+bán_ra	
+nhiều	
+và	
+được	
+độc_giả	
+yêu_thích	
+.	F

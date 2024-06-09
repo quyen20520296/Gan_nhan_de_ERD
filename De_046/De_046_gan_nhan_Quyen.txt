@@ -1,0 +1,164 @@
+Cho	
+lược_đồ	
+cơ_sở_dữ_liệu	
+quản_lý	
+bệnh_viện	
+như_sau	
+:	
+
+Thông_tin	
+bệnh_viện	E
+gồm	
+:	
+mã_bệnh_viện	PK
+(	
+danh_định	
+)	
+,	
+tên_bệnh_viện	AE
+,	
+địa_chỉ	AE
+.	F
+
+Thông_tin	
+nhà_sản_xuất	E
+gồm	
+:	
+mã_nhà_sản_xuất	PK
+(	
+danh_định	
+)	
+,	
+tên_nhà_sản_xuất	AE
+,	
+địa_chỉ	AE
+.	F
+
+Thông_tin	
+thuốc	E
+gồm	
+:	
+mã_thuốc	PK
+(	
+danh_định	
+)	
+,	
+tên_thuốc	AE
+,	
+đơn_vị_tính	AE
+,	
+giá_thuốc	AE
+.	F
+
+Một	O
+nhà_sản_xuất	E
+cung_cấp	R
+cho	
+bệnh_viện	
+nhiều	M
+thuốc	E
+.	F
+
+Thông_tin	
+bệnh_nhân	E
+gồm	
+:	
+mã_bệnh_nhân	PK
+(	
+danh_định	
+)	
+,	
+họ_tên	AE
+,	
+số_điện_thoại	AE
+,	
+ngày_sinh	AE
+,	
+giới_tính	AE
+.	F
+
+Thông_tin	
+khám_bệnh	E
+gồm	
+:	
+mã_khám_bệnh	PK
+(	
+danh_định	
+)	
+,	
+ngày_khám	AE
+,	
+chẩn_đoán	AE
+,	
+ghi_chú	AE
+.	F
+
+Một	O
+bệnh_nhân	E
+sẽ	
+có	R
+nhiều	M
+khám_bệnh	E
+vì	
+có_thể	
+tái_khám	
+nhiều	
+lần	
+.	F
+
+Một	O
+bệnh_viện	E
+dùng	
+để	
+tổ_chức	
+khám_bệnh	
+cũng	
+sẽ	
+có	R
+nhiều	M
+khám_bệnh	E
+.	F
+
+Sau_khi	
+khám_bệnh	
+,	
+một	
+toa_thuốc	
+sẽ	
+được_kê	
+cho	
+bệnh_nhân	
+để	
+sử_dụng	
+.	F
+
+Một	O
+khám_bệnh	E
+có_thể	
+kê	R
+nhiều	M
+thuốc	E
+khác_nhau	
+.	F
+
+Một	O
+thuốc	E
+cũng	
+có_thể	
+được_kê	R
+trong	
+nhiều	M
+khám_bệnh	E
+.	F
+
+Khi	
+kê
+toa_thuốc	ER
+,	
+cần	
+phải	
+biết	
+số_lượng	AR
+và	
+trị_giá	AR
+.	F

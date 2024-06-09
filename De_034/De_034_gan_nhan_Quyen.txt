@@ -1,0 +1,164 @@
+Cho	
+lược_đồ	
+cơ_sở_dữ_liệu	
+Quản_lý	
+hồ_sơ	
+bệnh_án_điện_tử	
+công_dân	
+có	
+cấu_trúc	
+như_sau	
+:	
+
+Quan_hệ	
+bệnh_nhân	E
+lưu_trữ	
+thông_tin	
+của	
+một	
+bệnh_nhân	
+,	
+bao_gồm	
+:	
+họ_tên	AE
+,	
+ngày_sinh	AE
+,	
+số_chứng_minh_nhân_dân	AE
+,	
+địa_chỉ	AE
+,	
+đối_tượng	AE
+,	
+số_lần_phẫu_thuật	AE
+.	F
+
+Mỗi	
+bệnh_nhân	E
+được_cấp	
+một	
+mã_bệnh_nhân	PK
+duy_nhất	
+.	F
+
+Quan_hệ	
+khám_bệnh	E
+chứa	
+các	
+thông_tin	
+của	
+việc	
+khám_bệnh	
+,	
+bao_gồm	
+:	
+mã_khám_bệnh	PK
+duy_nhất	
+,	
+bệnh_chính	AE
+,	
+bệnh_kèm_theo	AE
+,	
+thời_gian_bắt_đầu	AE
+,	
+thời_gian_kết_thúc	AE
+,	
+kết_luận	AE
+,	
+ngày_hẹn_tái_khám	AE
+.	F
+
+Một	O
+bệnh_nhân	E
+có_thể	
+đến	R
+để	
+khám_bệnh	E
+nhiều	M
+lần	
+.	F
+
+Quan_hệ	
+phẫu_thuật	E
+chứa	
+các	
+thông_tin	
+sự_kiện	
+phẫu_thuật	
+,	
+bao_gồm	
+:	
+mã_phẫu_thuật	PK
+duy_nhất	
+,	
+bộ_phận_phẫu_thuật	AE
+,	
+loại_phẫu_thuật	AE
+,	
+kết_quả	AE
+.	F
+
+Mỗi	O
+phẫu_thuật	E
+chỉ	
+thuộc	R
+một	O
+khám_bệnh	E
+và	
+một	O
+khám_bệnh	E
+có	R
+nhiều	M
+phẫu_thuật	E
+.	F
+
+Quan_hệ	
+bác_sĩ	E
+lưu_trữ	
+thông_tin	
+các	
+bác_sĩ	
+,	
+bao_gồm	
+:	
+mã_bác_sĩ	PK
+duy_nhất	
+,	
+họ_tên	AE
+,	
+năm_sinh	AE
+,	
+chuyên_môn	AE
+,	
+khoa	AE
+,	
+bệnh_viện	AE
+.	F
+
+Một	O
+bác_sĩ	E
+có_thể	
+phụ_trách	R
+nhiều	M
+khám_bệnh	E
+.	F
+
+Một	O
+khám_bệnh	E
+cũng	
+có_thể	
+được_phụ_trách	R
+bởi	
+nhiều	M
+bác_sĩ	E
+.	F
+
+Khi	
+phụ_trách	ER
+,	
+cần	
+ghi_lại	
+thời_điểm_bắt_đầu_phụ_trách	AR
+và	
+thời_điểm_kết_thúc_phụ_trách	AR
+.	F

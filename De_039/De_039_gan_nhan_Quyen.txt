@@ -1,0 +1,176 @@
+Cho	
+một	
+phần	
+lược_đồ	
+cơ_sở_dữ_liệu	
+quản_lý	
+bán_vé	
+tham_quan	
+phố_cổ	
+như_sau	
+:	
+
+Quan_hệ	
+địa_điểm_tham_quan	E
+chứa	
+dữ_liệu	
+của	
+các	
+địa_điểm_tham_quan	
+tại	
+phố_cổ	
+.	F
+
+Các	
+thuộc_tính	
+cần	
+lưu_trữ	
+bao_gồm	
+:	
+mã_địa_điểm	PK
+duy_nhất	
+,	
+tên_địa_điểm	AE
+,	
+khu_vực	AE
+,	
+địa_chỉ	AE
+,	
+thông_tin_giới_thiệu	AE
+,	
+năm_khai_thác	AE
+.	F
+
+Quan_hệ	
+loại_địa_điểm	R
+mô_tả	
+các	
+loại_hình	
+địa_điểm	
+tham_quan	
+,	
+thuộc_tính	
+lưu_trữ	
+bao_gồm	
+:	
+mã_loại_địa_điểm	PK
+duy_nhất	
+,	
+tên_loại_địa_điểm	AE
+.	F
+
+Một	O
+địa_điểm_tham_quan	E
+thuộc	R
+một	O
+loại_địa_điểm	E
+cụ_thể	
+nào_đó	
+và	
+một	O
+loại_địa_điểm	E
+sẽ	
+có	R
+nhiều	M
+địa_điểm_tham_quan	E
+.	F
+
+Quan_hệ	
+loại_vé	E
+mô_tả	
+thông_tin	
+các	
+combo	
+loại_vé	
+bao_gồm	
+:	
+tên_loại_vé	AE
+,	
+giá_vé	AE
+,	
+hạn_sử_dụng	AE
+và	
+được_cấp	
+một	
+mã_loại_vé	PK
+duy_nhất	
+để	
+phân_biệt	
+.	F
+
+Trong	
+chi_tiết	
+lịch_trình	
+tham_quan	
+của	
+một	O
+loại_vé	E
+có_thể	
+có	R
+nhiều	M
+địa_điểm_tham_quan	E
+.	F
+
+Dĩ_nhiên	
+,	
+một	O
+địa_điểm_tham_quan	E
+cũng	
+có_thể	
+được_liệt_kê	R
+trong	
+nhiều	M
+loại_vé	E
+khác_nhau	
+.	F
+
+Nếu	
+du_khách	
+muốn	
+tham_quan	
+một	
+địa_điểm	
+nào_đó	
+thì	
+cần	
+phải	
+mua
+vé	
+.	F
+
+Quan_hệ	
+bán_vé	E
+mô_tả	
+thông_tin	
+hóa_đơn_bán_vé	
+của	
+phố_cổ	
+.	F
+
+Thông_tin	
+được_lưu_trữ	
+bao_gồm	
+:	
+mã_hóa_đơn_bán_vé	PK
+,	
+số_lượng_vé_bán	AE
+,	
+trị_giá	AE
+,	
+ngày_bán	AE
+,	
+ngày_hết_hạn	AE
+.	F
+
+Một	O
+loại_vé	E
+sẽ	
+được_bán	
+nhiều	
+lần	
+nên	
+sẽ	
+có	R
+nhiều	M
+bán_vé	E
+.	F

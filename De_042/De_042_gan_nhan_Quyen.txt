@@ -1,0 +1,91 @@
+Cho	
+hệ_thống	
+cơ_sở_dữ_liệu	
+quản_lý	
+máy_bay	
+như_sau	
+:	
+
+Bảng	
+loại_máy_bay	E
+lưu_trữ	
+thông_tin	
+loại_máy_bay	
+gồm	
+model_của_máy_bay	PK
+(	
+danh_định	
+)	
+,	
+sức_chứa	AE
+,	
+trọng_lượng	AE
+.	F
+
+Bảng	
+máy_bay	E
+lưu_trữ	
+thông_tin	
+của	
+máy_bay	
+bao_gồm	
+biển_số	PK
+(	
+danh_định	
+)	
+.	F
+
+Một	O
+loại_máy_bay	E
+có	R
+nhiều	M
+máy_bay	E
+.	F
+
+Bảng	
+nhân_viên	E
+lưu_trữ	
+thông_tin	
+của	
+nhân_viên	
+bao_gồm	
+mã_nhân_viên	PK
+(	
+danh_định	
+)	
+,	
+tên	AE
+,	
+địa_chỉ	AE
+,	
+ngày_sinh	AE
+,	
+điện_thoại	AE
+,	
+lương	AE
+,	
+cấp_bậc	AE
+,	
+ngày_bắt_đầu_làm_việc	AE
+.	F
+
+Một	O
+nhân_viên	E
+có_thể	
+làm_việc	R
+trên	
+nhiều	M
+máy_bay	E
+và	
+một	O
+máy_bay	E
+cũng	
+có_thể	
+có	R
+nhiều	M
+nhân_viên	E
+cùng	
+làm_việc	
+trên	
+đó	
+.	

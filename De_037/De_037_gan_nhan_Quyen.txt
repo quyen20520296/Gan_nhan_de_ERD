@@ -1,0 +1,125 @@
+Cho	
+lược_đồ	
+cơ_sở_dữ_liệu	
+Quản_lý	
+thẻ_tài_khoản	
+gồm	
+các	
+quan_hệ	
+như_sau	
+:	
+
+Quan_hệ	
+khách_hàng	E
+có	
+mã_khách_hàng	PK
+duy_nhất	
+,	
+họ_tên	AE
+,	
+ngày_sinh	AE
+,	
+địa_chỉ	AE
+,	
+số_điện_thoại	AE
+và	
+chứng_minh_nhân_dân	AE
+.	F
+
+Quan_hệ	
+loại_tài_khoản	E
+có	
+mã_loại_tài_khoản	PK
+duy_nhất	
+để	
+phân_biệt	
+với	
+các	
+loại_tài_khoản	AE
+khác	
+,	
+có	
+tên_loại_tài_khoản	AE
+và	
+mô_tả	AE
+.	F
+
+Quan_hệ	
+tài_khoản	E
+có	
+số_tài_khoản	PK
+danh_định	
+duy_nhất	
+,	
+ngày_mở	AE
+,	
+số_dư	AE
+,	
+lãi_suất	AE
+,	
+trạng_thái	AE
+.	F
+
+Một	O
+khách_hàng	E
+được_phép	
+mở	R
+nhiều	M
+tài_khoản	E
+.	F
+
+Mỗi	O
+tài_khoản	E
+chỉ	
+thuộc	R
+một	O
+loại_tài_khoản	E
+nhưng	
+một	O
+loại_tài_khoản	E
+có_thể	
+có	R
+nhiều	M
+tài_khoản	E
+.	F
+
+Quan_hệ	
+loại_giao_dịch	E
+có	
+mã_loại_giao_dịch	PK
+duy_nhất	
+,	
+tên_loại_giao_dịch	AE
+và	
+mô_tả	AE
+.	F
+
+Quan_hệ	
+giao_dịch	E
+có	
+mã_giao_dịch	PK
+duy_nhất	
+,	
+ngày_giao_dịch	AE
+,	
+số_tiền	AE
+,	
+nội_dung	AE
+.	F
+
+Mỗi	O
+tài_khoản	E
+có	
+khả_năng	
+thực_hiện	R
+nhiều	M
+giao_dịch	E
+.	F
+
+Mỗi	O
+loại_giao_dịch	E
+cũng	
+có	R
+nhiều	M
+giao_dịch	E
+.	F

@@ -1,0 +1,136 @@
+Cho	
+lược_đồ	
+quan_hệ	
+cơ_sở_dữ_liệu	
+quản_lý	
+phân_công	
+lái_xe	
+như_sau	
+:	
+
+Mỗi	
+nhân_viên	E
+được_xác_định	
+bởi	
+một	
+mã_nhân_viên	PK
+duy_nhất	
+,	
+có	
+họ_tên	AE
+,	
+ngày_vào_làm	AE
+,	
+hệ_số_lương	AE
+.	F
+
+Một	O
+phòng_ban	E
+có	R
+nhiều	M
+nhân_viên	E
+.	F
+
+Mỗi	
+phòng_ban	E
+có	
+một	
+mã_phòng_ban	PK
+duy_nhất	
+để	
+phân_biệt	
+với	
+các	
+phòng_ban	
+khác	
+và	
+có	
+tên_phòng_ban	AE
+.	F
+
+Một	O
+phòng_ban	E
+chỉ	
+có	
+duy_nhất	
+một	O
+nhân_viên	E
+được	
+chỉ_định	
+làm	
+trưởng_phòng	R
+.	F
+
+Mỗi	
+xe	E
+có	
+các	
+thông_tin	
+bao_gồm	
+:	
+mã_xe	PK
+duy_nhất	
+,	
+loại_xe	AE
+,	
+số_chỗ_ngồi	AE
+,	
+năm_sản_xuất	AE
+.	F
+
+Để	
+phân_công	
+lái_xe	
+thì	
+phải	
+có	
+nhân_viên	
+và	
+xe	
+được_chọn	
+để	
+lái	
+.	F
+
+Thông_tin	
+phân_công	E
+gồm	
+:	
+mã_phân_công	PK
+(	
+danh_định	
+)	
+,	
+ngày_đi	AE
+,	
+ngày_về	AE
+,	
+nơi_đến	AE
+.	F
+
+Một	O
+nhân_viên	E
+được_phân_công	
+lái	
+nhiều	
+lần	
+nên	
+sẽ	
+có	R
+nhiều	M
+phân_công	E
+.	F
+
+Một	O
+xe	E
+cũng	
+được_sử_dụng	
+nhiều	
+lần	
+nên	
+cũng	
+sẽ	
+có	R
+nhiều	M
+phân_công	E
+.	F

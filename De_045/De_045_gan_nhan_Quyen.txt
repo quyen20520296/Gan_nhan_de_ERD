@@ -1,0 +1,163 @@
+Cho	
+lược_đồ	
+cơ_sở_dữ_liệu	
+quản_lý	
+phòng_khám	
+như_sau	
+:	
+
+Thông_tin	
+phòng_khám	E
+gồm	
+:	
+mã_phòng_khám	PK
+(	
+danh_định	
+)	
+,	
+tên_phòng_khám	AE
+,	
+địa_chỉ	AE
+.	F
+
+Thông_tin	
+nhà_cung_cấp	E
+gồm	
+:	
+mã_nhà_cung_cấp	PK
+(	
+danh_định	
+)	
+,	
+tên_nhà_cung_cấp	AE
+,	
+địa_chỉ	AE
+.	F
+
+Thông_tin	
+thuốc	E
+gồm	
+:	
+mã_thuốc	PK
+(	
+danh_định	
+)	
+,	
+tên_thuốc	AE
+,	
+đơn_vị_tính	AE
+,	
+giá_thuốc	AE
+.	F
+
+Một	O
+thuốc	E
+có	
+nguồn_gốc	R	
+từ	
+một	O
+nhà_cung_cấp	E
+xác_định	
+và	
+một	O
+nhà_cung_cấp	E
+có	
+khả_năng	
+cung_cấp	R
+nhiều	M
+thuốc	E
+.	F
+
+Thông_tin	
+bệnh_nhân	E
+gồm	
+:	
+mã_bệnh_nhân	PK
+(	
+danh_định	
+)	
+,	
+họ_tên	AE
+,	
+số_điện_thoại	AE
+,	
+ngày_sinh	AE
+,	
+giới_tính	AE
+.	F
+
+Thông_tin	
+khám_bệnh	E
+gồm	
+:	
+mã_khám_bệnh	PK
+(	
+danh_định	
+)	
+,	
+ngày_khám	AE
+,	
+chẩn_đoán	AE
+,	
+ghi_chú	AE
+.	F
+
+Một	O
+bệnh_nhân	E
+có_thể	
+đến	
+khám	
+nhiều	
+lần	
+nên	
+sẽ	
+có	R
+nhiều	M
+khám_bệnh	E
+.	F
+
+Một	O
+phòng_khám	E
+cũng	
+có_thể	
+được_dùng	
+để	
+thực_hiện	
+khám	
+nhiều_lần	
+nên	
+cũng	
+sẽ	
+có	R
+nhiều	M
+khám_bệnh	E
+.	F
+
+Một	O
+khám_bệnh	E
+có_thể	
+kê	R
+nhiều	M
+thuốc	E
+cho	
+bệnh_nhân	
+và	
+một	O
+thuốc	E
+có_thể	
+được_kê	R
+trong	
+nhiều	M
+khám_bệnh	E
+.	F
+
+Khi	
+kê	
+đơn_thuốc	ER
+,	
+cần_phải	
+ghi_lại	
+số_lượng	AR
+và	
+thành_tiền	AR
+.	F
